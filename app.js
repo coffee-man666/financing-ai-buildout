@@ -688,7 +688,7 @@ function L(pair) { return pair ? (pair[lang] || pair.en || '') : ''; }
       sText(s, cx + bw / 2, y - 6, fmt(tt, 1), 'lab-sm', 'middle');
       var lab = r.completion_year === 'Planned, no date' ? bi('n/d', '无日期') : (r.completion_year === 'After 2032' ? '>32' : r.completion_year.slice(2));
       sText(s, cx + bw / 2, by0 + 14, lab, 'ax-tick', 'middle');
-      if (isNd) sText(s, cx + bw / 2, byTop - 14, bi('never 54%', 'never 54%'), 'lab-sm', 'middle').style.fill = C.ink;
+      if (isNd) sText(s, cx + bw / 2, byTop - 14, bi('never 54%', '永不建成 54%'), 'lab-sm', 'middle').style.fill = C.ink;
     });
     sText(s, bx0 - 34, by0 + 34, bi('column totals in GW on top · 0.1 GW rounding vs printed 188.3/114.9/213.5 (col sums 188.4/115.0/213.4, derived)', '柱顶为合计 GW · 与印刷值 188.3/114.9/213.5 差 0.1 GW 系四舍五入（列和 188.4/115.0/213.4，衍生）'), 'lab-sm');
   });
@@ -701,7 +701,7 @@ function L(pair) { return pair ? (pair[lang] || pair.en || '') : ''; }
     if (!body) return;
     var rows = [
       { a: '79.3M GPUs', op: '÷', b: '1.10M racks', r: bi('= 72 GPUs/rack (NVL72)', '= 72 卡/架（NVL72）'), d: bi('188.3 GW build-out, Appendix D', '188.3 GW 建设规模，附录 D'), prov: 'paper_facts:15' },
-      { a: '188,300 MW', op: '÷1.2 ÷', b: '142 kW/rack', r: bi('≈ 1,105k racks (reverse check)', '≈ 110.5 万架（反推校验）'), d: bi('PUE 1.2 critical IT · cluster-equivalent', 'PUE 1.2 关键 IT · cluster-equivalent 口径'), prov: 'paper_facts:17' },
+      { a: '188,300 MW', op: '÷1.2 ÷', b: '142 kW/rack', r: bi('≈ 1,105k racks (reverse check)', '≈ 110.5 万架（反推校验）'), d: bi('PUE 1.2 critical IT · cluster-equivalent', 'PUE 1.2 关键 IT · 集群当量口径'), prov: 'paper_facts:17' },
       { a: '200 MW', op: '≈', b: '', r: '170,000 households', d: bi('continuous load, annual electricity', '连续负荷年用电当量'), prov: 'paper_facts:12' },
       { a: '1,515 TWh', op: '=', b: '', r: bi('entire U.S. residential sector (2025)', '全美居民部门（2025）'), d: bi('capacity completed by 2032 at full utilization', '2032 年前建成容量满负荷口径'), prov: 'paper_facts:11' },
       { a: '5–10 kW', op: '→', b: 'well above 100 kW', r: bi('CPU rack → AI rack power density', 'CPU 机架 → AI 机架功率密度'), d: bi('liquid cooling increasingly direct-to-chip', '液冷日益直触芯片'), prov: 'paper_facts:16' }
@@ -1007,7 +1007,7 @@ function L(pair) { return pair ? (pair[lang] || pair.en || '') : ''; }
         cur += b.w + 8;
       });
       sText(s, x0, 200, bi('Reconciliation (derived, fine print): 800 + 200 + 150 = $1,150B ≈ $2.9T × 40% = $1,160B.', '勾稽（衍生，细体）：800 + 200 + 150 = $1,150B ≈ $2.9T × 40% = $1,160B。'), 'lab-sm');
-      sText(s, x0, 216, bi('Third-party caliber: Morgan Stanley Research (2025); qualifiers about/roughly/approximately kept verbatim in hover notes.', '第三方口径：Morgan Stanley Research（2025）；about/roughly/approximately 措辞随浮层保留原文。'), 'lab-sm');
+      sText(s, x0, 216, bi('Third-party caliber: Morgan Stanley Research (2025); qualifiers about/roughly/approximately kept verbatim in hover notes.', '第三方口径：Morgan Stanley Research（2025）；「about/roughly/approximately」等英文限定词在浮层中保留原文。'), 'lab-sm');
       svgPilcrow(s, 690, 20, 'financing_mix', 2);
     }
   });
@@ -1661,7 +1661,7 @@ function L(pair) { return pair ? (pair[lang] || pair.en || '') : ''; }
       card.id = 'ins-' + it.id;
       card.innerHTML =
         '<h3><span class="en">' + esc(it.title.en) + '</span><span class="zh">' + esc(it.title.zh) + '</span></h3>' +
-        '<div class="insight-meta">#' + esc(it.id) + ' · <span class="badge-kind">' + esc(L(KIND_LABEL[it.kind]) || it.kind) + '</span><span class="badge-derived">' + esc(bi('derived', '衍生 derived')) + '</span></div>' +
+        '<div class="insight-meta">#' + esc(it.id) + ' · <span class="badge-kind">' + esc(L(KIND_LABEL[it.kind]) || it.kind) + '</span><span class="badge-derived">' + esc(bi('derived', '衍生')) + '</span></div>' +
         '<div class="insight-claim"><span class="en">' + esc(it.claim.en) + '</span><span class="zh">' + esc(it.claim.zh) + '</span></div>' +
         '<figure class="viz" id="iviz-' + it.id + '"><div class="viz-body"></div></figure>' +
         '<details class="insight-math"><summary>' + esc(bi('Recomputation & provenance (python3 verified 2026-10-12)', '复算式与来源（python3 已复算 2026-10-12）')) + '</summary>' +
@@ -1735,7 +1735,7 @@ function L(pair) { return pair ? (pair[lang] || pair.en || '') : ''; }
     sText(s, 620, 36, bi('The tip vs the iceberg ($B, log scale)', '冰山一角与整座冰山（$B，对数标尺）'), 'lab');
     var comps = [
       { v: 93.4, lab: bi('visible gap 2026', '表内缺口 2026'), mult: '1×', color: C.accent },
-      { v: 725, lab: bi('MS need per year', 'MS 年均需求'), mult: '7.8×', color: C.muted },
+      { v: 725, lab: bi('MS need per year', '摩根士丹利年均需求'), mult: '7.8×', color: C.muted },
       { v: 2400, lab: bi('off-balance stock', '表外存量'), mult: '25.7×', color: C.amber }
     ];
     var rx0 = 770, rx1 = 900;
@@ -1749,7 +1749,7 @@ function L(pair) { return pair ? (pair[lang] || pair.en || '') : ''; }
     });
     sText(s, 620, 236, bi('hover the bars for multiples: 25.7× / 7.8× / 3.88× (external >$362.5B/yr, derived)', '悬停条形看倍数：25.7× / 7.8× / 3.88×（外部 >$362.5B/年，衍生）'), 'lab-sm');
     sText(s, 620, 254, bi('log scale because $93B and $2.4T differ 26-fold — a linear bar would erase the tip.', '用对数标尺：$93B 与 $2.4T 相差 26 倍——线性条会抹掉一角。'), 'lab-sm');
-    sText(s, 620, 272, bi('3-year view derived from hyperscaler_capex + offbalance_leverage + financing_mix.', '三年视角由 hyperscaler_capex + offbalance_leverage + financing_mix 衍生。'), 'lab-sm');
+    sText(s, 620, 272, bi('3-year view derived from hyperscaler_capex + offbalance_leverage + financing_mix.', '三年视角由数据视图 hyperscaler_capex + offbalance_leverage + financing_mix 衍生。'), 'lab-sm');
   }
 
   /* macro-1：哑铃 + 双参考线 + 铁路地板 */
