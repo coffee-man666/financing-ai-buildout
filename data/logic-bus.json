@@ -1,0 +1,277 @@
+{
+  "narrative_flow": [
+    "I. Introduction — AI 的近期经济足迹是高度实体性的：训练与部署需要专用芯片、电力与定制数据中心，由此引出投资规模、融资结构变迁与风险归属三大问题，并预览全文论证路径。",
+    "II. AI as a Physical Capital Boom — 量化实体规模：200 MW 校区约 82 亿美元（41 百万美元/MW，1 GW 约 410 亿美元）；Cleanview 口径 63 GW 在运 + 494 GW 管线；中心情景 2025–32 新增 188.3 GW、对应 8.973 万亿美元投资（年均 3.22% GDP），超过运河/铁路/电气化/公路/电信史上各次热潮；电力可得性成为首要区位约束。",
+    "III. Ownership and Financing of AI Infrastructure — 五大超大规模厂商资本开支 2026 年首次超过经营现金流合计，融资转向租赁、合资、项目债、私募信贷与结构化工具；Morgan Stanley 估算 >一半增量算力资本来自外部、股债约 60–40；但总量口径低估资产层面杠杆——杠杆迁出资产负债表且更难观察。",
+    "IV. Financial Architecture and Risk — 以 Meta Hyperion（Beignet）为解剖样本：80% 股权售予 Blue Owl、270 亿美元 A+ 债、项目级 90% 杠杆与 1.12× 偿债覆盖；五段四年租约 + 残值担保的合同设计；GAAP 不确认未来租赁与担保导致报告杠杆低估（Moody's 9,700/6,600 亿美元、WSJ 2.4 万亿 vs 6,040 亿、含租约后杠杆 20%→48%）；代价是 ≥100bp 利差 / >50 亿美元利息；结构已成为模板（Sopaipilla），并体现在 CDS 利差走阔。",
+    "V. Risks in the AI Infrastructure Buildout — 三大脆弱性（租户集中、技术过时、执行瓶颈）叠加高资产级杠杆与链条环状相依；2025–32 建成容量需 3.549 万亿美元成熟年收入（8.8% of 2032 GDP、约 5.1 美元/装机 GPU 时）方可在 10% 无杠杆回报下回本——与 2026 年 8 月末前沿 GPU 租价大体相当，但缓冲很薄且对 IT 寿命假设高度敏感；REIT beta 从 0.5 升至约 1 表明风险已系统化。",
+    "VI. Policy and Research Questions — 政策优先级依次为：改进度量（谁承担需求/再融资/残值风险）、披露与会计（项目债、合资权益、未来租约、残值担保、租户集中度）、估值与资本结构设计（短寿命 IT 与长寿命建筑的错配）、金融稳定（表外结构使相关敞口在下行前更难观察）。",
+    "Appendices A–D — 附录 A 给出校区成本假设（PUE 1.2、142 kW/机架、$4M/机架）；附录 B 详述 Cleanview 项目库（3,377 个活跃项目、缺失容量插补模型 R²=0.830）与实现率情景及年度投资公式；附录 C 提供历史热潮的原始数据来源；附录 D 推导收入要求数学（资本回收因子、φ=1.04527、IT 6 年/其他 20 年寿命）。"
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "claim": {
+        "en": "A representative 200 MW AI training campus costs about $8.2 billion, i.e. roughly $41 million per MW of total facility power (about $41 billion per 1 GW campus): $11M/MW facility, $2M/MW power infrastructure, $28M/MW IT (≈1,170 GB300 NVL72 racks at $4M each), so two-thirds is compute hardware and one-third real estate plus power.",
+        "zh": "一个代表性 200 MW AI 训练校区成本约 82 亿美元，即每 MW 总设施功率约 4,100 万美元（1 GW 校区约 410 亿美元）：设施 1,100 万/MW、电力基础设施 200 万/MW、IT 设备 2,800 万/MW（约 1,170 个 GB300 NVL72 机架、每架 400 万美元）；约三分之二是算力硬件、三分之一是场地与电力。"
+      },
+      "section": "II",
+      "evidence_dataset_ids": ["campus_cost", "paper_facts"],
+      "evidence_locators": ["Table 2", "Appendix A", "PDF p.6", "PDF pp.20-21"],
+      "supports": ["C4"]
+    },
+    {
+      "id": "C2",
+      "claim": {
+        "en": "Using Cleanview project-level data (accessed Sept 12, 2026), the U.S. has roughly 63 GW of operating data center capacity and a development pipeline of about 494 GW — 47 GW under construction plus 447 GW planned — where the planned figure is not a completion forecast.",
+        "zh": "基于 Cleanview 项目级数据（2026-09-12 取数）：美国在运数据中心容量约 63 GW，开发管线约 494 GW——47 GW 在建加 447 GW 规划——其中规划数并非完工预测。"
+      },
+      "section": "II",
+      "evidence_dataset_ids": ["capacity_pipeline", "paper_facts"],
+      "evidence_locators": ["Table 3", "PDF p.6", "PDF pp.22-23"],
+      "supports": ["C3"]
+    },
+    {
+      "id": "C3",
+      "claim": {
+        "en": "The central scenario implies 188.3 GW of additional U.S. capacity becomes operational during 2025–32 (including 22.5 GW already operational in 2025–26), 114.9 GW is completed after 2032, and 213.5 GW is never completed; the implied project-count cancellation rate of 32.6% matches Brandsaas et al.'s 33%, and the capacity-weighted non-realization rate is 43.2%.",
+        "zh": "中心情景下 2025–32 新增投运 188.3 GW（含 2025/26 年已投运的 22.5 GW），2032 年后完工 114.9 GW，永不完工 213.5 GW；隐含项目数口径取消率 32.6% 与 Brandsaas 等人的 33% 一致，容量加权未实现率 43.2%。"
+      },
+      "section": "II",
+      "evidence_dataset_ids": ["capacity_outcomes", "paper_facts"],
+      "evidence_locators": ["Table 4", "PDF p.6", "PDF pp.24-25"],
+      "supports": ["C4", "C17"]
+    },
+    {
+      "id": "C4",
+      "claim": {
+        "en": "Applying $41M/MW (growing 4%/yr) and a 4-year expenditure profile to the capacity scenario, the 2025–32 buildout requires $8.973 trillion of investment — 3.22% of GDP per year on average and 3.17% of cumulative GDP (2.95% if nominal GDP grows 6%/yr instead of 4%).",
+        "zh": "对容量情景套用 41 百万美元/MW（每年涨 4%）与四年支出分布，2025–32 建设需总投资 8.973 万亿美元——年均占 GDP 3.22%、累计占 3.17%（若名义 GDP 年增 6% 则为 2.95%）。"
+      },
+      "section": "II",
+      "evidence_dataset_ids": ["investment_annual", "paper_facts"],
+      "evidence_locators": ["Table 5", "PDF pp.6-7", "PDF pp.26-27"],
+      "supports": ["C5", "C17"]
+    },
+    {
+      "id": "C5",
+      "claim": {
+        "en": "The AI buildout's 3.22% average annual investment-to-GDP share exceeds every prior U.S. capex boom in the comparison: railroads 2.24% (1870–90), highways 1.13% (1956–73), telecom/fiber 1.10% (1996–2003), canals 0.66% (1836–41), electrification 0.50% (1905–25).",
+        "zh": "AI 建设期年均投资占 GDP 3.22%，超过历史各次美国资本开支热潮：铁路 2.24%（1870–90）、公路 1.13%（1956–73）、电信/光纤 1.10%（1996–2003）、运河 0.66%（1836–41）、电气化 0.50%（1905–25）。"
+      },
+      "section": "II",
+      "evidence_dataset_ids": ["historical_booms"],
+      "evidence_locators": ["Table 1", "Appendix C", "PDF p.7", "PDF pp.27-28"],
+      "supports": []
+    },
+    {
+      "id": "C6",
+      "claim": {
+        "en": "AI campuses concentrate power at far higher density than traditional facilities (CPU racks 5–10 kW vs AI racks well above 100 kW), and at campus scale the electricity draw is enormous: a continuous 200 MW load consumes about as much electricity as 170,000 average U.S. households, while the full 2032 fleet at high utilization would consume roughly as much as the entire U.S. residential sector (1,515 TWh in 2025).",
+        "zh": "AI 校区功率密度远高于传统设施（CPU 机架 5–10 kW vs AI 机架远超 100 kW），校区级耗电巨大：200 MW 连续负荷约等于 17 万户美国家庭年用电，2032 年建成的全部容量在高利用率下年耗电约等于全美居民部门（2025 年 1,515 TWh）。"
+      },
+      "section": "II",
+      "evidence_dataset_ids": ["paper_facts"],
+      "evidence_locators": ["PDF pp.4-6"],
+      "supports": []
+    },
+    {
+      "id": "C7",
+      "claim": {
+        "en": "Aggregate capex of Oracle, Microsoft, Amazon, Meta, and Alphabet rose from $96.8B in 2020 to $415.8B in 2025 and is projected at $800.5B in 2026, surpassing their combined operating cash flow for the first time — internal cash generation no longer suffices to finance the projected pace of investment.",
+        "zh": "Oracle、微软、亚马逊、Meta、Alphabet 五家资本开支合计从 2020 年 968 亿美元升至 2025 年 4,158 亿美元、2026 年预计 8,005 亿美元，首次超过其经营现金流合计——内部现金已不足以支撑预计的投资节奏。"
+      },
+      "section": "III",
+      "evidence_dataset_ids": ["hyperscaler_capex"],
+      "evidence_locators": ["Figure 1", "PDF p.3", "PDF pp.8-9"],
+      "supports": ["C8"]
+    },
+    {
+      "id": "C8",
+      "claim": {
+        "en": "External capital already carries the marginal dollar: Morgan Stanley estimates more than half of the roughly $2.9 trillion needed for hyperscalers' incremental compute over 2025–28 comes from outside capital, with an approximate 60–40 equity-debt split overall, and within debt private credit is the largest piece (~$800B) followed by corporate debt (~$200B) and structured finance (~$150B).",
+        "zh": "边际资金已由外部资本承担：Morgan Stanley 估算 2025–28 满足超大规模厂商增量算力所需的约 2.9 万亿美元中超过一半来自外部，整体股债约 60–40；债务内部私募信贷最大（约 8,000 亿美元），其后是公司债约 2,000 亿、结构化融资约 1,500 亿。"
+      },
+      "section": "III",
+      "evidence_dataset_ids": ["financing_mix"],
+      "evidence_locators": ["PDF p.10"],
+      "supports": ["C9"]
+    },
+    {
+      "id": "C9",
+      "claim": {
+        "en": "The aggregate 60–40 equity-debt split understates leverage at the asset level: hyperscalers point their internal capital at IT equipment while shells, power, and real estate are financed with project debt and leases, so moving assets into separately financed vehicles raises loan-to-value and debt-to-equity on the infrastructure even as reported operating-company leverage stays low — system leverage rises and becomes less visible.",
+        "zh": "总量 60–40 股债口径低估资产层面杠杆：超大规模厂商将自有资本投向 IT 设备，而壳体、电力与不动产走项目债和租赁，资产装入独立融资载体后底层基础设施的贷款价值比与债务股本比上升、运营公司报告杠杆却仍然很低——系统杠杆上升且更不可见（杠杆被移到表外）。"
+      },
+      "section": "III",
+      "evidence_dataset_ids": ["financing_mix"],
+      "evidence_locators": ["PDF p.10"],
+      "supports": []
+    },
+    {
+      "id": "C10",
+      "claim": {
+        "en": "The Hyperion project (~2.0 GW, ~$30B total investment, ≈$15M/MW excluding IT equipment which tenant Meta finances separately) was initially wholly owned by Meta, which then sold an 80% equity stake to Blue Owl for ~$2.5B; the JV Beignet raised $27B of external debt in October 2025, rated A+ by S&P (one notch below Meta) — the largest individual investment-grade corporate debt issuance in U.S. history.",
+        "zh": "Hyperion 项目（约 2.0 GW、总投资约 300 亿美元、约 15 百万美元/MW，不含租户 Meta 另行融资的 IT 设备）最初由 Meta 全资持有，随后以约 25 亿美元向 Blue Owl 出售 80% 股权；合资载体 Beignet 于 2025 年 10 月发行 270 亿美元外部债务，获标普 A+（低于 Meta 一档）——美国历史上最大单笔投资级公司债发行。"
+      },
+      "section": "IV",
+      "evidence_dataset_ids": ["hyperion_case"],
+      "evidence_locators": ["PDF p.10", "footnote 3"],
+      "supports": ["C11"]
+    },
+    {
+      "id": "C11",
+      "claim": {
+        "en": "Hyperion is highly levered at the project level: $27B of debt against a $30B asset value is a ~90% debt-to-asset ratio with a debt service coverage ratio of only 1.12× — current lease payments barely cover debt service — whereas Meta's own year-end 2025 leverage was ~25% on book equity (4% on market equity) and its $130B operating cash flow is at least 18× its 2026 debt service, illustrating how off-balance-sheet project finance supports far higher leverage than an investment-grade balance sheet would.",
+        "zh": "Hyperion 项目级杠杆极高：300 亿美元资产背上 270 亿美元债务，债务/资产约 90%，偿债覆盖率仅 1.12×——当前租金刚好够覆盖偿债；对比 Meta 自身 2025 年末杠杆按账面股本约 25%（市值口径 4%）、1,300 亿经营现金流至少是其 2026 年偿债的 18 倍，说明表外项目融资支撑了远高于投资级资产负债表的杠杆。"
+      },
+      "section": "IV",
+      "evidence_dataset_ids": ["hyperion_case"],
+      "evidence_locators": ["PDF p.11", "footnote 4"],
+      "supports": ["C9"]
+    },
+    {
+      "id": "C12",
+      "claim": {
+        "en": "The contract design reconciles lender duration demands with Meta's flexibility via a sequence of five four-year leases beginning 2029 and running to the bond's 2049 maturity: at each renewal Meta may terminate some or all of the campus, the affected assets are offered for sale, and Meta must cover any shortfall below a contractually specified minimum value (residual value guarantee).",
+        "zh": "合同设计用五段各四年的租约（2029 年起、至债券 2049 年到期）调和债权人的久期要求与 Meta 的灵活性：每个续约节点 Meta 可终止部分或全部校区，相关资产被挂牌出售，Meta 须补足售价与合同约定最低价值之间的差额（残值担保）。"
+      },
+      "section": "IV",
+      "evidence_dataset_ids": ["hyperion_case"],
+      "evidence_locators": ["PDF p.11", "Figure 2"],
+      "supports": ["C11", "C13"]
+    },
+    {
+      "id": "C13",
+      "claim": {
+        "en": "Under current GAAP, Meta recognizes neither the future lease obligations nor the residual value guarantee before they become effective — even though one of the two commitments will materialize for sure — so reported leverage understates economic obligations; Moody's estimates hyperscalers hold roughly $970B of lease commitments, of which about $660B is future leases not yet on balance sheet.",
+        "zh": "按现行 GAAP，Meta 在未来租约与残值担保生效前均不予确认——尽管两项承诺中必有一项最终兑现——因此报告杠杆低估经济义务；Moody's 估算超大规模厂商租赁承诺约 9,700 亿美元，其中约 6,600 亿美元是尚未上表的未来租约。"
+      },
+      "section": "IV",
+      "evidence_dataset_ids": ["offbalance_leverage"],
+      "evidence_locators": ["PDF p.11"],
+      "supports": ["C9"]
+    },
+    {
+      "id": "C14",
+      "claim": {
+        "en": "A Wall Street Journal tally finds $2.4 trillion of off-balance-sheet liabilities at the four large hyperscalers ($904B future lease commitments plus $1.52T future purchase commitments, mostly chips), against $604B of on-balance-sheet obligations ($356B long-term debt plus $248B current lease obligations) — only one-fifth of the $3 trillion in datacenter-related obligations is currently recognized.",
+        "zh": "《华尔街日报》统计四大超大规模厂商表外负债 2.4 万亿美元（未来租赁承诺 9,040 亿 + 未来采购承诺 1.52 万亿、多为芯片），而表内义务仅 6,040 亿（长期债务 3,560 亿 + 当期租赁 248 亿）——3 万亿美元数据中心相关义务中目前仅约五分之一在表内确认。"
+      },
+      "section": "IV",
+      "evidence_dataset_ids": ["offbalance_leverage"],
+      "evidence_locators": ["footnote 5", "PDF p.11"],
+      "supports": ["C9"]
+    },
+    {
+      "id": "C15",
+      "claim": {
+        "en": "Recomputing leverage with lease obligations included (uncommenced leases multiplied by 0.75 to approximate present value, June 2026 data, four hyperscalers excluding Amazon), aggregate leverage rises from L1 = 20% to L2 = 48% (debt over debt plus book equity) and from L3 = 0.7× to L4 = 2.6× (debt over EBITDA).",
+        "zh": "把租赁义务计入后重算杠杆（未起始租约乘 0.75 近似现值，2026 年 6 月数据，剔除亚马逊后的四家）：总杠杆从 L1=20% 升至 L2=48%（债务/（债务+账面股本）），从 L3=0.7× 升至 L4=2.6×（债务/EBITDA）。"
+      },
+      "section": "IV",
+      "evidence_dataset_ids": ["offbalance_leverage"],
+      "evidence_locators": ["footnote 6", "PDF pp.11-12"],
+      "supports": ["C9"]
+    },
+    {
+      "id": "C16",
+      "claim": {
+        "en": "The off-balance-sheet structure is not costless: Beignet's debt was issued at a 6.58% yield, at least 100bp above what Meta likely would have paid on comparable unsecured debt, implying more than $5B of additional interest expense over the life of the financing that is ultimately reflected in Meta's lease payments — Meta's rationale is preserving an asset-light reported profile, not cheaper financing.",
+        "zh": "表外结构并非免费：Beignet 债券发行收益率 6.58%，至少高于 Meta 同类无担保债 100bp，存续期内意味着超 50 亿美元额外利息、最终计入 Meta 租金——Meta 的动机是保全轻资产报告形象而非更便宜的融资。"
+      },
+      "section": "IV",
+      "evidence_dataset_ids": ["hyperion_case"],
+      "evidence_locators": ["PDF p.12"],
+      "supports": ["C9"]
+    },
+    {
+      "id": "C17",
+      "claim": {
+        "en": "Under Appendix D's central assumptions, the 188.3 GW of 2025–32 capacity costs $8.762 trillion ($9.159T capital base at commissioning including construction carry at φ=1.04527) and must generate $1.774T of annual operating cash flow to earn a 10% unlevered return; at a 50% operating cash-flow margin this requires about $3.549 trillion of mature annual revenue by 2032 — roughly 8.8% of 2032 GDP ($40.481T), with a weighted annual capital charge of 19.37% (IT 68% at 6-year life, other 32% at 20-year).",
+        "zh": "按附录 D 中心假设，188.3 GW 容量成本 8.762 万亿美元（含建设期资金占用 φ=1.04527 后资本基数 9.159 万亿），需每年 1.774 万亿经营现金流才能实现 10% 无杠杆回报；按 50% 经营现金流利润率，2032 年前需成熟年收入约 3.549 万亿美元——约为 2032 年 GDP（40.481 万亿）的 8.8%，加权年资本费用 19.37%（IT 占 68%、6 年寿命，其余 32%、20 年寿命）。"
+      },
+      "section": "V",
+      "evidence_dataset_ids": ["revenue_requirement", "paper_facts"],
+      "evidence_locators": ["Table 6", "PDF p.14", "PDF pp.28-30"],
+      "supports": ["C18"]
+    },
+    {
+      "id": "C18",
+      "claim": {
+        "en": "In market units the revenue requirement is roughly at current rents — current pricing just about suffices to recover capital: $3.549T over 188.3 GW is ≈$18.8M per MW-year of facility power, ≈$22.6M per MW-year of critical IT, $2.58 per kWh of critical IT energy, or ≈$5.1 per installed GB300 GPU-hour at full utilization across ~1.10 million racks / 79.3 million GPUs — slightly below the $6.07 B200 rental price in the Ornn Compute Price Index on Aug 31, 2026; at 80% utilization the required billed price is ≈$6.4 per GPU-hour ($7.3 at 70%), comparable to frontier-GPU rental prices at end-August 2026.",
+        "zh": "换算成市场单位，收入要求与当前租价大体相当——当前租金刚够回本：3.549 万亿美元摊到 188.3 GW 约为每 MW-年设施功率 1,880 万美元、每 MW-年关键 IT 负载 2,260 万美元、每 kWh 关键 IT 电量 2.58 美元，或按约 110 万机架 / 7,930 万颗 GPU 满负荷约 5.1 美元/装机 GPU 时——略低于 Ornn 算力价格指数 2026-08-31 的 B200 租价 6.07 美元；80% 利用率下所需计费价约 6.4 美元/GPU 时（70% 时约 7.3 美元），与 2026 年 8 月末前沿 GPU 租价相当。"
+      },
+      "section": "V",
+      "evidence_dataset_ids": ["revenue_sensitivity", "paper_facts"],
+      "evidence_locators": ["PDF p.14", "PDF pp.30-31", "footnote 12"],
+      "supports": []
+    },
+    {
+      "id": "C19",
+      "claim": {
+        "en": "The revenue requirement is highly assumption-sensitive: it ranges from $2.13T (5% return, 67% margin) to $6.55T (15% return, 33% margin); shortening IT economic life from six to three years raises the weighted capital charge from 19.37% to 31.10%, lifting required revenue from ~$3.5T to ~$5.7T (8.8% → 14.1% of 2032 GDP) and the required price from ~$5.1 to ~$8.2 per installed GPU-hour; and taking $100B as OpenAI+Anthropic's combined 2026 revenue, revenues must grow ~81.3% per year through 2032 to reach $3.549T.",
+        "zh": "收入要求对假设高度敏感：区间从 2.13 万亿（5% 回报、67% 利润率）到 6.55 万亿美元（15% 回报、33% 利润率）；IT 经济寿命从 6 年缩到 3 年使加权资本费用率从 19.37% 升至 31.10%，所需收入从约 3.5 万亿升至约 5.7 万亿（占 2032 年 GDP 从 8.8% 升至 14.1%）、所需价格从约 5.1 升至约 8.2 美元/装机 GPU 时；以 OpenAI+Anthropic 合计 2026 年收入 1,000 亿美元计，需年均增长约 81.3% 才能在 2032 年达到 3.549 万亿。"
+      },
+      "section": "V",
+      "evidence_dataset_ids": ["revenue_sensitivity"],
+      "evidence_locators": ["Table 7", "PDF pp.31-32"],
+      "supports": ["C18"]
+    },
+    {
+      "id": "C20",
+      "claim": {
+        "en": "Market beta of publicly traded data center REITs has risen from roughly 0.5 to around 1 (36-month rolling, Jan 2018–Mar 2026 sample), and their exposure to the non-AI component of the S&P 500 is now comparable to their exposure to AI stocks — data centers no longer look like defensive infrastructure but part of the same systematic risk complex.",
+        "zh": "上市数据中心 REIT 的市场 beta 已从约 0.5 升至约 1（36 个月滚动，2018-01 至 2026-03 样本），且对标普 500 非 AI 成分的暴露已与对 AI 股的暴露相当——数据中心不再是防御性基础设施，而与 AI 风险同属一个系统风险复合体。"
+      },
+      "section": "V",
+      "evidence_dataset_ids": ["market_signals"],
+      "evidence_locators": ["Figure 3", "PDF p.13", "PDF pp.15-16"],
+      "supports": []
+    },
+    {
+      "id": "C21",
+      "claim": {
+        "en": "Financing circularity runs through the equipment supplier: the $500B credit facility stood up by Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR in August 2026 to finance NVIDIA chips carries a 25% residual value guarantee from NVIDIA — up to $125B of backstops — illustrating how a dominant supplier helps finance purchases of infrastructure built around its own products; Google and Broadcom struck a similar arrangement for TPU chips.",
+        "zh": "融资环状相依贯穿设备供应商：2026 年 8 月 Apollo、BlackRock、Blackstone、Brookfield、高盛、KKR 设立的 500 亿美元信贷工具为英伟达芯片融资，英伟达提供 25% 残值担保——最高 1,250 亿美元兜底——说明主导型供应商在为围绕自家产品建设的基础设施的购买融资；谷歌与博通就 TPU 芯片达成类似安排。"
+      },
+      "section": "V",
+      "evidence_dataset_ids": ["market_signals"],
+      "evidence_locators": ["footnote 9", "PDF p.15"],
+      "supports": []
+    },
+    {
+      "id": "C22",
+      "claim": {
+        "en": "Credit markets are already repricing balance-sheet opacity: between Nov 21, 2025 and Jul 22, 2026 five-year CDS spreads widened for all five hyperscalers — Alphabet 44.7→57.7, Meta 56.1→80.2, Microsoft 35.1→47.7, Amazon 39.7→59.6, and Oracle 118.8→205.5 bps — consistent with investors incorporating off-balance-sheet data-center commitments and financing opacity into default-risk compensation.",
+        "zh": "信贷市场已在为报表不透明重定价：2025-11-21 至 2026-07-22 五家超大规模厂商五年期 CDS 利差全线走阔——Alphabet 44.7→57.7、Meta 56.1→80.2、微软 35.1→47.7、亚马逊 39.7→59.6、Oracle 118.8→205.5 bp——与投资者把表外数据中心承诺与融资不透明计入违约风险补偿相一致。"
+      },
+      "section": "IV",
+      "evidence_dataset_ids": ["market_signals"],
+      "evidence_locators": ["footnote 8", "PDF p.13"],
+      "supports": ["C9"]
+    },
+    {
+      "id": "C23",
+      "claim": {
+        "en": "Hyperion is a replicable template, not a one-off: the 960 MW Sopaipilla project in El Paso, TX — a Meta–BlackRock joint venture — followed a nearly identical structure and issued $12.3 billion of A+-rated bonds in July 2026.",
+        "zh": "Hyperion 是可复制的模板而非孤例：德州 El Paso 的 960 MW Sopaipilla 项目（Meta 与 Blackrock 合资）采用几乎相同的结构，于 2026 年 7 月发行 123 亿美元 A+ 评级债券。"
+      },
+      "section": "IV",
+      "evidence_dataset_ids": ["hyperion_case"],
+      "evidence_locators": ["footnote 7", "PDF p.13"],
+      "supports": ["C10"]
+    },
+    {
+      "id": "C24",
+      "claim": {
+        "en": "Historical comparison based on gross investment requires caution because asset lives differ: canals, railroads, and fiber often served for decades, whereas GPUs may become economically obsolete within three to six years, so the AI buildout generates less net capital formation per dollar of gross investment than earlier booms even though buildings and power connections remain long-lived (Appendix D pairs a 6-year IT life with 20-year building/power life; a 3-year IT life raises the required revenue by ~60%).",
+        "zh": "基于总投资的历史比较需谨慎，因为资产寿命不同：运河、铁路与光纤往往服务数十年，而 GPU 可能三到六年内经济性过时，故 AI 建设每美元总投资形成的净资本低于以往热潮——尽管建筑与电力接入仍属长寿命资产（附录 D 以 IT 6 年、建筑/电力 20 年配对；IT 寿命取 3 年时所需收入约提高六成）。"
+      },
+      "section": "II",
+      "evidence_dataset_ids": ["revenue_requirement", "revenue_sensitivity"],
+      "evidence_locators": ["Appendix C", "PDF p.28", "Table 6 notes", "PDF pp.31-32"],
+      "supports": ["C5"]
+    }
+  ]
+}

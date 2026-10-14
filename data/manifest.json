@@ -1,0 +1,95 @@
+{
+  "views": [
+    {
+      "id": "campus_cost",
+      "title_zh": "200 MW AI 训练校区示意成本（表2）及附录A成本假设",
+      "title_en": "Illustrative Cost of a 200 MW AI Training Campus (Table 2) and Appendix A Assumptions",
+      "rows": 3,
+      "source": "Table 2; PDF pp. 20, 21, 22, 6, 26"
+    },
+    {
+      "id": "paper_facts",
+      "title_zh": "论文正文与脚注的量化事实与情景参数",
+      "title_en": "Quantitative Facts and Scenario Parameters from the Paper's Main Text and Footnotes",
+      "rows": 30,
+      "source": "text & footnotes; PDF pp. 2, 3, 4, 5, 6, 7, 25, 26, 31"
+    },
+    {
+      "id": "hyperscaler_capex",
+      "title_zh": "超大规模云厂商资本开支、经营现金流与资本开支强度（图 1）",
+      "title_en": "Hyperscaler Capital Expenditures, Operating Cash Flow, and Capex Intensity (Figure 1)",
+      "rows": 7,
+      "source": "Figure 1; PDF pp. 8, 9"
+    },
+    {
+      "id": "financing_mix",
+      "title_zh": "AI 基础设施建设融资结构估算（Morgan Stanley）",
+      "title_en": "Estimated Financing Mix for the AI Infrastructure Buildout (Morgan Stanley)",
+      "rows": 7,
+      "source": "text & footnotes; PDF pp. 8, 9, 10"
+    },
+    {
+      "id": "historical_booms",
+      "title_zh": "美国历史上若干资本开支热潮（表 1 与附录 C）",
+      "title_en": "Selected U.S. Capital-Expenditure Booms (Table 1 and Appendix C)",
+      "rows": 6,
+      "source": "Table 1; PDF pp. 7, 27, 28"
+    },
+    {
+      "id": "capacity_pipeline",
+      "title_zh": "按完工年份划分的美国在运/在建/规划数据中心容量（表3）",
+      "title_en": "Operational, Under Construction, and Planned U.S. Data Center Capacity by Completion Year (Table 3)",
+      "rows": 11,
+      "source": "Table 3; PDF pp. 6, 22, 23, 25"
+    },
+    {
+      "id": "capacity_outcomes",
+      "title_zh": "规划与在建项目的实现率假设及美国数据中心容量结果（表4）",
+      "title_en": "Planned and Under-Construction Project Realization Assumptions and U.S. Data Center Capacity Outcomes (Table 4)",
+      "rows": 10,
+      "source": "Table 4; PDF pp. 24, 25"
+    },
+    {
+      "id": "investment_annual",
+      "title_zh": "情景隐含的美国数据中心年度投资，2025–32（表5）",
+      "title_en": "Scenario-Implied U.S. Data Center Investment, 2025–32 (Table 5)",
+      "rows": 8,
+      "source": "Table 5; PDF pp. 6, 25, 26, 27, 28"
+    },
+    {
+      "id": "revenue_requirement",
+      "title_zh": "按建成年份的资本与所需收入（表 6）及收入要求参数",
+      "title_en": "Capital and Required Revenue by Completion Cohort (Table 6) with Revenue-Requirement Parameters",
+      "rows": 8,
+      "source": "Table 6; PDF pp. 14, 28, 29, 30"
+    },
+    {
+      "id": "revenue_sensitivity",
+      "title_zh": "所需成熟期年收入：回报率与利润率敏感性（表 7）及市场单位换算",
+      "title_en": "Required Mature Annual Revenue: Sensitivity to Return and Margin (Table 7) and Market-Unit Conversions",
+      "rows": 3,
+      "source": "Table 7; PDF pp. 14, 30, 31, 32"
+    },
+    {
+      "id": "hyperion_case",
+      "title_zh": "Meta Hyperion（Beignet）数据中心融资——案例事实",
+      "title_en": "Meta Hyperion (Beignet) Data Center Financing - Case Facts",
+      "rows": 49,
+      "source": "text & footnotes; PDF pp. 10, 11, 12, 13"
+    },
+    {
+      "id": "offbalance_leverage",
+      "title_zh": "超大规模云厂商表外租赁与采购承诺",
+      "title_en": "Hyperscaler Off-Balance-Sheet Lease and Purchase Commitments",
+      "rows": 21,
+      "source": "text & footnotes; PDF pp. 11, 12, 15"
+    },
+    {
+      "id": "market_signals",
+      "title_zh": "AI 建设风险的市场信号：超大规模云厂商 CDS 利差、NVIDIA 芯片融资工具与数据中心 REIT Beta",
+      "title_en": "Market Signals of AI-Buildout Risk: Hyperscaler CDS Spreads, the NVIDIA Chip Financing Facility, and Data Center REIT Betas",
+      "rows": 23,
+      "source": "text & footnotes; PDF pp. 13, 15, 16"
+    }
+  ]
+}

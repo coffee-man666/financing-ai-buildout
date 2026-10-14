@@ -1,0 +1,268 @@
+{
+  "id": "market_signals",
+  "title": {
+    "en": "Market Signals of AI-Buildout Risk: Hyperscaler CDS Spreads, the NVIDIA Chip Financing Facility, and Data Center REIT Betas",
+    "zh": "AI 建设风险的市场信号：超大规模云厂商 CDS 利差、NVIDIA 芯片融资工具与数据中心 REIT Beta"
+  },
+  "description": {
+    "en": "Three market signals of AI-infrastructure risk. (1) Footnote 8: five-year CDS spreads of all five hyperscalers widened between November 21, 2025 and July 22, 2026. (2) Footnote 9: the $500 billion credit facility stood up by Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR in August 2026 to finance NVIDIA chips, with NVIDIA providing a 25% residual value guarantee exposing it to as much as $125 billion of backstops; Google and Broadcom entered a similar arrangement for TPU chips. (3) Figure 3: 36-month rolling betas of data center REIT returns with the S&P 500 rose from roughly 0.5 to around 1, and their exposure to the non-AI component of the S&P 500 is now comparable to their exposure to AI stocks.",
+    "zh": "AI 基础设施风险的三个市场信号：(1) 脚注 8：2025-11-21 至 2026-07-22 五家超大规模云厂商五年期 CDS 利差全部走阔；(2) 脚注 9：Apollo、BlackRock、Blackstone、Brookfield、高盛与 KKR 于 2026 年 8 月设立的 $5000 亿 NVIDIA 芯片融资工具，NVIDIA 提供 25% 残值担保、敞口至多 $1250 亿，Google 与 Broadcom 就 TPU 芯片达成类似安排；(3) Figure 3：数据中心 REIT 收益率对 S&P500 的 36 个月滚动 beta 从约 0.5 升至约 1，对 S&P500 非 AI 成分股的暴露已与其对 AI 股的暴露相当。"
+  },
+  "source": {
+    "tables": [],
+    "pdf_pages": [
+      13,
+      15,
+      16
+    ],
+    "sections": [
+      "Section V. Risks in the AI Infrastructure Buildout (footnotes 8 and 9; Figure 3 discussion)",
+      "Figure 3"
+    ]
+  },
+  "columns": [
+    {
+      "key": "signal",
+      "label": {
+        "en": "Signal",
+        "zh": "信号"
+      },
+      "unit": ""
+    },
+    {
+      "key": "value",
+      "label": {
+        "en": "Value (paper figure/verbatim)",
+        "zh": "数值（论文原值/原文）"
+      },
+      "unit": "varies (see unit)"
+    },
+    {
+      "key": "unit",
+      "label": {
+        "en": "Unit",
+        "zh": "单位"
+      },
+      "unit": ""
+    },
+    {
+      "key": "note",
+      "label": {
+        "en": "Note",
+        "zh": "备注"
+      },
+      "unit": ""
+    }
+  ],
+  "rows": [
+    {
+      "signal": "cds_observation_window",
+      "value": "2025-11-21 to 2026-07-22",
+      "unit": "",
+      "note": "Footnote 8, PDF p.13 — five-year CDS spreads widened for all five hyperscalers between these dates."
+    },
+    {
+      "signal": "cds_5y_alphabet_2025_11_21",
+      "value": 44.7,
+      "unit": "bps",
+      "note": "Footnote 8, PDF p.13 — Alphabet five-year CDS spread at 2025-11-21 (window start)."
+    },
+    {
+      "signal": "cds_5y_alphabet_2026_07_22",
+      "value": 57.7,
+      "unit": "bps",
+      "note": "Footnote 8, PDF p.13 — Alphabet five-year CDS spread at 2026-07-22 (window end); spreads widened for all five firms."
+    },
+    {
+      "signal": "cds_5y_meta_2025_11_21",
+      "value": 56.1,
+      "unit": "bps",
+      "note": "Footnote 8, PDF p.13 — Meta five-year CDS spread at 2025-11-21 (window start)."
+    },
+    {
+      "signal": "cds_5y_meta_2026_07_22",
+      "value": 80.2,
+      "unit": "bps",
+      "note": "Footnote 8, PDF p.13 — Meta five-year CDS spread at 2026-07-22 (window end); spreads widened for all five firms."
+    },
+    {
+      "signal": "cds_5y_microsoft_2025_11_21",
+      "value": 35.1,
+      "unit": "bps",
+      "note": "Footnote 8, PDF p.13 — Microsoft five-year CDS spread at 2025-11-21 (window start)."
+    },
+    {
+      "signal": "cds_5y_microsoft_2026_07_22",
+      "value": 47.7,
+      "unit": "bps",
+      "note": "Footnote 8, PDF p.13 — Microsoft five-year CDS spread at 2026-07-22 (window end); spreads widened for all five firms."
+    },
+    {
+      "signal": "cds_5y_amazon_2025_11_21",
+      "value": 39.7,
+      "unit": "bps",
+      "note": "Footnote 8, PDF p.13 — Amazon five-year CDS spread at 2025-11-21 (window start)."
+    },
+    {
+      "signal": "cds_5y_amazon_2026_07_22",
+      "value": 59.6,
+      "unit": "bps",
+      "note": "Footnote 8, PDF p.13 — Amazon five-year CDS spread at 2026-07-22 (window end); spreads widened for all five firms."
+    },
+    {
+      "signal": "cds_5y_oracle_2025_11_21",
+      "value": 118.8,
+      "unit": "bps",
+      "note": "Footnote 8, PDF p.13 — Oracle five-year CDS spread at 2025-11-21 (window start)."
+    },
+    {
+      "signal": "cds_5y_oracle_2026_07_22",
+      "value": 205.5,
+      "unit": "bps",
+      "note": "Footnote 8, PDF p.13 — Oracle five-year CDS spread at 2026-07-22 (window end); spreads widened for all five firms."
+    },
+    {
+      "signal": "nvidia_facility_size_bn",
+      "value": 500,
+      "unit": "$ billion",
+      "note": "Footnote 9, PDF p.15 — credit facility stood up to finance NVIDIA chips."
+    },
+    {
+      "signal": "nvidia_facility_participants",
+      "value": "Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR",
+      "unit": "",
+      "note": "Footnote 9, PDF p.15."
+    },
+    {
+      "signal": "nvidia_facility_date",
+      "value": "August 2026",
+      "unit": "",
+      "note": "Footnote 9, PDF p.15."
+    },
+    {
+      "signal": "nvidia_residual_value_guarantee_pct",
+      "value": 25,
+      "unit": "%",
+      "note": "Footnote 9, PDF p.15 — NVIDIA provides the residual value guarantee."
+    },
+    {
+      "signal": "nvidia_backstop_exposure_bn",
+      "value": 125,
+      "unit": "$ billion",
+      "note": "Footnote 9, PDF p.15 — qualifier 'as much as'."
+    },
+    {
+      "signal": "google_broadcom_similar_arrangement",
+      "value": "similar arrangement to help finance acquisition of its TPU chips",
+      "unit": "",
+      "note": "Footnote 9, PDF p.15 — Google and Broadcom entered into a similar arrangement to help finance acquisition of its TPU chips."
+    },
+    {
+      "signal": "reit_beta_spx_start",
+      "value": 0.5,
+      "unit": "beta",
+      "note": "Figure 3 / Section V, PDF pp.15–16 — market beta of data center REITs 'risen from roughly 0.5' (start of sample)."
+    },
+    {
+      "signal": "reit_beta_spx_end",
+      "value": 1,
+      "unit": "beta",
+      "note": "Figure 3 / Section V, PDF pp.15–16 — 'to around 1' (end of sample)."
+    },
+    {
+      "signal": "rolling_window_months",
+      "value": 36,
+      "unit": "months",
+      "note": "Figure 3, PDF p.16 — 36-month rolling-window beta."
+    },
+    {
+      "signal": "figure3_sample_period",
+      "value": "monthly, January 2018 until March 2026",
+      "unit": "",
+      "note": "Figure 3, PDF p.16."
+    },
+    {
+      "signal": "figure3_ai_stock_definition",
+      "value": "constituents of Global X's AIQ ETF on March 18, 2026",
+      "unit": "",
+      "note": "Figure 3, PDF p.16."
+    },
+    {
+      "signal": "reit_nonai_exposure_vs_ai",
+      "value": "has also increased and is now comparable to their exposure to AI stocks",
+      "unit": "",
+      "note": "Section V, PDF p.15 — exposure to the non-AI component of the S&P 500 'has also increased and is now comparable to their exposure to AI stocks'."
+    }
+  ],
+  "totals": {},
+  "notes": [
+    "No table underlies this dataset; rows are transcribed from footnote 8, so totals is empty and no change column is computed (the paper states only the two endpoint spreads).",
+    "Footnote 8 interpretation: 'This broad-based repricing suggests that credit investors increasingly discount the formal investment-grade status of these firms by incorporating off-balance-sheet data-center commitments, future lease obligations, and related financing opacity into required default-risk compensation.' (PDF p.13)",
+    "Footnote 9 context: 'It illustrates the circularity created when a dominant equipment supplier helps finance customers' purchases of infrastructure built around its own products.' (PDF p.15)",
+    "Figure 3 methodology (PDF p.16): the black line plots the 36-month rolling-window beta of data center REIT returns with the S&P 500 value-weighted excess return; the blue line uses the component of the S&P 500 that excludes all AI-related stocks. The dependent variable is the value-weighted return on data center REITs (FTSE Nareit U.S. Real Estate Index Series) minus the Treasury bill rate; independent variables are the S&P 500 excess return, the 10-year U.S. Treasury total return minus the T-bill rate, and the size, value, profitability, and investment factors of the Fama-French five-factor model. In the second specification the S&P excess return is replaced by the excess return on the S&P 500 excluding AI stocks and the excess return on the AI stocks in the S&P 500.",
+    "Section V reading of Figure 3: 'Data centers therefore appear less like defensive infrastructure assets or a hedge against AI-related risk and more like part of the same systematic risk complex.' (PDF p.15)",
+    "Raw stores the footnote-8 CDS data as a company × date matrix; this view flattens each numeric endpoint into its own signal row (values verbatim, no change column computed — the paper states only the two endpoint spreads)."
+  ],
+  "provenance": [
+    {
+      "locator": "Footnote 8",
+      "pdf_page": 13,
+      "quote_en": "The clearest expression of the market pricing of balance-sheet opacity appears in the CDS market."
+    },
+    {
+      "locator": "Footnote 8",
+      "pdf_page": 13,
+      "quote_en": "Between November 21, 2025 and July 22, 2026, five-year CDS spreads widened for all five hyperscalers:"
+    },
+    {
+      "locator": "Footnote 8",
+      "pdf_page": 13,
+      "quote_en": "Alphabet from 44.7 to 57.7 bps, Meta from 56.1 to 80.2 bps, Microsoft from 35.1 to 47.7 bps, Amazon from 39.7 to 59.6 bps, and Oracle from 118.8 to 205.5 bps."
+    },
+    {
+      "locator": "Footnote 9",
+      "pdf_page": 15,
+      "quote_en": "The $500 billion credit facility stood up by Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR in August 2026 to finance NVIDIA chips is a good example."
+    },
+    {
+      "locator": "Footnote 9",
+      "pdf_page": 15,
+      "quote_en": "NVIDIA will provide a 25% residual value guarantee, exposing it to as much as $125 billion of backstops."
+    },
+    {
+      "locator": "Footnote 9",
+      "pdf_page": 15,
+      "quote_en": "Google and Broadcom entered into a similar arrangement to help finance acquisition of its TPU chips."
+    },
+    {
+      "locator": "Figure 3, title",
+      "pdf_page": 16,
+      "quote_en": "Figure 3. Rolling Betas of Data Center REIT Returns with the Stock Market"
+    },
+    {
+      "locator": "Figure 3, notes",
+      "pdf_page": 16,
+      "quote_en": "The black line plots the 36-month rolling-window beta of data center REIT returns with the S&P 500 value-weighted excess return."
+    },
+    {
+      "locator": "Figure 3, notes",
+      "pdf_page": 16,
+      "quote_en": "The sample is monthly from January 2018 until March 2026."
+    },
+    {
+      "locator": "Figure 3, notes",
+      "pdf_page": 16,
+      "quote_en": "AI stocks are defined as the constituents of the Global X’s AIQ ETF on March 18, 2026."
+    },
+    {
+      "locator": "Section V, Figure 3 discussion",
+      "pdf_page": 15,
+      "quote_en": "Figure 3 shows that the market beta of publicly traded data center REITs has risen from roughly 0.5 to around 1, indicating that their returns now move much more closely with the broader equity market."
+    },
+    {
+      "locator": "Section V, Figure 3 discussion",
+      "pdf_page": 15,
+      "quote_en": "has also increased and is now comparable to their exposure to AI stocks."
+    }
+  ]
+}

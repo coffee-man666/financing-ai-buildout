@@ -1,0 +1,179 @@
+{
+  "id": "capacity_outcomes",
+  "title": {
+    "en": "Planned and Under-Construction Project Realization Assumptions and U.S. Data Center Capacity Outcomes (Table 4)",
+    "zh": "规划与在建项目的实现率假设及美国数据中心容量结果（表4）"
+  },
+  "description": {
+    "en": "Realization-rate assumptions (shares completed by 2032 / after 2032, separately for observed and imputed capacity) and resulting capacity outcomes in GW (By 2032 / After 2032 / Never) for each completion-year category of planned and under-construction U.S. data center projects. Operational capacity and all 2025 capacity are included in full.",
+    "zh": "对美国规划与在建数据中心项目按完工年份档给出的实现率假设（观测容量与插值容量分别设定 2032 年前/后完工比例），以及由此得到的容量结果（GW，分 2032 年前完工/2032 年后完工/永不完工三列）。在运容量与全部 2025 年容量按全额计入。"
+  },
+  "source": {
+    "tables": [
+      "Table 4"
+    ],
+    "pdf_pages": [
+      24,
+      25
+    ],
+    "sections": [
+      "Appendix B"
+    ]
+  },
+  "columns": [
+    {
+      "key": "completion_year",
+      "label": {
+        "en": "Completion year",
+        "zh": "完工年份"
+      },
+      "unit": ""
+    },
+    {
+      "key": "gw_by_2032",
+      "label": {
+        "en": "Capacity completed by 2032",
+        "zh": "2032 年前完工容量"
+      },
+      "unit": "GW"
+    },
+    {
+      "key": "gw_after_2032",
+      "label": {
+        "en": "Capacity completed after 2032",
+        "zh": "2032 年后完工容量"
+      },
+      "unit": "GW"
+    },
+    {
+      "key": "gw_never",
+      "label": {
+        "en": "Capacity never completed",
+        "zh": "永不完工容量"
+      },
+      "unit": "GW"
+    }
+  ],
+  "rows": [
+    {
+      "completion_year": "2025",
+      "gw_by_2032": 13.8,
+      "gw_after_2032": 0.0,
+      "gw_never": 0.0
+    },
+    {
+      "completion_year": "2026",
+      "gw_by_2032": 26.6,
+      "gw_after_2032": 0.0,
+      "gw_never": 2.1
+    },
+    {
+      "completion_year": "2027",
+      "gw_by_2032": 35.8,
+      "gw_after_2032": 2.5,
+      "gw_never": 7.3
+    },
+    {
+      "completion_year": "2028",
+      "gw_by_2032": 32.7,
+      "gw_after_2032": 5.1,
+      "gw_never": 10.1
+    },
+    {
+      "completion_year": "2029",
+      "gw_by_2032": 10.7,
+      "gw_after_2032": 2.8,
+      "gw_never": 4.7
+    },
+    {
+      "completion_year": "2030",
+      "gw_by_2032": 6.9,
+      "gw_after_2032": 3.0,
+      "gw_never": 4.5
+    },
+    {
+      "completion_year": "2031",
+      "gw_by_2032": 5.3,
+      "gw_after_2032": 3.7,
+      "gw_never": 5.2
+    },
+    {
+      "completion_year": "2032",
+      "gw_by_2032": 2.6,
+      "gw_after_2032": 2.9,
+      "gw_never": 4.1
+    },
+    {
+      "completion_year": "After 2032",
+      "gw_by_2032": 0.0,
+      "gw_after_2032": 5.2,
+      "gw_never": 5.2
+    },
+    {
+      "completion_year": "Planned, no date",
+      "gw_by_2032": 54.0,
+      "gw_after_2032": 89.8,
+      "gw_never": 170.2
+    }
+  ],
+  "totals": {
+    "row_label": "Total",
+    "gw_by_2032": 188.3,
+    "gw_after_2032": 114.9,
+    "gw_never": 213.5
+  },
+  "notes": [
+    "No-date planned projects (required, PDF p.25): for reported (observed) capacity, 20 percent is completed by 2032, 30 percent after 2032, and 50 percent is never realized; for imputed capacity, the corresponding shares are 10 percent, 25 percent, and 65 percent.",
+    "Table 4 notes (PDF p.24): rates apply only to planned and under-construction projects; operational capacity and all 2025 capacity are included in full; “Never” is the residual capacity not completed; columns may not sum exactly because of rounding.",
+    "The 2025 row's four rate cells show “–” in the paper (no rates apply; 2025 capacity is included in full) and are stored as null in data/raw/capacity.json; this view's rows carry only the GW outcome columns, with the rate assumptions reproduced verbatim in the notes below.",
+    "Interpretation (PDF p.24): the residual “Never” category captures cancellation and downsizing; the realization shares should be interpreted as capacity-weighted outcomes rather than project-level cancellation probabilities. For dated projects through 2032, the share completed by 2032 declines with the reported completion horizon and is lower when capacity must be imputed.",
+    "Scenario scope (PDF pp.24–25): Table 4 divides the 516.7 GW gross post-2024 pipeline into three outcomes — 188.3 GW operational by end-2032, 114.9 GW completed after 2032, 213.5 GW never completed. The calculation is “a scenario for realized capacity, not as a forecast that every project is built on its reported schedule.”",
+    "Composition of the 188.3 GW buildout (PDF p.25): 22.5 GW associated with projects operational in 2025 or 2026, 147.2 GW of planned or under-construction capacity with observed MW, and 18.6 GW with imputed MW.",
+    "No-date category (PDF p.25): of the 313.9 GW associated with 717 planned or under-construction projects without a completion date (capacity imputed for 234 of them), 54.0 GW is completed by 2032, 89.8 GW after 2032, and 170.2 GW never; “because this category accounts for most of the gross pipeline, its ultimate realization remains the largest source of uncertainty in the central scenario.”",
+    "Exclusions (PDF p.25): projects completed by the end of 2024, together with operational projects without a reported completion year, are part of the pre-2025 installed base and excluded from the buildout calculations.",
+    "Realization-rate assumptions of Table 4 (percent of capacity; observed by-2032/after-2032, imputed by-2032/after-2032; kept out of the fixed row schema, values verbatim — the 2025 row prints '–' in the paper and is null in raw): 2025: –/–, –/–; 2026: 90/0, 80/0; 2027: 80/5, 65/10; 2028: 70/10, 55/15; 2029: 60/15, 45/20; 2030: 50/20, 35/25; 2031: 40/25, 25/30; 2032: 30/30, 20/30; After 2032: 0/50, 0/50; Planned, no date: 20/30, 10/25.",
+    "Column mapping from raw: by_2032_gw→gw_by_2032, after_2032_gw→gw_after_2032, never_gw→gw_never; values verbatim."
+  ],
+  "provenance": [
+    {
+      "locator": "Table 4 (title)",
+      "pdf_page": 24,
+      "quote_en": "Table 4. Planned and Under-Construction Project Realization Assumptions and U.S. Data Center Capacity Outcomes"
+    },
+    {
+      "locator": "Table 4 (notes)",
+      "pdf_page": 24,
+      "quote_en": "Rates apply only to planned and under-construction projects; operational capacity and all 2025 capacity are included in full."
+    },
+    {
+      "locator": "Appendix B, interpretation paragraph",
+      "pdf_page": 24,
+      "quote_en": "The residual “Never” category captures cancellation and downsizing; the realization shares should therefore be interpreted as capacity-weighted outcomes rather than project-level cancellation probabilities."
+    },
+    {
+      "locator": "Appendix B, text below Table 4",
+      "pdf_page": 24,
+      "quote_en": "Table 4 divides the 516.7 GW gross post-2024 pipeline into three outcomes."
+    },
+    {
+      "locator": "Appendix B, no-date treatment paragraph",
+      "pdf_page": 25,
+      "quote_en": "For reported capacity, we assume that 20 percent is completed by 2032, 30 percent is completed after 2032, and 50 percent is never realized."
+    },
+    {
+      "locator": "Appendix B, no-date treatment paragraph",
+      "pdf_page": 25,
+      "quote_en": "For imputed capacity, the corresponding shares are 10 percent, 25 percent, and 65 percent."
+    },
+    {
+      "locator": "Appendix B, buildout composition",
+      "pdf_page": 25,
+      "quote_en": "The 188.3 GW buildout consists of 22.5 GW associated with projects that are operational in 2025 or 2026, 147.2 GW of planned or under-construction capacity for which MW are observed, and 18.6 GW for which MW are imputed."
+    },
+    {
+      "locator": "Appendix B, no-date outcomes",
+      "pdf_page": 25,
+      "quote_en": "Consequently, of the 313.9 GW associated with 717 planned or under-construction projects without a completion date, 54.0 GW is completed by 2032, 89.8 GW is completed after 2032, and 170.2 GW is never completed."
+    }
+  ]
+}

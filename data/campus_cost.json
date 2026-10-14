@@ -1,0 +1,288 @@
+{
+  "id": "campus_cost",
+  "title": {
+    "en": "Illustrative Cost of a 200 MW AI Training Campus (Table 2) and Appendix A Assumptions",
+    "zh": "200 MW AI 训练校区示意成本（表2）及附录A成本假设"
+  },
+  "description": {
+    "en": "Table 2 of the paper: component-level cost and share for a representative 200 MW AI training campus (200 MW total facility power = 166.7 MW critical IT at PUE 1.2; ~1,170 GB300 NVL72 racks at 142 kW/rack), together with the underlying Appendix A assumptions and benchmark comparisons (JLL, Cleanview, Turner & Townsend, Moody's).",
+    "zh": "论文表2：一个代表性 200 MW AI 训练校区分项成本与占比（200 MW 总设施功率 = PUE 1.2 下 166.7 MW 关键 IT 容量；约 1,170 个 GB300 NVL72 机架、每架 142 kW），并收录附录A的全部成本假设与基准对比（JLL、Cleanview、Turner & Townsend、Moody's）。"
+  },
+  "source": {
+    "tables": [
+      "Table 2"
+    ],
+    "pdf_pages": [
+      20,
+      21,
+      22,
+      6,
+      26
+    ],
+    "sections": [
+      "Appendix A. Representative AI Campus Cost",
+      "II. AI as a Physical Capital Boom"
+    ]
+  },
+  "columns": [
+    {
+      "key": "component",
+      "label": {
+        "en": "Component",
+        "zh": "成本项"
+      },
+      "unit": ""
+    },
+    {
+      "key": "assumption",
+      "label": {
+        "en": "Assumption",
+        "zh": "假设"
+      },
+      "unit": ""
+    },
+    {
+      "key": "cost_bn",
+      "label": {
+        "en": "Cost",
+        "zh": "成本"
+      },
+      "unit": "$ billions"
+    },
+    {
+      "key": "share_pct",
+      "label": {
+        "en": "Share",
+        "zh": "占比"
+      },
+      "unit": "%"
+    }
+  ],
+  "rows": [
+    {
+      "component": "Data center facility",
+      "assumption": "200 MW × $11m",
+      "cost_bn": 2.2,
+      "share_pct": 26.8
+    },
+    {
+      "component": "Incremental power infrastructure",
+      "assumption": "Campus-level allowance",
+      "cost_bn": 0.4,
+      "share_pct": 4.9
+    },
+    {
+      "component": "IT equipment",
+      "assumption": "1,170 racks × $4.8m",
+      "cost_bn": 5.616,
+      "share_pct": 68.4
+    }
+  ],
+  "subrows": [
+    {
+      "component": "Integrated GB300 NVL72 systems",
+      "assumption": "1,170 racks × $4.0m",
+      "cost_bn": 4.68,
+      "share_pct": 57.0,
+      "level": 1,
+      "parent": "IT equipment"
+    },
+    {
+      "component": "External network fabric and fiber",
+      "assumption": "10% of rack-system cost",
+      "cost_bn": 0.468,
+      "share_pct": 5.7,
+      "level": 1,
+      "parent": "IT equipment"
+    },
+    {
+      "component": "Shared data storage",
+      "assumption": "5% of rack-system cost",
+      "cost_bn": 0.234,
+      "share_pct": 2.8,
+      "level": 1,
+      "parent": "IT equipment"
+    },
+    {
+      "component": "Integration and commissioning",
+      "assumption": "5% of rack-system cost",
+      "cost_bn": 0.234,
+      "share_pct": 2.8,
+      "level": 1,
+      "parent": "IT equipment"
+    }
+  ],
+  "totals": {
+    "component": "Total cost 200 MW data center",
+    "total_bn": 8.216,
+    "share_pct": 100.0
+  },
+  "notes": [
+    "Printed page number = PDF page − 2. Table 2 is on PDF page 21 (printed p.19); Appendix A spans PDF pages 20–22 (printed pp.18–20); Section II cost stack on PDF page 6 (printed p.4).",
+    "Table 2 prints costs exactly as 2.200 / 0.400 / 5.616 / 4.680 / 0.468 / 0.234 / 0.234 ($ billions) and total 8.216; JSON numbers drop trailing zeros (e.g. 2.2 for 2.200) with no change in value.",
+    "Table 2 notes (verbatim key points): 'The campus has 200 MW of total facility power, equivalent to 166.7 MW of critical IT capacity at a PUE of 1.2. The rack count is interpreted as a cluster-equivalent measure: the 142 kW per rack denominator allocates the critical IT load across fully configured compute capacity, including each rack's pro rata share of external networking and storage power. The network, storage, and integration rows are cost allowances rather than additional power loads. Indented rows sum to total IT equipment.'",
+    "Indented sub-rows sum to the IT equipment row: 4.680 + 0.468 + 0.234 + 0.234 = 5.616; top-level rows sum to the total: 2.200 + 0.400 + 5.616 = 8.216. Share rounding: 26.8 + 4.9 + 68.4 = 100.1 and 57.0 + 5.7 + 2.8 + 2.8 = 68.3, both ≈ 100.0 / 68.4 due to rounding in the paper.",
+    "The $4.0m per-rack price 'already includes the GPUs, attached high-bandwidth memory, Grace CPUs, NVLink switching, power systems, and the physical rack' (Appendix A, PDF p.21).",
+    "Benchmark positioning (Appendix A, PDF p.20): $11m/MW facility benchmark is close to JLL (2026) $11.3m/MW and above Cleanview's $8.9m/MW average for 2025–26 completions; liquid cooling adds 7–10% (Turner & Townsend 2025). The $2m/MW power estimate is below Moody's implied $2.44m/MW (45 GW, $110B by 2030), so the paper calls it 'likely conservative'.",
+    "Footnote 10 (PDF p.21): rack count is a cluster-equivalent capacity measure — the 166.7 MW critical IT load is allocated across fully configured AI-compute capacity, not only GPU rack nameplate draw; network/storage/integration allowances are cost markups on the same unit, not additional power loads.",
+    "Table 2 indented sub-rows of IT equipment are carried structurally in the top-level `subrows` array, values verbatim: Integrated GB300 NVL72 systems [1,170 racks × $4.0m] = 4.68 $B (57.0%); External network fabric and fiber [10% of rack-system cost] = 0.468 $B (5.7%); Shared data storage [5% of rack-system cost] = 0.234 $B (2.8%); Integration and commissioning [5% of rack-system cost] = 0.234 $B (2.8%). They stay out of `rows` because the paper prints them indented under IT equipment — flat inclusion would double-count against the paper total 8.216 (sub-rows sum to the IT equipment row: 4.680 + 0.468 + 0.234 + 0.234 = 5.616).",
+    "rows hold the three top-level Table 2 lines together with the paper's Assumption column (added as the fourth view column); the four indented IT sub-rows (level=1, parent='IT equipment') are in `subrows`; the full-fidelity raw copy remains in data/raw/physical.json (campus_cost)."
+  ],
+  "provenance": [
+    {
+      "locator": "Table 2, title",
+      "pdf_page": 21,
+      "quote_en": "Table 2. Illustrative Cost of a 200 MW AI Training Campus"
+    },
+    {
+      "locator": "Table 2, row 'Data center facility'",
+      "pdf_page": 21,
+      "quote_en": "Data center facility 200 MW × $11m 2.200 26.8"
+    },
+    {
+      "locator": "Table 2, row 'Incremental power infrastructure'",
+      "pdf_page": 21,
+      "quote_en": "Incremental power infrastructure Campus-level allowance 0.400 4.9"
+    },
+    {
+      "locator": "Table 2, row 'IT equipment'",
+      "pdf_page": 21,
+      "quote_en": "IT equipment 1,170 racks × $4.8m 5.616 68.4"
+    },
+    {
+      "locator": "Table 2, row 'Integrated GB300 NVL72 systems'",
+      "pdf_page": 21,
+      "quote_en": "Integrated GB300 NVL72 systems 1,170 racks × $4.0m 4.680 57.0"
+    },
+    {
+      "locator": "Table 2, row 'External network fabric and fiber'",
+      "pdf_page": 21,
+      "quote_en": "External network fabric and fiber 10% of rack-system cost 0.468 5.7"
+    },
+    {
+      "locator": "Table 2, row 'Shared data storage'",
+      "pdf_page": 21,
+      "quote_en": "Shared data storage 5% of rack-system cost 0.234 2.8"
+    },
+    {
+      "locator": "Table 2, row 'Integration and commissioning'",
+      "pdf_page": 21,
+      "quote_en": "Integration and commissioning 5% of rack-system cost 0.234 2.8"
+    },
+    {
+      "locator": "Table 2, row 'Total cost 200 MW data center'",
+      "pdf_page": 21,
+      "quote_en": "Total cost 200 MW data center 8.216 100.0"
+    },
+    {
+      "locator": "Table 2, notes",
+      "pdf_page": 21,
+      "quote_en": "The campus has 200 MW of total facility power, equivalent to 166.7 MW of critical IT capacity at a PUE of 1.2."
+    },
+    {
+      "locator": "Appendix A (PUE and critical IT)",
+      "pdf_page": 20,
+      "quote_en": "Assuming a power usage effectiveness (PUE) ratio of 1.2, the facility supports approximately 166.7 MW of critical IT capacity."
+    },
+    {
+      "locator": "Appendix A (non-IT power)",
+      "pdf_page": 20,
+      "quote_en": "The remaining approximately 33.3 MW powers cooling, electrical conversion and distribution, lighting, and other non-IT facility operations."
+    },
+    {
+      "locator": "Appendix A (facility cost benchmark)",
+      "pdf_page": 20,
+      "quote_en": "We assume that the data center facility costs $11 million per MW of total power capacity, implying a construction cost of $2.2 billion."
+    },
+    {
+      "locator": "Appendix A (JLL comparison)",
+      "pdf_page": 20,
+      "quote_en": "This benchmark is close to the $11.3 million-per-MW global construction cost forecast by JLL (2026)."
+    },
+    {
+      "locator": "Appendix A (Cleanview comparison)",
+      "pdf_page": 20,
+      "quote_en": "estimate is higher than the $8.9 million average of Cleanview’s estimated real estate investment per MW of capacity for data centers that became operational in 2025 and 2026."
+    },
+    {
+      "locator": "Appendix A (liquid-cooling premium, Turner & Townsend)",
+      "pdf_page": 20,
+      "quote_en": "This is consistent with evidence from Turner & Townsend (2025) that liquid-cooled U.S. data centers cost 7–10 percent more than otherwise comparable air-cooled facilities"
+    },
+    {
+      "locator": "Appendix A (energy infrastructure allowance)",
+      "pdf_page": 20,
+      "quote_en": "We separately allow $0.4 billion for energy infrastructure investment, equivalent to $2 million per MW of total facility capacity."
+    },
+    {
+      "locator": "Appendix A (Moody's 45 GW / $110B)",
+      "pdf_page": 20,
+      "quote_en": "Ratings (2026c) estimates that meeting the surge in U.S. data center power demand requires 45 GW of new power generation capacity by 2030, carrying an estimated $110 billion cost."
+    },
+    {
+      "locator": "Appendix A (Moody's implied $2.44m/MW)",
+      "pdf_page": 20,
+      "quote_en": "This amounts to $2.44 million per MW, and that is without the direct cost to the data centers of connecting to the grid"
+    },
+    {
+      "locator": "Appendix A (142 kW/rack, ~1,170 racks)",
+      "pdf_page": 20,
+      "quote_en": "reports power requirements of approximately 142 kW per rack (NVIDIA, 2026), implying that the campus can accommodate approximately 1,170 high-density"
+    },
+    {
+      "locator": "Appendix A (power estimate 'likely conservative')",
+      "pdf_page": 20,
+      "quote_en": "Thus, my $2 million per MW estimate for the power component is likely conservative."
+    },
+    {
+      "locator": "Appendix A ($4.0m per GB300 system)",
+      "pdf_page": 21,
+      "quote_en": "We assume a cost of $4.0 million per integrated GB300 NVL72 system, or $4.68 billion in total."
+    },
+    {
+      "locator": "Appendix A (10%/5%/5% markups)",
+      "pdf_page": 21,
+      "quote_en": "We add 10 percent of the rack cost for the external network fabric and fiber, 5 percent for shared storage, and 5 percent for cluster-level installation, integration, and commissioning."
+    },
+    {
+      "locator": "Appendix A (installed IT cost)",
+      "pdf_page": 21,
+      "quote_en": "The resulting installed IT cost is approximately $4.8 million per rack, or $5.62 billion in total, equivalent to about $34 million per MW of critical IT capacity."
+    },
+    {
+      "locator": "Appendix A ($8.2B / $41m per MW)",
+      "pdf_page": 21,
+      "quote_en": "The resulting initial capital cost is approximately $8.2 billion or $41 million per MW."
+    },
+    {
+      "locator": "Appendix A (32% / 68% split)",
+      "pdf_page": 21,
+      "quote_en": "The data center facility and incremental power infrastructure account for about 32 percent of the total, while the installed IT system accounts for about 68 percent."
+    },
+    {
+      "locator": "Appendix A (benchmark $41m/MW, +4%/yr)",
+      "pdf_page": 21,
+      "quote_en": "we use a benchmark cost of $41 million per MW of total facility power in 2025, with cost per MW increasing by 4 percent per year."
+    },
+    {
+      "locator": "Appendix A (cohort cost formula $41m × 1.04^(t−2025))",
+      "pdf_page": 21,
+      "quote_en": "Thus, capacity completed in year 𝑡is valued at $41 million × 1.04𝑡−2025 per MW"
+    },
+    {
+      "locator": "Appendix A, footnote 10 (cluster-equivalent racks)",
+      "pdf_page": 21,
+      "quote_en": "We interpret this rack count as a cluster-equivalent capacity measure."
+    },
+    {
+      "locator": "Section II ($11m/MW facility, $2m/MW power)",
+      "pdf_page": 6,
+      "quote_en": "approximately $11 million per MW for the real estate asset (including specialized cooling and backup power generation equipment), $2 million per MW for the power infrastructure,"
+    },
+    {
+      "locator": "Appendix B ($2m/MW power, $11m/MW real estate, $28m/MW IT)",
+      "pdf_page": 26,
+      "quote_en": "Applying these assumptions to our $2 million per MW estimate of power costs, $11 million per MW of real estate, and $28 million per MW of IT"
+    }
+  ]
+}

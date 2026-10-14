@@ -1,0 +1,134 @@
+{
+  "id": "financing_mix",
+  "title": {
+    "en": "Estimated Financing Mix for the AI Infrastructure Buildout (Morgan Stanley)",
+    "zh": "AI 基础设施建设融资结构估算（Morgan Stanley）"
+  },
+  "description": {
+    "en": "Morgan Stanley Research (2025) estimates of how the roughly $2.9 trillion of incremental compute capital needs over 2025-2028 will be financed: more than half from outside capital, an approximate 60-40 equity-debt split, with private credit (~$800B), corporate debt (~$200B), and structured finance (~$150B) within the debt component; plus the paper's description of third-party equity and debt financing channels (Section III).",
+    "zh": "Morgan Stanley Research（2025）对 2025–2028 年约 2.9 万亿美元增量算力资本需求的融资结构估算：过半来自外部资本，整体约 60/40 股债比；债务构成中私人信贷约 8000 亿美元、公司债约 2000 亿美元、结构化融资约 1500 亿美元；并含论文第 III 节对第三方股权与债务融资渠道的角色描述。"
+  },
+  "source": {
+    "tables": [],
+    "pdf_pages": [
+      8,
+      9,
+      10
+    ],
+    "sections": [
+      "Section III. Ownership and Financing of AI Infrastructure"
+    ]
+  },
+  "columns": [
+    {
+      "key": "item",
+      "label": {
+        "en": "Financing item",
+        "zh": "融资项目"
+      },
+      "unit": ""
+    },
+    {
+      "key": "value_bn",
+      "label": {
+        "en": "Value",
+        "zh": "数值"
+      },
+      "unit": "$ billions"
+    },
+    {
+      "key": "share_pct",
+      "label": {
+        "en": "Share",
+        "zh": "占比"
+      },
+      "unit": "%"
+    },
+    {
+      "key": "note",
+      "label": {
+        "en": "Note",
+        "zh": "备注"
+      },
+      "unit": ""
+    }
+  ],
+  "rows": [
+    {
+      "item": "Capital required to meet hyperscalers' incremental compute needs",
+      "value_bn": 2900.0,
+      "share_pct": null,
+      "note": "raw key: incremental_compute_needs; paper wording: 'roughly $2.9 trillion' over 2025–2028 (Morgan Stanley Research, 2025); value_bn = 2900 is a pure unit restatement of the raw value 2.9 ($ trillion) into $ billions — no other change"
+    },
+    {
+      "item": "Share of the $2.9T coming from outside capital",
+      "value_bn": null,
+      "share_pct": null,
+      "note": "raw key: external_capital_share; the paper states only 'more than half' (qualifier verbatim) and gives no numeric value, so value_bn and share_pct are null — nothing invented"
+    },
+    {
+      "item": "Equity share of the full investment",
+      "value_bn": null,
+      "share_pct": 60,
+      "note": "raw key: equity_share; qualifier: 'approximate 60–40 split'; scope: across the full investment; Morgan Stanley Research, 2025"
+    },
+    {
+      "item": "Debt share of the full investment",
+      "value_bn": null,
+      "share_pct": 40,
+      "note": "raw key: debt_share; qualifier: 'approximate 60–40 split'; scope: across the full investment; Morgan Stanley Research, 2025"
+    },
+    {
+      "item": "Private credit within the debt component (largest share)",
+      "value_bn": 800,
+      "share_pct": null,
+      "note": "raw key: private_credit; qualifier: 'about'; scope: within the debt component; Morgan Stanley Research, 2025"
+    },
+    {
+      "item": "Corporate debt within the debt component",
+      "value_bn": 200,
+      "share_pct": null,
+      "note": "raw key: corporate_debt; qualifier: 'roughly'; scope: within the debt component; Morgan Stanley Research, 2025"
+    },
+    {
+      "item": "Structured finance within the debt component",
+      "value_bn": 150,
+      "share_pct": null,
+      "note": "raw key: structured_finance; qualifier: 'approximately'; scope: within the debt component; Morgan Stanley Research, 2025"
+    }
+  ],
+  "totals": {},
+  "notes": [
+    "Third-party equity role (PDF p.8): 'Specialized data center developers, REITs, infrastructure funds, and private equity investors increasingly build or acquire facilities and lease capacity to hyperscalers and other large users.' These arrangements let technology firms 'secure capacity without supplying all of the upfront equity or issuing the associated debt directly', and 'Data centers have consequently become a major institutional real estate and infrastructure asset class (Green Street, 2026).'",
+    "Debt financing channels (PDF p.9): 'Bank loans, comprised of mortgage loans backed by datacenter assets and syndicated lines of credit, remain important, but private credit and structured finance now provide a growing share of project funding, usually backed by long-term contracted revenues.'",
+    "IT-equipment financing (PDF p.9): 'GPUs and related hardware can be financed through leases or asset-backed structures'; this collateral 'differs from conventional real estate or aircraft: its economic life is shorter and rapid technological change creates substantial obsolescence risk, making its resale value less certain (Moody’s Ratings, 2025).'",
+    "Asset-level leverage (PDF p.10): 'The aggregate 60–40 equity-debt split, however, can understate leverage at the asset level.' Hyperscalers direct internal capital toward IT equipment while 'data center shells, power infrastructure, and related real estate are financed through project-level debt, leases, and other asset-backed structures', which 'can therefore raise loan-to-value and debt-to-equity ratios on the underlying infrastructure'.",
+    "Capital-structure separation (PDF p.10): 'developers, infrastructure funds, private credit lenders, and structured-finance investors hold distinct claims on data centers, power assets, and IT equipment'; hyperscalers and AI firms secure capacity 'through leases, service agreements, and joint ventures'.",
+    "Historical baseline (PDF p.8): hyperscalers historically financed data center investment 'through retained earnings and unsecured corporate debt'; financing entirely on balance sheet 'has become more costly in terms of leverage, liquidity, and strategic flexibility'.",
+    "Credit quality (PDF p.8): 'Amazon, Microsoft, Meta, Alphabet, and Oracle are investment-grade borrowers'; frontier AI firms such as OpenAI and Anthropic 'generally lack comparable standalone credit profiles' and obtain compute through contracts with hyperscalers.",
+    "Unit normalization: the only converted figure is the headline $2.9 trillion (→ value_bn 2900, $ billions); 800 / 200 / 150 are verbatim $ billions from raw.",
+    "item carries the paper's English wording; the snake_case raw keys are recorded in each row's note (full raw table incl. item_zh in data/raw/financing.json)."
+  ],
+  "provenance": [
+    {
+      "locator": "Section III, paragraph 'The scale of external financing is already substantial'",
+      "pdf_page": 10,
+      "quote_en": "Morgan Stanley estimates that more than half of the roughly $2.9 trillion required to meet hyperscalers’ incremental compute needs over 2025–2028 will come from outside capital"
+    },
+    {
+      "locator": "Section III, same paragraph",
+      "pdf_page": 10,
+      "quote_en": "Across the full investment, it projects an approximate 60–40 split between equity and debt."
+    },
+    {
+      "locator": "Section III, same paragraph",
+      "pdf_page": 10,
+      "quote_en": "private credit accounts for the largest share—about $800 billion—followed by corporate debt of roughly $200 billion and structured finance of approximately $150 billion."
+    },
+    {
+      "locator": "Section III, paragraph on third-party equity",
+      "pdf_page": 8,
+      "quote_en": "Specialized data center developers, REITs, infrastructure funds, and private equity investors increasingly build or acquire facilities and lease capacity to hyperscalers and other large users."
+    }
+  ]
+}

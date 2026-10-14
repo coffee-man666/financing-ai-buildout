@@ -1,0 +1,113 @@
+{
+  "id": "hyperscaler_capex",
+  "title": {
+    "en": "Hyperscaler Capital Expenditures, Operating Cash Flow, and Capex Intensity (Figure 1)",
+    "zh": "超大规模云厂商资本开支、经营现金流与资本开支强度（图 1）"
+  },
+  "description": {
+    "en": "Annual aggregate capital expenditures (capex) and operating cash flow (OCF), in billions of dollars, for Oracle, Microsoft, Amazon, Meta, and Alphabet, 2020-2026, as plotted in Figure 1. The figure also plots a Capex/OCF ratio line against the right axis, but no per-year ratio values are stated in the text.",
+    "zh": "Oracle、Microsoft、Amazon、Meta、Alphabet 五家超大规模云厂商 2020–2026 年合计资本开支（capex）与经营现金流（OCF），单位十亿美元，来自图 1。图 1 右轴另绘有 Capex/OCF 比率线，但正文与文本抽取均未给出逐年比率数值。"
+  },
+  "source": {
+    "tables": [
+      "Figure 1"
+    ],
+    "pdf_pages": [
+      8,
+      9
+    ],
+    "sections": [
+      "Section III. Ownership and Financing of AI Infrastructure"
+    ]
+  },
+  "columns": [
+    {
+      "key": "year",
+      "label": {
+        "en": "Year",
+        "zh": "年份"
+      },
+      "unit": "calendar year"
+    },
+    {
+      "key": "capex_bn",
+      "label": {
+        "en": "Aggregate capex (Oracle, Microsoft, Amazon, Meta, Alphabet)",
+        "zh": "合计资本开支（Oracle/Microsoft/Amazon/Meta/Alphabet）"
+      },
+      "unit": "$ billions"
+    },
+    {
+      "key": "ocf_bn",
+      "label": {
+        "en": "Aggregate operating cash flow (five firms)",
+        "zh": "五家公司合计经营现金流"
+      },
+      "unit": "$ billions"
+    }
+  ],
+  "rows": [
+    {
+      "year": 2020,
+      "capex_bn": 96.8,
+      "ocf_bn": 252.2
+    },
+    {
+      "year": 2021,
+      "capex_bn": 130.9,
+      "ocf_bn": 289.9
+    },
+    {
+      "year": 2022,
+      "capex_bn": 158.3,
+      "ocf_bn": 288.3
+    },
+    {
+      "year": 2023,
+      "capex_bn": 153.8,
+      "ocf_bn": 377.9
+    },
+    {
+      "year": 2024,
+      "capex_bn": 240.4,
+      "ocf_bn": 478.5
+    },
+    {
+      "year": 2025,
+      "capex_bn": 415.8,
+      "ocf_bn": 603.2
+    },
+    {
+      "year": 2026,
+      "capex_bn": 800.5,
+      "ocf_bn": 707.1
+    }
+  ],
+  "totals": {},
+  "notes": [
+    "Narrative (PDF p.8): aggregate capex 'rose from roughly $97 billion in 2020 to more than $400 billion in 2025 and are projected to exceed $800 billion in 2026'; 'On current estimates, capex will surpass the five firms’ combined operating cash flow for the first time in 2026' — i.e., 2026 is the first year capex exceeds combined OCF.",
+    "LIMITATION — per-company values not available: the Figure 1 legend assigns a color to each company (Oracle, Microsoft, Amazon, Meta, Alphabet), but the text gives only the aggregate series; the paper does not report per-company capex or OCF values for Figure 1.",
+    "The figure also plots 'capital intensity, measured as the ratio of aggregate capital expenditures to aggregate operating cash flow' (Capex/OCF) on the right axis, whose tick labels run 30%-120%; per-year ratio values are not stated in the text and are therefore not extracted.",
+    "Figure 1 notes (PDF p.9): 'Historical values are constructed from company 10-K and 10-Q SEC filings and measure cash capital expenditures and GAAP operating cash flow. Microsoft and Oracle are converted from fiscal-year to calendar-year values using quarterly and year-to-date filings.'",
+    "Figure 1 notes (PDF p.9): 'The 2026 values combine reported results with the latest company guidance and Wall Street estimates. Hyperscaler capex includes non-AI related capex but excludes capex for data centers leased by the hyperscalers.'",
+    "Context (PDF p.8): historically hyperscalers financed data center investment 'through retained earnings and unsecured corporate debt', owned facilities directly, and bore 'construction, utilization, and residual-value risk'; the marginal financing model is shifting toward third-party capital.",
+    "Column keys renamed from raw (capex_usd_b→capex_bn, ocf_usd_b→ocf_bn); values verbatim."
+  ],
+  "provenance": [
+    {
+      "locator": "Figure 1, data labels (capex series $96.8-$800.5; OCF series $252.2-$707.1)",
+      "pdf_page": 9,
+      "quote_en": "The figure plots capital expenditures and operating cash flow, in billions of dollars, for Oracle, Microsoft, Amazon, Meta, and Alphabet using the left axis."
+    },
+    {
+      "locator": "Section III text, first paragraph discussing Figure 1",
+      "pdf_page": 8,
+      "quote_en": "Aggregate capital expenditures by Oracle, Microsoft, Amazon, Meta, and Alphabet rose from roughly $97 billion in 2020 to more than $400 billion in 2025 and are projected to exceed $800 billion in 2026."
+    },
+    {
+      "locator": "Section III text, first paragraph discussing Figure 1",
+      "pdf_page": 8,
+      "quote_en": "On current estimates, capex will surpass the five firms’ combined operating cash flow for the first time in 2026."
+    }
+  ]
+}

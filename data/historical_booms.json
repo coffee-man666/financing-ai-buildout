@@ -1,0 +1,182 @@
+{
+  "id": "historical_booms",
+  "title": {
+    "en": "Selected U.S. Capital-Expenditure Booms (Table 1 and Appendix C)",
+    "zh": "美国历史上若干资本开支热潮（表 1 与附录 C）"
+  },
+  "description": {
+    "en": "Table 1 compares six U.S. capital-expenditure booms by average annual capital expenditure as a percentage of GDP over each period. Appendix C documents each episode's construction, peak year, and underlying sources.",
+    "zh": "表 1 按各期间年均资本开支占 GDP 比重比较六轮美国资本开支热潮；附录 C 给出各期的测算口径、峰值年份与数据来源。"
+  },
+  "source": {
+    "tables": [
+      "Table 1"
+    ],
+    "pdf_pages": [
+      7,
+      27,
+      28
+    ],
+    "sections": [
+      "Section II. AI as a Physical Capital Boom (Table 1)",
+      "Appendix C. Historical Investment Booms"
+    ]
+  },
+  "columns": [
+    {
+      "key": "episode",
+      "label": {
+        "en": "Episode",
+        "zh": "热潮"
+      },
+      "unit": ""
+    },
+    {
+      "key": "period",
+      "label": {
+        "en": "Period",
+        "zh": "期间"
+      },
+      "unit": ""
+    },
+    {
+      "key": "size_pct_gdp",
+      "label": {
+        "en": "Size: average annual capex as % of GDP",
+        "zh": "规模：年均资本开支占 GDP %"
+      },
+      "unit": "% of GDP"
+    },
+    {
+      "key": "peak_pct_gdp",
+      "label": {
+        "en": "Peak annual share of GDP",
+        "zh": "年度占比峰值"
+      },
+      "unit": "% of GDP"
+    },
+    {
+      "key": "peak_year",
+      "label": {
+        "en": "Peak year",
+        "zh": "峰值年份"
+      },
+      "unit": ""
+    }
+  ],
+  "rows": [
+    {
+      "episode": "Canals",
+      "period": "1836–1841",
+      "size_pct_gdp": 0.66,
+      "peak_pct_gdp": 0.9,
+      "peak_year": 1840
+    },
+    {
+      "episode": "Railroads",
+      "period": "1870–1890",
+      "size_pct_gdp": 2.24,
+      "peak_pct_gdp": null,
+      "peak_year": [
+        1870,
+        1881
+      ]
+    },
+    {
+      "episode": "Electrification",
+      "period": "1905–1925",
+      "size_pct_gdp": 0.5,
+      "peak_pct_gdp": 0.96,
+      "peak_year": 1924
+    },
+    {
+      "episode": "Highways",
+      "period": "1956–1973",
+      "size_pct_gdp": 1.13,
+      "peak_pct_gdp": 1.32,
+      "peak_year": 1958
+    },
+    {
+      "episode": "Telecom and fiber",
+      "period": "1996–2003",
+      "size_pct_gdp": 1.1,
+      "peak_pct_gdp": 1.39,
+      "peak_year": 2000
+    },
+    {
+      "episode": "AI buildout",
+      "period": "2025–2032",
+      "size_pct_gdp": 3.22,
+      "peak_pct_gdp": 4.96,
+      "peak_year": 2028
+    }
+  ],
+  "totals": {
+    "ai_buildout_total_investment_usd_trillion": 8.973,
+    "ai_buildout_share_of_cumulative_nominal_gdp_pct": 3.17,
+    "totals_note": "Appendix C: 'Total investment over this period is $8.973 trillion, equivalent to 3.17 percent of cumulative nominal GDP.' (period 2025–2032)"
+  },
+  "notes": [
+    "Table 1 notes: 'Size is average annual capital expenditure as a percentage of GDP over the indicated period. Appendix C provides sources and further details.'",
+    "Table 1 context (PDF p.7): the AI-buildout share 'exceeds the corresponding investment shares associated with the canal, railroad, electrification, highway, and telecommunications and fiber booms.'",
+    "Appendix C general caveat: 'Because the underlying historical sources differ in scope and accounting conventions, the estimates should be interpreted as approximate measures of the scale of each investment boom rather than as perfectly harmonized national-accounting series.'",
+    "Economic-life caveat (Appendix C): 'Canals, railroads, and fiber optic cables often provided services for decades, whereas GPUs may become economically obsolete within three to six years. The AI buildout therefore generates less net capital formation per dollar of gross investment than many earlier infrastructure booms, although buildings, power connections, and other components of data centers remain long-lived.'",
+    "Railroad peak: Appendix C states only that 'the annual share exceeded 4 percent in 1870 and 1881' — no exact peak value is given, so peak_share_pct_gdp is null with the verbatim statement in peak_share_note.",
+    "Episode detail — Canals (运河): Based on annual construction-expenditure estimates assembled by Cranmer (1960); divided by contemporaneous nominal GDP from Johnston and Williamson (2026). 'annual investment rose from $4.4 million to a peak of $14.3 million in 1840 before declining to $11.7 million in 1841.'",
+    "Episode detail — Railroads (铁路): Based on Gallman’s revised annual series for railroad construction and his annual national-product estimates, both measured in constant 1860 dollars and reported by Rhode (2002). 'This measure covers railroad construction and therefore excludes at least some investment in locomotives and rolling stock.'",
+    "Episode detail — Electrification (电气化): Based on the annual gross capital expenditure series for electric light and power assembled by Ulmer (1960); includes 'private and municipally owned generation, transmission, and distribution plant and equipment, but excludes land and complementary investment in electrical machinery by electricity users'. 'For years before 1923, we allocate Ulmer’s municipal-investment totals across years in proportion to private investment.'",
+    "Episode detail — Highways (公路): Based on the Federal Highway Administration’s annual series for capital outlays by federal, state, and local governments (Federal Highway Administration, 2014); capital outlays include 'land acquisition, engineering, construction and reconstruction, rehabilitation, and related highway improvements.'",
+    "Episode detail — Telecom and fiber (电信与光纤): Measured as private fixed investment in communications equipment and communications structures in the BEA national accounts; 'consistent with Couper et al. (2003), who document the sharp rise and subsequent collapse in communications investment surrounding the expansion of long-haul fiber networks.'",
+    "Episode detail — AI buildout (AI 建设): Investment-to-GDP ratio for the AI buildout 'described in Appendix B'; 'averages 3.22 percent over 2025–2032 and peaks at 4.96 percent in 2028.'",
+    "Column mapping from raw: avg_share_pct_gdp→size_pct_gdp (Table 1 'Size'), peak_share_pct_gdp→peak_pct_gdp (Appendix C); values verbatim.",
+    "Railroads peak_pct_gdp is null — Appendix C states only that 'the annual share exceeded 4 percent in 1870 and 1881' (raw peak_share_note); peak_year carries the two years as the list [1870, 1881] (all other rows use a single integer year).",
+    "Display precision: Table 1 prints sizes with two decimals (0.50 for Electrification, 1.10 for Telecom and fiber); JSON numeric serialization drops trailing zeros (0.5, 1.1) — identical values, no rounding introduced."
+  ],
+  "provenance": [
+    {
+      "locator": "Table 1, Notes",
+      "pdf_page": 7,
+      "quote_en": "Size is average annual capital expenditure as a percentage of GDP over the indicated period."
+    },
+    {
+      "locator": "Appendix C, canal paragraph",
+      "pdf_page": 27,
+      "quote_en": "annual investment rose from $4.4 million to a peak of $14.3 million in 1840 before declining to $11.7 million in 1841"
+    },
+    {
+      "locator": "Appendix C, canal paragraph",
+      "pdf_page": 27,
+      "quote_en": "canal investment averaged approximately 0.66 percent of GDP over 1836–1841 and peaked at 0.90 percent in 1840"
+    },
+    {
+      "locator": "Appendix C, railroad paragraph",
+      "pdf_page": 27,
+      "quote_en": "Over 1870–1890, railroad construction investment averaged 2.24 percent of GDP; the annual share exceeded 4 percent in 1870 and 1881."
+    },
+    {
+      "locator": "Appendix C, electrification paragraph",
+      "pdf_page": 28,
+      "quote_en": "electric-utility investment averaged 0.50 percent of GDP during 1905–1925 and peaked at 0.96 percent in 1924"
+    },
+    {
+      "locator": "Appendix C, highway paragraph",
+      "pdf_page": 28,
+      "quote_en": "highway capital investment averaged 1.13 percent of GDP during 1956–1973 and peaked at 1.32 percent in 1958"
+    },
+    {
+      "locator": "Appendix C, telecommunications paragraph",
+      "pdf_page": 28,
+      "quote_en": "investment averaged 1.10 percent of GDP during the 1996–2003 telecom boom and peaked at 1.39 percent in 2000"
+    },
+    {
+      "locator": "Appendix C, AI buildout paragraph",
+      "pdf_page": 28,
+      "quote_en": "averages 3.22 percent over 2025–2032 and peaks at 4.96 percent in 2028"
+    },
+    {
+      "locator": "Appendix C, AI buildout paragraph",
+      "pdf_page": 28,
+      "quote_en": "Total investment over this period is $8.973 trillion, equivalent to 3.17 percent of cumulative nominal GDP."
+    }
+  ]
+}

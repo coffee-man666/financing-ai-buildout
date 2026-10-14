@@ -1,0 +1,187 @@
+{
+  "selected": [
+    {
+      "id": "sustain-1",
+      "title": {
+        "en": "The 2026 capex-over-OCF crossover is only the visible tip: the $93B on-balance-sheet gap is 1/26th of the $2.4T already sitting off balance sheet",
+        "zh": "2026 年 capex 首超 OCF 只是可见的冰山一角：表内缺口 934 亿美元，仅约为已表外 2.4 万亿美元的 1/26"
+      },
+      "claim": {
+        "en": "In 2026 the five hyperscalers' capex ($800.5B) exceeds their combined OCF ($707.1B) by $93.4B — capex/OCF = 113%, the first crossover after 38–69% in 2020–25 — but Figure 1's capex explicitly excludes data centers the hyperscalers lease, and the WSJ tally already counts $2.4T of off-balance-sheet obligations at four of these firms: 25.7x the visible gap. Annualizing Morgan Stanley's $2.9T compute-capital need over 2025–28 gives $725B/yr (7.8x the gap), of which more than half is external (>$362.5B/yr, >3.88x the gap). Even cumulatively, 2024–26 capex ($1,456.7B) is still only 81.4% of OCF ($1,788.8B) — so the headline 'first year capex surpasses OCF' materially understates how far external, off-screen capital already carries the buildout.",
+        "zh": "2026 年五大厂 capex（8,005 亿）首超合计 OCF（7,071 亿），缺口 934 亿美元——capex/OCF = 113%，此前 2020–25 年仅 38–69%——但图 1 的 capex 口径明确不含 hyperscaler 租入的数据中心，而 WSJ 统计这五家中四家的表外义务已有 2.4 万亿美元，是表内缺口的 25.7 倍。把 Morgan Stanley 的 2.9 万亿算力资本需求按 2025–28 年均化，为每年 7,250 亿（缺口的 7.8 倍），其中过半来自外部（每年 >3,625 亿，>缺口的 3.88 倍）。即便按累计口径，2024–26 三年 capex（14,567 亿）也仍只有 OCF（17,888 亿）的 81.4%——『capex 首超 OCF』这一标志性时刻显著低估了外部与表外资本已经在多大程度上支撑着这场建设。"
+      },
+      "evidence": "hyperscaler_capex.rows：2026 capex 800.5 − ocf 707.1 = 93.4（800.5/707.1 = 113.2%；2020–25 比率 38.4/45.2/54.9/40.7/50.2/68.9%）；Σ2024–26 capex 1,456.7 ÷ Σocf 1,788.8 = 81.4%。offbalance_leverage.wsj_offbalance_total = 2,400 → 2,400/93.4 = 25.7×。financing_mix.value_bn = 2,900（2025–28）→ 2,900/4 = 725/年（725/93.4 = 7.8×），『more than half 外部』→ >0.5×2,900/4 = >362.5/年（>3.9×）。均为视图数字的比值/差额运算，python3 复算。 【已复算 python3，2026-10-12】800.5−707.1=93.4；800.5/707.1=113.2%；2020–25 逐年 96.8/252.2=38.4%、130.9/289.9=45.2%、158.3/288.3=54.9%、153.8/377.9=40.7%、240.4/478.5=50.2%、415.8/603.2=68.9%；Σ2024–26 capex 240.4+415.8+800.5=1,456.7、Σocf 478.5+603.2+707.1=1,788.8、1,456.7/1,788.8=81.4%；2,400/93.4=25.70×；2,900/4=725、725/93.4=7.76×；0.5×725=362.5、362.5/93.4=3.88×（claim 原『≥3.9×』已按精确值修正为 >3.88×）。全部通过。",
+      "provenance": [
+        "Figure 1 / hyperscaler_capex（PDF pp.8–9；capex 不含租入 DC 见图 1 注 PDF p.9）",
+        "footnote 5 / offbalance_leverage（PDF p.11，$2.4T 表外）",
+        "financing_mix（PDF p.10，Morgan Stanley $2.9T、过半外部）"
+      ],
+      "viz": "左图：2020–26 capex vs OCF 双柱 + 右轴比率折线，2026 交叉点标注；提供『单年/三年累计』切换（累计视角下 81.4% 仍被覆盖）。右图：断轴/对数标尺对比条——$93.4B 表内缺口 vs $2.4T 表外存量 vs $725B/年 MS 年均需求；悬停显示倍数（25.7×/7.8×/3.88×）。",
+      "kind": "recombination"
+    },
+    {
+      "id": "macro-1",
+      "title": {
+        "en": "AI's average year beats every predecessor's best year — only railroads' peak tops it",
+        "zh": "AI 的「平均年」胜过前人的「最好年」——只有铁路的峰值年份压得住它"
+      },
+      "claim": {
+        "en": "Put on the same scale, the AI buildout's AVERAGE annual share (3.22% of GDP) exceeds the best single year ever recorded by 4 of the 5 prior U.S. booms: canals 0.90% (3.6x), electrification 0.96% (3.4x), highways 1.32% (2.4x), telecom/fiber 1.39% (2.3x). Only the railroad peak years (\">4%\" in 1870/1881, the sole recorded figure) top AI's average — and AI's own 2028 peak of 4.96% clears that 4% floor too, at 3.57x the telecom peak. Even the scenario's trough years (2.2% in 2031–32) run 1.58x telecom's all-time best year.",
+        "zh": "放到同一标尺下，AI 建设期的「年均」占 GDP 3.22%，已超过五轮历史热潮中四轮的史上最好单年：运河 0.90%（3.6 倍）、电气化 0.96%（3.4 倍）、公路 1.32%（2.4 倍）、电信/光纤 1.39%（2.3 倍）。只有铁路的峰值年份（1870/1881「超过 4%」，为其唯一记录值）高于 AI 的平均值——而 AI 自己 2028 年峰值 4.96% 同样越过这条 4% 线，为电信峰值的 3.57 倍。即便情景中最差的年份（2031–32 年的 2.2%）也是电信史上最佳年份的 1.58 倍。"
+      },
+      "evidence": "historical_booms.rows：对每个 episode 计算 3.22/peak_pct_gdp 与 4.96/peak_pct_gdp——运河 0.90→3.58×/5.51×、电气化 0.96→3.35×/5.17×、公路 1.32→2.44×/3.76×、电信 1.39→2.32×/3.57×；铁路 peak 为 null（论文仅记「exceeded 4 percent」），4.96>4。investment_annual.rows：2027=4.8%、2028=5.0%（附录 C 精确值 4.96%）均越过铁路 4% 地板，2026=3.9% 未过 4% 但高于 1.39%；2029–32 逐年比率 2.7/2.4/2.2/2.2，最低值 2.2/1.39=1.58×；AI 平均对铁路平均 3.22/2.24=1.44×。 【已复算 python3，2026-10-12】3.22/0.90=3.58×、3.22/0.96=3.354×（按 1 位小数应进位为 3.4×，claim 原 3.3× 系截断、已修正）、3.22/1.32=2.44×、3.22/1.39=2.32×；4.96>4（铁路地板）且 4.96/1.39=3.57×；2029–32 最低 2.2%、2.2/1.39=1.58×；3.22/2.24=1.44×；investment_annual 2026–32 逐年 3.9/4.8/5.0/2.7/2.4/2.2/2.2% 与视图一致。全部通过。",
+      "provenance": [
+        "Table 1; PDF p.7",
+        "Appendix C; PDF pp.27–28",
+        "Table 5 (annual investment/GDP ratios); PDF p.27"
+      ],
+      "viz": "哑铃图（dumbbell chart）：每个热潮一行，同一 % of GDP 横轴上画「年均」点与「峰值」点并连线；AI 行高亮，另加两条参考线（3.22% 年均、4.96% 峰值）与铁路「>4%」地板阴影区。交互：悬停任一热潮显示其两点相对 AI 的倍数；点击切换「年均标尺 / 峰值标尺」，直观呈现 AI 平均线穿过四个前人峰值点。",
+      "kind": "recombination"
+    },
+    {
+      "id": "sustain-2",
+      "title": {
+        "en": "Breakeven billed utilization is ~84%: at the Aug-2026 rent of $6.07/GPU-hour the buildout clears its 10% hurdle only above 84% utilization — or above a 42% cash margin",
+        "zh": "盈亏平衡计费利用率约 84%：按 2026 年 8 月 6.07 美元/GPU 时的市价，利用率须高于约 84%——或现金利润率高于约 42%——10% 回报门槛才可能达成"
+      },
+      "claim": {
+        "en": "The $3,549B requirement over 79.3M GPUs x 8,760h works out to $5.11 per installed GPU-hour, so the $6.07 spot B200 rent leaves an 18.8% price cushion (worth ~$668B/yr) — but the required billed price is 5.11/u, and the cushion is exhausted at u = 84.2%: the paper's own 80%-utilization case ($6.39) already prices above spot, and the 70% case ($7.30) is 20% above. Holding utilization at 100%, the margin floor is mu = 1,774.3/4,217 = 42.1%; Table 7's 33%-margin column ($5,377B = $7.74/GPU-hour) cannot be covered by the spot rent at any utilization. The buffer between 'comparable to current rents' and 'underwater' is roughly four points of utilization.",
+        "zh": "3.549 万亿美元所需收入摊到 7,930 万颗 GPU × 8,760 小时 = 每装机 GPU 时 5.11 美元，对照 6.07 美元的 B200 现货租金只剩 18.8% 的价格缓冲（约每年 6,680 亿美元）——但所需计费价 = 5.11/u，缓冲在 u = 84.2% 处耗尽：论文自己的 80% 利用率情形（6.39 美元）已高于现货价，70% 情形（7.30 美元）高出 20%。若利用率锁定 100%，利润率下限为 μ = 1,774.3/4,217 = 42.1%；表 7 的 33% 利润率列（5.377 万亿美元 = 7.74 美元/GPU 时）在任何利用率下都无法被现货价覆盖。『与现价大体相当』到『水下』之间，只有约 4 个百分点的利用率余量。"
+      },
+      "evidence": "revenue_sensitivity（3,549；79.3M GPU；8,760h；租金 6.07；80%→6.4、70%→7.3）× revenue_requirement.totals（req_cf 1,774.3）：3,549e9 ÷ (79.3e6×8,760) = $5.11/装机 GPU 时；盈亏平衡利用率 u* = 5.11/6.07 = 84.2%；市价隐含收入上限 = 6.07 × 694.7B GPU 时 = $4,217B；利润率下限 μ* = 1,774.3/4,217 = 42.1%；表 7 的 33%/10% 格 5,377 → 5,377e9/694.7B = $7.74/GPU 时 > 6.07。校验：5.11/0.8 = 6.39 ≈ 论文 6.4、5.11/0.7 = 7.30 ≈ 论文 7.3。 【已复算 python3，2026-10-12】79.3e6×8,760=694.7B GPU 时；3,549/694.7=$5.110/装机 GPU 时；6.07/5.110−1=18.8%；6.07×694.7=$4,216.6B≈$4,217B，缓冲 4,216.6−3,549=$667.6B/yr≈$668B；盈亏平衡 u*=5.110/6.07=84.2%；μ*=1,774.3/4,216.6=42.1%；表 7 的 33%/10% 格 5,377/694.7=$7.74>6.07（任何利用率都无法覆盖）；5.110/0.8=6.39≈论文 6.4、5.110/0.7=7.30≈论文 7.3，论文双点校验通过。全部通过。",
+      "provenance": [
+        "PDF p.31（市场单位换算、Ornn B200 $6.07（脚注 12）、80%/70% 利用率情形）",
+        "Table 7 / revenue_sensitivity（PDF p.31）",
+        "Table 6 / revenue_requirement（PDF p.30，req_cf 合计 1,774.3）",
+        "PDF p.31（79.3M GPU / 1.10M racks 换算基数）"
+      ],
+      "viz": "交互曲线图：x 轴计费利用率 60–100%，y 轴所需计费价 5.11/u，水平线 $6.07 现货租金；84.2% 左侧区域着色为『市价不足以回本』；滑块联动租金价与利润率 μ（μ 改变曲线上移/下移），并标注论文的 80%（$6.4）与 70%（$7.3）两个点。",
+      "kind": "extension"
+    },
+    {
+      "id": "risk-1",
+      "title": {
+        "en": "One Notch of Rating, 26x of Leverage: Hyperion's SPV vs Meta's Parent Balance Sheet",
+        "zh": "评级只差一档、杠杆差 26 倍：Hyperion SPV 对 Meta 母公司报表"
+      },
+      "claim": {
+        "en": "Put Hyperion's project capital structure and Meta's parent balance sheet on the same debt-to-equity scale and the gap is enormous: the SPV runs 8.64x debt/equity against the parent's 0.33x — a 25.9x leverage differential that S&P compresses into a single rating notch (A+, one notch below Meta's corporate rating). That A+ rests on a 10.4% JV equity cushion and a 1.12x DSCR, meaning a 10.7% decline in lease cash flow exhausts debt-service coverage; and the ~24-year bond (Oct 2025 to 2049) is at any point secured by only four years of effective lease — 16.7% of its life — with Meta holding a termination option at each renewal gate from 2029.",
+        "zh": "把 Hyperion 项目资本结构与 Meta 母公司报表放到同一债务/股本标尺上，差距极大：SPV 的债务/股本为 8.64×，母公司仅 0.33×——杠杆差 25.9 倍，而标普只用一档评级（A+，低于 Meta 公司评级一档）就压缩了这 26 倍差距。A+ 背后是仅 10.4% 的合资股本缓冲与 1.12× 偿债覆盖率——租约现金流下降 10.7% 即击穿偿债线；且这张约 24 年期债券（2025-10 至 2049）任何时点只有 4 年生效租约支撑（占存续期 16.7%），Meta 自 2029 年起在每个续约节点都握有终止权。"
+      },
+      "evidence": "hyperion_case 视图字段：equity_stake_sale_price=2.5、equity_stake_sold_pct=80、project_debt=27、project_debt_to_asset=90、dscr=1.12、debt_rating=A+、rating_vs_meta='one notch below'、meta_leverage_book=25、lease_term=4、first_lease_start_year=2029、bond_maturity_year=2049。计算（python3，已运行）：隐含 100% 股权 = 2.5/0.8 = $3.125B；SPV D/E = 27/3.125 = 8.64×；母公司 D/E = 25/(100−25) = 0.333×；倍数差 = 8.64/0.333 = 25.9×。JV 股本缓冲 = 3.125/(3.125+27) = 10.4%。DSCR 1.12× → 盈亏平衡租约现金流降幅 = 1−1/1.12 = 10.7%。债券 2025-10→2049 ≈ 24 年，单一租约覆盖 4/24 = 16.7%。 【已复算 python3，2026-10-12】2.5/0.8=$3.125B；27/3.125=8.64×；母公司 0.25/0.75=0.333×；8.64/0.333=25.9×；3.125/(3.125+27)=3.125/30.125=10.4%；1−1/1.12=10.7%；视图仅给发行月（2025-10）与到期年（2049），实际期限介于 23.2–24.2 年，『约 24 年』为合理取整，4/24=16.7%。全部通过。",
+      "provenance": [
+        "Section IV, PDF p.10 (80% stake for ~$2.5B; $27B A+ bond, one notch below Meta)",
+        "Section IV, PDF p.11 (90% debt-to-asset; DSCR 1.12x; five 4-year leases 2029-2049; Footnote 4: Meta 25% book leverage)",
+        "Figure 2 Notes, PDF p.12 (bankruptcy-remote SPV chain)"
+      ],
+      "viz": "对数标尺杠杆断层图：左柱 SPV（D/E 8.64×、LTV 90%、DSCR 1.12×）、右柱 Meta 母公司（D/E 0.33×、账面杠杆 25%、市值口径 4%），中间以'1 notch'评级标尺桥接；交互：点击切换三个子视图——D/E 对数标尺 / 现金流缓冲仪表盘（10.7% 触发线）/ 债券-租约时间轴（24 年债券条上叠 5 段 4 年租约块 + 5 个终止权旗标）。",
+      "kind": "recombination"
+    },
+    {
+      "id": "macro-3",
+      "title": {
+        "en": "The 'bigger than railroads' verdict hangs on one database bucket: undated projects given a 3.7x haircut",
+        "zh": "「超过铁路」的结论悬在一个数据库档位上：无日期项目被砍 3.7 倍的实现率"
+      },
+      "claim": {
+        "en": "Projects WITH dates realize 63.8% of their capacity by 2032 (120.6 of 189.0 GW), but the 313.9 GW 'planned, no date' bucket — 56% of the entire 557.1 GW database — is assumed to realize only 17.2% by 2032, a 3.7x harsher haircut. Rescaling the 3.22% average proportionally to realized capacity: if undated projects realized like dated ones, the buildout averages ~5.7% of GDP (334.7 GW); if none is built by 2032, it averages ~2.30% (134.4 GW) — just 0.06pp above railroads' 2.24%. The entire historical ranking flips inside the uncertainty band of this single category.",
+        "zh": "有日期项目到 2032 年实现其容量的 63.8%（189.0 GW 中 120.6 GW），而占整个 557.1 GW 数据库 56% 的「规划、无日期」档（313.9 GW）被假设仅实现 17.2%——砍幅严苛 3.7 倍。按实现容量等比例重定标 3.22% 的平均值：若无日期项目按有日期项目的比率实现，建设期年均约占 GDP 5.7%（334.7 GW）；若 2032 年前一个都不建，年均约 2.30%（134.4 GW）——只比铁路的 2.24% 高 0.06 个百分点。整个历史排名在这一个档位的不确定带内即可翻转。"
+      },
+      "evidence": "capacity_outcomes.rows：有日期档（2026–2032+After 2032）合计 by2032=120.6、after=25.2、never=43.0+0.2=43.2，总 189.0 GW，by-2032 实现率 120.6/189.0=63.8%；无日期档 54.0/313.9=17.2%（54.0 来自该表，313.9 来自 capacity_pipeline.rows），比率 63.8/17.2=3.71×；313.9/557.1=56.3%。构成勾稽：13.8（2025 全额）+120.6+54.0=188.4≈188.3（表 4 总计，论文注明四舍五入）。情景重算（$41m/MW 与支出分布不变、投资额 ∝ 2032 年前实现容量的近似）：无日期按 63.8% → 13.8+120.6+313.9×0.638=334.7 GW → 3.22×334.7/188.3=5.72%；无日期归零 → 134.4 GW → 3.22×134.4/188.3=2.30%，对铁路 2.24% 的余量 0.058pp。 【已复算 python3，2026-10-12】有日期档 Σby2032=120.6、Σafter=25.2、Σnever=43.2、合计 189.0 GW，120.6/189.0=63.8%；无日期档 54.0/313.9=17.2%；63.8/17.2=3.71×；313.9/557.1=56.3%；勾稽 13.8+120.6+54.0=188.4≈188.3（论文注明四舍五入）；高情景 13.8+120.6+313.9×0.638=334.7 GW→3.22×334.7/188.3=5.72%；低情景 134.4 GW→2.30%，高于铁路 2.24% 仅 0.06pp（2.296−2.24=0.056）。全部通过。",
+      "provenance": [
+        "Table 4 (realization rates & 188.3/114.9/213.5 GW); PDF pp.24–25",
+        "Appendix B, no-date treatment (20/30/50 observed, 10/25/65 imputed); PDF p.25",
+        "Table 3 (313.9 GW undated / 557.1 GW total); PDF p.23",
+        "Table 5 (3.22% average); PDF p.27"
+      ],
+      "viz": "双联面板：左侧堆叠瀑布图，516.7 GW 毛管道切成 188.3 / 114.9 / 213.5 GW，并以颜色区分「有日期档贡献（134.4）」与「无日期档贡献（54.0）」；右侧放「无日期档 2032 年前实现率」滑杆（0%–64%），联动重算隐含年均 GDP 占比（2.30%–5.72%），叠加铁路 2.24% 阈值线——滑杆扫过 2.24% 时高亮提示「历史排名在此翻转」。",
+      "kind": "extension"
+    },
+    {
+      "id": "risk-2",
+      "title": {
+        "en": "48% and 2.6x Are Floors: The Paper's Own Leverage Ratios Exclude the $1.52T Chip Purchase Commitments",
+        "zh": "48% 与 2.6× 只是下限：论文自身的杠杆比率剔除了 1.52 万亿美元芯片采购承诺"
+      },
+      "claim": {
+        "en": "Footnote 6's L2/L4 add lease obligations only, so the largest off-balance-sheet block — $1.52T of future purchase commitments, 63.3% of the $2.4T off-balance total and 2.52x the entire $604B on-balance-sheet stack — enters no leverage ratio in the paper; extending the paper's own 0.75 PV convention to it would add ~$1.14T of debt-equivalents to the numerator. Meanwhile the two ratio pairs cross-validate: the equity-denominator pair implies lease obligations of 2.69x debt and the EBITDA-denominator pair 2.71x — only 0.8% apart — so the recompute is internally consistent but structurally incomplete. It also degrades asymmetrically: the cash-flow metric multiplies 3.7x (0.7x to 2.6x) versus 2.4x for the balance-sheet metric (20% to 48%), and both still miss the chip commitments.",
+        "zh": "脚注 6 的 L2/L4 只把租赁义务加回分子，因此表外最大的一块——1.52 万亿美元未来采购承诺（占 2.4 万亿表外总额的 63.3%、相当于 6,040 亿表内义务总盘的 2.52 倍）——不进入论文任何一个杠杆比率；若把论文自己的 0.75 现值系数推广到它，分子将再增约 1.14 万亿美元债务等价物。同时两组比率互相验证：权益分母对推出租约/债务 = 2.69×，EBITDA 分母对推出 2.71×，仅差 0.8%——重算内部自洽，但结构上不完整。且恶化不对称：现金流口径放大 3.7 倍（0.7×→2.6×）对 资产负债表口径 2.4 倍（20%→48%），而两者都漏掉芯片采购承诺。"
+      },
+      "evidence": "offbalance_leverage 视图字段：fn6_l1=20、fn6_l2=48、fn6_l3=0.7、fn6_l4=2.6、wsj_future_purchase_commitments=1520、wsj_offbalance_total=2400、wsj_onbalance_total=604、fn6_uncommenced_lease_pv_factor=0.75；fn6 定义注（L2/L4 分子为 debt plus lease obligations，不含采购承诺）。计算（python3，已运行）：1520/2400 = 63.3%；1520/604 = 2.52×；0.75×1520 = $1,140B；勾稽 604/(2400+604) = 20.1% ≈ 'one-fifth'；由 L1=D/(D+E)=20% 得 D/E=0.25，由 L2=(D+L)/(D+L+E)=48% 得 (D+L)/E=0.9231 → L/D=2.692；由 L3/L4 得 L/D = 2.6/0.7−1 = 2.714；两者相差 0.8%；倍数不对称 48/20 = 2.4× 对 2.6/0.7 = 3.71×。 【已复算 python3，2026-10-12】1,520/2,400=63.3%；1,520/604=2.52×；0.75×1,520=$1,140B；604/(2,400+604)=604/3,004=20.1%≈one-fifth；由 L1 得 D/E=0.20/0.80=0.25，由 L2 得 (D+L)/E=0.48/0.52=0.9231→L/D=(0.9231−0.25)/0.25=2.692；由 L3/L4 得 L/D=2.6/0.7−1=2.714；两者相对差 0.8%；不对称倍数 48/20=2.4× 对 2.6/0.7=3.71×。全部通过。",
+      "provenance": [
+        "Footnote 5, PDF p.11 ($2.4T off-balance; $904B future leases + $1.52T future purchase commitments, mostly chips; $604B on-balance; one-fifth recognized)",
+        "Footnote 6, PDF pp.11-12 (L1-L4 definitions; x0.75 PV on uncommenced leases; L1 20%->L2 48%; L3 0.7x->L4 2.6x)"
+      ],
+      "viz": "$3.0T 堆叠条形图：表内 604 / 表外租赁 904 / 表外采购 1520 三段，用括号高亮'L2/L4 只捕捉租赁段'；两个交互开关：(1) 对租赁段套 ×0.75 现值缩放；(2) '若采购承诺同样按 0.75 资本化'——追加 1,140 幽灵段并联动重绘右侧 L2/L4 刻度线；旁注交叉验证结果（2.69× 对 2.71×，差 0.8%）。",
+      "kind": "extension"
+    },
+    {
+      "id": "macro-5",
+      "title": {
+        "en": "Record intensity, not record mass: railroads committed ~1.8x more capital relative to GDP, over 21 years",
+        "zh": "纪录的是强度而非总量：铁路 21 年累计投入相对 GDP 约为 AI 情景的 1.8 倍"
+      },
+      "claim": {
+        "en": "Multiplying each boom's average share by its duration (annual-GDP-equivalents committed) reorders Table 1: railroads 47.0 (2.24% × 21y) vs AI 25.8 (3.22% × 8y; 25.4 on the cumulative 3.17% basis) — the railroad era accumulated ~1.8x more capital relative to a year's GDP. AI ties telecom as the second-shortest of the six episodes (only the six-year canal boom was shorter) while carrying the highest rate, and its $8.973T is front-loaded: 50.9% falls in 2026–28, then investment drops 43% in a single year (2028 $1,717B → 2029 $978B, 5.0% → 2.7% of GDP) onto a ~$904B/yr plateau — the central scenario contains its own down-cycle, driven by a dated pipeline that peaks at 93.6 GW in the 2027–28 cohorts versus 9.5–18.2 GW/yr for 2029–32.",
+        "zh": "用「年均占比 × 期间长度」（累计投入折合多少个年度 GDP）重排表 1：铁路 47.0（2.24%×21 年）对 AI 25.8（3.22%×8 年；按累计口径 3.17%×8=25.4）——铁路时代相对一个年度 GDP 累计形成的资本约为 AI 情景的 1.8 倍。AI 与电信并列六轮热潮中第二短（8 年，仅长于 6 年的运河热潮）却顶着最高强度，且 8.973 万亿美元前倾分布：50.9% 落在 2026–28 年，随后投资单年骤降 43%（2028 年 1,717B → 2029 年 978B，占 GDP 5.0% → 2.7%），进入约 904B/年的平台期——中心情景自带一轮下行周期，物理来源是有日期管道在 2027–28 队列见顶（93.6 GW）而 2029–32 每年仅 9.5–18.2 GW。"
+      },
+      "evidence": "historical_booms.rows 的 period 解析出时长（1836–1841=6、1870–1890=21、1905–1925=21、1956–1973=18、1996–2003=8、2025–2032=8），GDP 当量 = size_pct_gdp×年数：运河 4.0、铁路 47.0、电气化 10.5、公路 20.3、电信 8.8、AI 25.8（累计口径 3.17×8=25.4）；铁路/AI = 47.0/25.8 = 1.83。investment_annual.rows：(1253+1597+1717)/8973 = 50.9%；2029 年同比 (978−1717)/1717 = −43.0%；2029–32 年均 (978+886+863+889)/4 = 904B。capacity_pipeline.rows：2027+2028 队列 45.7+47.9 = 93.6 GW，2029–32 队列 18.2/14.3/14.2/9.5 GW。 【已复算 python3，2026-10-12】时长 1836–1841=6、1870–1890=21、1905–1925=21、1956–1973=18、1996–2003=8、2025–2032=8（最短为运河 6 年，AI/电信 8 年为第二短——claim 原文『最短』已修正）；GDP 当量 0.66×6=4.0、2.24×21=47.0、0.50×21=10.5、1.13×18=20.3、1.10×8=8.8、3.22×8=25.8、3.17×8=25.4；47.0/25.8=1.83×；(1,253+1,597+1,717)/8,973=50.9%；(978−1,717)/1,717=−43.0%；(978+886+863+889)/4=904；2027+2028 队列 45.7+47.9=93.6 GW，2029–32 队列 18.2/14.3/14.2/9.5。全部通过。",
+      "provenance": [
+        "Table 1 (periods & average shares); PDF p.7",
+        "Appendix C; PDF pp.27–28",
+        "Table 5 (annual investment 2025–32 & totals); PDF p.27",
+        "Table 3 (cohort GW by completion year); PDF p.23"
+      ],
+      "viz": "甘特式时间轴（1836–2032）：六轮热潮各一条横条，长度=期间、高度/色深=年均 %GDP、条形面积 ∝ GDP 当量；AI 条最短最高、铁路条最长且面积最大，一屏看清「强度冠军 vs 累量冠军」。交互：悬停显示各期的年均/时长/GDP 当量三件套；副面板为表 5 逐年投资柱状图，标注 2028 峰值（$1,717B、5.0%）与 2029 断崖（−43%），并与 2027–28 队列 93.6 GW 的管道峰联动高亮。",
+      "kind": "recombination"
+    },
+    {
+      "id": "risk-3",
+      "title": {
+        "en": "'All Five Widened' Is an Average Story: +53% Aggregate, 2.5x Dispersion, Oracle 55% of the Move — and Amazon, Excluded from the Leverage Recompute, Was Repriced Second-Hardest",
+        "zh": "「五家全走阔」是个平均数故事：合计 +53%、离散 2.5 倍、Oracle 独占 55%——而被杠杆重算剔除的 Amazon 恰是第二猛的重定价"
+      },
+      "claim": {
+        "en": "Computing changes from the paper's two CDS endpoints: the five-name aggregate spread rose from 294.4 to 450.7 bps (+156.3 bps, +53.1%), but relative widening ranges from Alphabet's +29.1% to Oracle's +73.0% — a 2.5x dispersion — with Oracle alone contributing 55.5% of the aggregate move, having entered the window already 2.1-3.4x wider than peers. The market discriminated rather than applying a uniform investment-grade de-rating. And the two evidence sets have different blind spots: footnote 6's L1-to-L4 sample excludes Amazon (warehouse-heavy leases), yet Amazon's +50.1% was the second-largest relative repricing — the ratio-based leverage evidence and the market-based evidence cover different firm sets, so neither alone shows the whole risk map.",
+        "zh": "用论文两个 CDS 端点计算变化：五家合计利差从 294.4 升至 450.7 bp（+156.3 bp、+53.1%），但相对走阔幅度从 Alphabet 的 +29.1% 到 Oracle 的 +73.0%——离散 2.5 倍——Oracle 一家贡献合计走阔的 55.5%，且它在窗口起点就比同业宽 2.1–3.4 倍。市场在做区分定价，而非一刀切的投资级降档。而两套证据的盲区互不相同：脚注 6 的 L1→L4 样本剔除 Amazon（租约多仓库），Amazon +50.1% 的相对走阔却是第二猛——比率型杠杆证据与市场型证据覆盖的是不同的公司集合，单看任何一套都看不到完整风险地图。"
+      },
+      "evidence": "market_signals 视图字段：10 个 CDS 端点（alphabet 44.7→57.7、meta 56.1→80.2、microsoft 35.1→47.7、amazon 39.7→59.6、oracle 118.8→205.5）+ cds_observation_window；offbalance_leverage 字段 fn6_sample='ex-Amazon, four hyperscalers'。计算（python3，已运行）：Δbp = +13.0/+24.1/+12.6/+19.9/+86.7；相对涨幅 = +29.1%/+43.0%/+35.9%/+50.1%/+73.0%；Σ起点 = 294.4、Σ终点 = 450.7，合计 +156.3 bp = +53.1%；Oracle 占 86.7/156.3 = 55.5%；离散 = 73.0/29.1 = 2.51×；Oracle 起点倍数 118.8/56.1 = 2.12 至 118.8/35.1 = 3.38。 【已复算 python3，2026-10-12】Δbp：Alphabet 57.7−44.7=13.0、Meta 80.2−56.1=24.1、Microsoft 47.7−35.1=12.6、Amazon 59.6−39.7=19.9、Oracle 205.5−118.8=86.7；相对涨幅 13.0/44.7=29.1%、24.1/56.1=43.0%、12.6/35.1=35.9%、19.9/39.7=50.1%、86.7/118.8=73.0%；Σ起点 294.4、Σ终点 450.7、+156.3bp=+53.1%；Oracle 贡献 86.7/156.3=55.5%；离散 73.0/29.1=2.51×；Oracle 起点倍数 118.8/56.1=2.12×、118.8/35.1=3.38×；相对涨幅排序 Oracle>Amazon>Meta>Microsoft>Alphabet，Amazon 第二成立；fn6 样本确为 ex-Amazon。全部通过。",
+      "provenance": [
+        "Footnote 8, PDF p.13 (five hyperscalers' 5y CDS endpoints, 2025-11-21 to 2026-07-22)",
+        "Footnote 6, PDF p.12 (ex-Amazon sample for the L1-L4 recompute)"
+      ],
+      "viz": "斜率图（slope chart）：五家公司 2025-11-21 与 2026-07-22 两端点连线，按相对涨幅排序着色（Oracle 最深）；Amazon 用虚线并加标注'excluded from fn6 L1-L4 sample'；悬停显示 Δbp 与 Δ%；底部一条汇总细带显示 294.4→450.7（+53.1%）并分解 Oracle 55.5% 的贡献份额。",
+      "kind": "recombination"
+    }
+  ],
+  "rejected": [
+    {
+      "id": "sustain-3",
+      "reason": "与 sustain-2 共用同一收入要求模型骨架（$3,549B、$5.11/GPU 时、$6.07 现货租金）且同为『刀刃余量』叙事：按同一数字只留最深一篇的规则，sustain-2 的利用率口径自带论文双点校验（5.11/0.8=6.39≈6.4、5.11/0.7=7.30≈7.3）、更可交流，保留 sustain-2；sustain-3 独有的 4.6 年盈亏平衡 IT 寿命可作为 sustain-2 可视化里的寿命滑杆维度并入，不单独成篇。"
+    },
+    {
+      "id": "sustain-4",
+      "reason": "三组关键数字均为复用：707.1 OCF 与 $93.4B/113% 交叉点属 sustain-1 核心且其展开（25.7×/7.8×/3.9×、累计 81.4%）更深；1,774.3 与 3,549 属 sustain-2 模型骨架。其『付款方基础必须扩大』的结论亦与 sustain-1 的表外资本主线同向重复，独有增速扇形（81.3% vs 29.5%）对这些共享数字的挖掘最浅。"
+    },
+    {
+      "id": "sustain-5",
+      "reason": "Hyperion 案例数字（$27B/6.58%/DSCR 1.12/租约-债券期限错配）在 risk-1 中得到更深的结构性展开（25.9× 杠杆差、10.7% 现金流触发线、16.7% 租约覆盖），同案例只留最深一篇；不透明溢价 ≥$5B（17% 资产、62.5% 缓冲消耗、家族 ≥$7.3B）作为该结构的代价项宜作 risk-1 的注脚，而非独立观点。"
+    },
+    {
+      "id": "macro-2",
+      "reason": "铁路 2.24% 这一排名锚定数字已被 macro-3（脆弱方向：无日期档 3.7× 实现率即可翻转排名，勾稽 188.4≈188.3 完整）与 macro-5（累计质量方向：GDP 当量重排 1.8×）从两个更深的切口覆盖；macro-2 作为第二条『排名稳健性』论据边际价值低，13.6% 盈亏平衡增速可作 macro-5 的敏感性注记并入。"
+    },
+    {
+      "id": "macro-4",
+      "reason": "家庭当量与 TTh 换算建立在反解的 91.8% 利用率之上（论文未直接给出该数，属推导假设，且整条换算链都依赖它），证据强度弱于同组；213.5 GW 未建成容量已出现在 macro-3 的勾稽与瀑布图中，『幻影需求 vs 幸存者』框架可并入 macro-3 的可视化叙述。"
+    },
+    {
+      "id": "risk-4",
+      "reason": "其时间轴骨架（capex/OCF 40.7%→50.2%→68.9%→113.2% 与 $93.4B 缺口）正是 sustain-1 的核心数字且展开更浅，单独成篇会与 sustain-1 的图表撞数字；独有贡献（beta 翻倍时仅 11.9% 容量建成）依赖该重叠锚点承重，可作 sustain-1 时间轴的事件毯注记。"
+    },
+    {
+      "id": "risk-5",
+      "reason": "两根支柱均为复用且浅于原篇：6v3 年寿命敏感性（19.37%→31.10%、+60.6%）复用 sustain-3 的核心计算，>$5B 溢价对 $2.5B 股本的 2.0× 复用 sustain-5 的核心数字——而这两篇本身已因更深者入选/落选被处理；唯一独有的 $125B NVIDIA RVG（=表内盘 20.7%、Meta 一年 OCF 的 96%）建议并入 risk-1 的担保链条可视化，不独立成篇。"
+    }
+  ]
+}

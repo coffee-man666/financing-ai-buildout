@@ -1,0 +1,491 @@
+{
+  "id": "hyperion_case",
+  "title": {
+    "en": "Meta Hyperion (Beignet) Data Center Financing - Case Facts",
+    "zh": "Meta Hyperion（Beignet）数据中心融资——案例事实"
+  },
+  "description": {
+    "en": "All case facts on the Meta/Blue Owl Hyperion transaction from Section IV and footnotes 3, 4, 7 plus Figure 2 notes: ~2.0 GW capacity and ~$30B total investment (≈$15M/MW excl. IT equipment), 80% equity sale to Blue Owl for ≈$2.5B, the Beignet JV's $27B October 2025 bond (S&P A+, largest single IG corporate bond in U.S. history), ~90% project debt/asset and 1.12x DSCR, the bankruptcy-remote SPV chain (Laidley LLC / Project Beignet Holdings LLC / Iris Crossing LLC / Beignet Investor LLC / Entergy Louisiana PPA with three gas-fired units), five 4-year leases 2029-2049 with per-renewal termination, asset sale and Meta residual value guarantee, GAAP non-recognition before effectiveness, the 6.58% issuance yield (>=100bp over Meta unsecured, >$5B lifetime extra interest), Meta's own year-end 2025 leverage (25% book / 4% market) and $130B OCF covering 2026 debt service >=18x, and the Sopaipilla template case.",
+    "zh": "Section IV 与脚注 3、4、7 及图 2 注释中 Meta/Blue Owl Hyperion 交易的全部案例事实：约 2.0 GW 容量、总投资约 300 亿美元（约合 1500 万美元/MW，不含 IT 设备）、向 Blue Owl 出售 80% 股权约 25 亿美元、合资公司 Beignet 于 2025 年 10 月发行 270 亿美元债券（S&P A+，美国史上最大单笔投资级公司债）、项目负债/资产约 90%、DSCR 1.12x、破产隔离 SPV 链条（Laidley LLC / Project Beignet Holdings LLC / Meta 经 Iris Crossing LLC 持 20% / Blue Owl 经 Beignet Investor LLC / 与 Entergy Louisiana 的 PPA 及三台燃气机组）、2029-2049 年五段各 4 年租约及逐节点终止权、资产出售与 Meta 残值担保、生效前 GAAP 不入表、6.58% 发行收益率（高于 Meta 同类无担保债至少 100bp、全周期多付超 50 亿美元利息）、Meta 2025 年末自身杠杆（账面 25%/市值 4%）及 1300 亿美元经营现金流对 2026 年债务偿付至少 18 倍覆盖，以及模板案例 Sopaipilla。"
+  },
+  "source": {
+    "tables": [],
+    "pdf_pages": [
+      10,
+      11,
+      12,
+      13
+    ],
+    "sections": [
+      "Section IV. Financial Architecture and Risk",
+      "Footnotes 3, 4, 7",
+      "Figure 2 Notes"
+    ]
+  },
+  "columns": [
+    {
+      "key": "fact_key",
+      "label": {
+        "en": "Fact key",
+        "zh": "事实键"
+      },
+      "unit": ""
+    },
+    {
+      "key": "value",
+      "label": {
+        "en": "Value (paper figure/verbatim)",
+        "zh": "数值（论文原值/原文）"
+      },
+      "unit": "varies (see unit)"
+    },
+    {
+      "key": "unit",
+      "label": {
+        "en": "Unit",
+        "zh": "单位"
+      },
+      "unit": ""
+    },
+    {
+      "key": "note",
+      "label": {
+        "en": "Note (qualifier; verbatim detail; locator)",
+        "zh": "备注（限定词；原文细节；定位）"
+      },
+      "unit": ""
+    }
+  ],
+  "rows": [
+    {
+      "fact_key": "capacity",
+      "value": 2.0,
+      "unit": "GW",
+      "note": "qualifier: approximately; \"approximately 2.0 GW of capacity\"; Section IV, PDF p.10"
+    },
+    {
+      "fact_key": "total_investment",
+      "value": 30,
+      "unit": "$ billion",
+      "note": "qualifier: about; \"total investment of about $30 billion, making it one of the largest single data center developments to date\"; Section IV, PDF p.10"
+    },
+    {
+      "fact_key": "total_investment_per_mw",
+      "value": 15,
+      "unit": "$ million/MW",
+      "note": "qualifier: about; \"This corresponds to about $15 million per MW, broadly consistent with our estimate of $11 million per MW for the facility plus additional power-infrastructure costs\"; Footnote 3, PDF p.10"
+    },
+    {
+      "fact_key": "facility_cost_per_mw_benchmark",
+      "value": 11,
+      "unit": "$ million/MW",
+      "note": "\"our estimate of $11 million per MW for the facility\"; Footnote 3, PDF p.10"
+    },
+    {
+      "fact_key": "it_equipment_excluded",
+      "value": true,
+      "unit": "",
+      "note": "\"The figure excludes IT equipment, which Meta will finance separately as the tenant\"; Footnote 3, PDF p.10"
+    },
+    {
+      "fact_key": "initial_owner",
+      "value": "Meta",
+      "unit": "",
+      "note": "\"Meta initially owned the project outright\"; Section IV, PDF p.10"
+    },
+    {
+      "fact_key": "equity_stake_sold_pct",
+      "value": 80,
+      "unit": "%",
+      "note": "\"sold an 80 percent equity stake to Blue Owl\"; Section IV, PDF p.10"
+    },
+    {
+      "fact_key": "equity_stake_sale_price",
+      "value": 2.5,
+      "unit": "$ billion",
+      "note": "qualifier: approximately; \"for approximately $2.5 billion\"; Section IV, PDF p.10"
+    },
+    {
+      "fact_key": "joint_venture",
+      "value": "Beignet",
+      "unit": "",
+      "note": "\"The resulting joint venture, Beignet\"; Section IV, PDF p.10"
+    },
+    {
+      "fact_key": "external_debt_raised",
+      "value": 27,
+      "unit": "$ billion",
+      "note": "\"raised $27 billion of external debt in October 2025\"; Section IV, PDF p.10"
+    },
+    {
+      "fact_key": "debt_issuance_date",
+      "value": "October 2025",
+      "unit": "",
+      "note": "\"in October 2025\"; Section IV, PDF p.10"
+    },
+    {
+      "fact_key": "debt_rating",
+      "value": "A+",
+      "unit": "S&P rating",
+      "note": "\"The debt was rated A+ by Standard & Poor’s\"; Section IV, PDF p.10"
+    },
+    {
+      "fact_key": "rating_vs_meta",
+      "value": "one notch below",
+      "unit": "",
+      "note": "\"one notch below Meta’s own corporate credit rating\"; Section IV, PDF p.10"
+    },
+    {
+      "fact_key": "largest_ig_corporate_issuance_us",
+      "value": true,
+      "unit": "",
+      "note": "\"the largest individual investment-grade corporate debt issuance in U.S. history\"; Section IV, PDF p.10"
+    },
+    {
+      "fact_key": "project_asset_value",
+      "value": 30,
+      "unit": "$ billion",
+      "note": "\"financed roughly $27 billion of the $30 billion asset value with debt\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "project_debt",
+      "value": 27,
+      "unit": "$ billion",
+      "note": "qualifier: roughly; \"Beignet financed roughly $27 billion ... with debt\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "project_debt_to_asset",
+      "value": 90,
+      "unit": "%",
+      "note": "qualifier: about; \"implying a debt-to-asset ratio of about 90 percent\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "dscr",
+      "value": 1.12,
+      "unit": "x",
+      "note": "qualifier: only; \"The debt service coverage ratio is only 1.12×\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "spv_asset_owner",
+      "value": "Laidley LLC",
+      "unit": "",
+      "note": "\"Laidley LLC owns the datacenter campus\"; Figure 2 Notes, PDF p.12"
+    },
+    {
+      "fact_key": "spv_holding_entity",
+      "value": "Project Beignet Holdings LLC",
+      "unit": "",
+      "note": "\"funded by its subsidiary Project Beignet Holdings LLC\"; Figure 2 Notes, PDF p.12"
+    },
+    {
+      "fact_key": "meta_jv_vehicle",
+      "value": "Iris Crossing LLC",
+      "unit": "",
+      "note": "\"owned in Joint Venture for 20% by Meta, through Iris Crossing LLC\"; Figure 2 Notes, PDF p.12"
+    },
+    {
+      "fact_key": "meta_jv_share",
+      "value": 20,
+      "unit": "%",
+      "note": "\"owned in Joint Venture for 20% by Meta\"; Figure 2 Notes, PDF p.12"
+    },
+    {
+      "fact_key": "blue_owl_jv_vehicle",
+      "value": "Beignet Investor LLC",
+      "unit": "",
+      "note": "\"by Blue Owl, through Beignet Investor LLC\"; Figure 2 Notes, PDF p.12"
+    },
+    {
+      "fact_key": "ppa_counterparty",
+      "value": "Entergy Louisiana",
+      "unit": "",
+      "note": "\"Laidley enters in a Power Purchase Agreement with Entergy Louisiana\"; Figure 2 Notes, PDF p.12"
+    },
+    {
+      "fact_key": "ppa_new_gas_units",
+      "value": 3,
+      "unit": "units",
+      "note": "\"which will develop three gas-fired generating units\"; Figure 2 Notes, PDF p.12"
+    },
+    {
+      "fact_key": "lease_count",
+      "value": 5,
+      "unit": "leases",
+      "note": "\"a sequence of five four-year leases\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "lease_term",
+      "value": 4,
+      "unit": "years per lease",
+      "note": "\"five four-year leases\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "first_lease_start_year",
+      "value": 2029,
+      "unit": "year",
+      "note": "\"beginning in 2029\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "bond_maturity_year",
+      "value": 2049,
+      "unit": "year",
+      "note": "\"extending through the bond’s 2049 maturity\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "tenant_termination_option",
+      "value": true,
+      "unit": "",
+      "note": "\"At each renewal date, Meta may terminate the lease for some or all of the Hyperion campus\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "asset_sale_on_termination",
+      "value": true,
+      "unit": "",
+      "note": "\"the affected assets are offered for sale\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "residual_value_guarantee",
+      "value": true,
+      "unit": "",
+      "note": "\"Meta must cover any shortfall between the sale proceeds and a contractually specified minimum value\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "gaap_recognized_before_effective",
+      "value": false,
+      "unit": "",
+      "note": "\"Meta does not recognize the future lease obligations nor the residual value guarantee on its balance sheet before the relevant lease or guarantee becomes effective\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "one_commitment_materializes_for_sure",
+      "value": true,
+      "unit": "",
+      "note": "\"even though one of the two commitments will ultimately materialize for sure\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "issuance_yield",
+      "value": 6.58,
+      "unit": "%",
+      "note": "\"Beignet’s debt was issued at a yield of 6.58%\"; Section IV, PDF p.12"
+    },
+    {
+      "fact_key": "spread_vs_meta_unsecured",
+      "value": 100,
+      "unit": "bps",
+      "note": "qualifier: at least; \"at least 100 basis points above the rate Meta likely would have paid on comparable unsecured corporate debt at the time of issuance\"; Section IV, PDF p.12"
+    },
+    {
+      "fact_key": "lifetime_extra_interest",
+      "value": 5,
+      "unit": "$ billion",
+      "note": "qualifier: more than; \"Over the life of the financing, that spread implies more than $5 billion of additional interest expense for Beignet, a cost which is ultimately reflected in Meta’s lease payments.\"; Section IV, PDF p.12"
+    },
+    {
+      "fact_key": "meta_leverage_book",
+      "value": 25,
+      "unit": "%",
+      "note": "qualifier: approximately; \"Meta’s own year-end 2025 leverage ratio was approximately 25 percent using book equity\"; Footnote 4, PDF p.11"
+    },
+    {
+      "fact_key": "meta_leverage_market",
+      "value": 4,
+      "unit": "%",
+      "note": "qualifier: just; \"just 4 percent using market equity\"; Footnote 4, PDF p.11"
+    },
+    {
+      "fact_key": "meta_leverage_asof",
+      "value": "year-end 2025",
+      "unit": "",
+      "note": "\"year-end 2025 leverage ratio\"; Footnote 4, PDF p.11"
+    },
+    {
+      "fact_key": "meta_ocf",
+      "value": 130,
+      "unit": "$ billion",
+      "note": "\"Meta’s operating cash flow of $130 billion\"; Footnote 4, PDF p.11"
+    },
+    {
+      "fact_key": "meta_ocf_to_2026_debt_service",
+      "value": 18,
+      "unit": "x",
+      "note": "qualifier: at least; \"is at least 18× its 2026 debt service\"; Footnote 4, PDF p.11"
+    },
+    {
+      "fact_key": "bondholder_direct_claim_on_meta",
+      "value": false,
+      "unit": "",
+      "note": "\"they do not have a direct claim on Meta’s balance sheet\"; Section IV, PDF p.13"
+    },
+    {
+      "fact_key": "template_for_future_financings",
+      "value": true,
+      "unit": "",
+      "note": "\"The Hyperion transaction may therefore provide a template for future data center financings\"; Section IV, PDF p.13"
+    },
+    {
+      "fact_key": "sopaipilla_capacity",
+      "value": 960,
+      "unit": "MW",
+      "note": "\"the 960MW Sopaipilla datacenter project in El Paso, TX\"; Footnote 7, PDF p.13"
+    },
+    {
+      "fact_key": "sopaipilla_jv_partners",
+      "value": "Meta and Blackrock",
+      "unit": "",
+      "note": "\"a joint venture of Meta and Blackrock, follows a nearly identical structure\"; Footnote 7, PDF p.13"
+    },
+    {
+      "fact_key": "sopaipilla_bond_amount",
+      "value": 12.3,
+      "unit": "$ billion",
+      "note": "\"Sopaipilla investor issued $12.3 billion in A+-rated bonds\"; Footnote 7, PDF p.13"
+    },
+    {
+      "fact_key": "sopaipilla_bond_rating",
+      "value": "A+",
+      "unit": "rating",
+      "note": "\"A+-rated bonds\"; Footnote 7, PDF p.13"
+    },
+    {
+      "fact_key": "sopaipilla_bond_issue_date",
+      "value": "July 2026",
+      "unit": "",
+      "note": "\"in July 2026\"; Footnote 7, PDF p.13"
+    }
+  ],
+  "totals": {},
+  "notes": [
+    "Printed page = PDF page - 2; Section IV spans printed pp. 8-11 (PDF 10-13).",
+    "Financing is organized through a network of bankruptcy-remote special-purpose vehicles that issue debt backed by contractual claims on future lease payments; the structure 'isolates the project from Meta's broader corporate balance sheet and enhances creditor protection, but it also makes ultimate exposures more difficult to trace' (Section IV, PDF p.11).",
+    "The residual value guarantee 'gives Meta operational flexibility while preserving much of the long-duration credit support that lenders would otherwise obtain from a conventional long-term lease'; 'Meta's reported leverage therefore understates the economic obligations embedded in the contract' (Section IV, PDF p.11).",
+    "Economic rationale: 'not cheaper financing, but preservation of an asset-light corporate profile'; Meta 'avoids adding the full amount of the associated assets and debt to its own balance sheet' (Section IV, PDF pp.12-13).",
+    "Bondholders lack a direct claim on Meta's balance sheet; 'the bonds' longer duration and specialized private-placement structure also contribute to the interest premium' (Section IV, PDF p.13).",
+    "Template features: 'investment-grade tenant credit, high project-level leverage, bankruptcy-remote entities, lease optionality, and a residual value guarantee' (Section IV, PDF p.13).",
+    "Figure 2 sources cited by the paper: Standard & Poor's pre-sale report; Entergy 2025 Form 10-K (PDF p.12).",
+    "The paper states the A+ rating is 'one notch below Meta's own corporate credit rating' but does not state Meta's own letter rating.",
+    "Blue Owl's JV share is not separately stated in Figure 2 notes; the 80% comes from the stake-sale sentence in Section IV (PDF p.10).",
+    "'project_asset_value' ($30B, PDF p.11) and 'total_investment' ($30B, PDF p.10) refer to the same project amount as discussed in two sentences.",
+    "fact_key = raw `item`; `note` merges raw qualifier_en, detail_en, locator and pdf_page verbatim."
+  ],
+  "provenance": [
+    {
+      "locator": "Section IV",
+      "pdf_page": 10,
+      "quote_en": "The project involves approximately 2.0 GW of capacity and a total investment of about $30 billion, making it one of the largest single data center developments to date."
+    },
+    {
+      "locator": "Footnote 3",
+      "pdf_page": 10,
+      "quote_en": "This corresponds to about $15 million per MW, broadly consistent with our estimate of $11 million per MW for the facility plus additional power-infrastructure costs."
+    },
+    {
+      "locator": "Footnote 3",
+      "pdf_page": 10,
+      "quote_en": "The figure excludes IT equipment, which Meta will finance separately as the tenant."
+    },
+    {
+      "locator": "Section IV",
+      "pdf_page": 10,
+      "quote_en": "Meta initially owned the project outright but subsequently sold an 80 percent equity stake to Blue Owl for approximately $2.5 billion."
+    },
+    {
+      "locator": "Section IV",
+      "pdf_page": 10,
+      "quote_en": "The resulting joint venture, Beignet, then raised $27 billion of external debt in October 2025."
+    },
+    {
+      "locator": "Section IV",
+      "pdf_page": 10,
+      "quote_en": "The debt was rated A+ by Standard & Poor’s, one notch below Meta’s own corporate credit rating, and represented the largest individual investment-grade corporate debt issuance in U.S. history."
+    },
+    {
+      "locator": "Section IV",
+      "pdf_page": 11,
+      "quote_en": "Beignet financed roughly $27 billion of the $30 billion asset value with debt, implying a debt-to-asset ratio of about 90 percent."
+    },
+    {
+      "locator": "Section IV",
+      "pdf_page": 11,
+      "quote_en": "The debt service coverage ratio is only 1.12×."
+    },
+    {
+      "locator": "Footnote 4",
+      "pdf_page": 11,
+      "quote_en": "Meta’s own year-end 2025 leverage ratio was approximately 25 percent using book equity and just 4 percent using market equity."
+    },
+    {
+      "locator": "Footnote 4",
+      "pdf_page": 11,
+      "quote_en": "Meta’s operating cash flow of $130 billion is at least 18× its 2026 debt service."
+    },
+    {
+      "locator": "Section IV",
+      "pdf_page": 11,
+      "quote_en": "Meta addresses this tension through a sequence of five four-year leases beginning in 2029 and extending through the bond’s 2049 maturity."
+    },
+    {
+      "locator": "Section IV",
+      "pdf_page": 11,
+      "quote_en": "At each renewal date, Meta may terminate the lease for some or all of the Hyperion campus."
+    },
+    {
+      "locator": "Section IV",
+      "pdf_page": 11,
+      "quote_en": "If it does so, the affected assets are offered for sale, and Meta must cover any shortfall between the sale proceeds and a contractually specified minimum value."
+    },
+    {
+      "locator": "Section IV",
+      "pdf_page": 11,
+      "quote_en": "Under current GAAP rules, Meta does not recognize the future lease obligations nor the residual value guarantee on its balance sheet before the relevant lease or guarantee becomes effective"
+    },
+    {
+      "locator": "Figure 2 Notes",
+      "pdf_page": 12,
+      "quote_en": "Laidley LLC owns the datacenter campus, which is funded by its subsidiary Project Beignet Holdings LLC."
+    },
+    {
+      "locator": "Figure 2 Notes",
+      "pdf_page": 12,
+      "quote_en": "The latter is owned in Joint Venture for 20% by Meta, through Iris Crossing LLC, and by Blue Owl, through Beignet Investor LLC."
+    },
+    {
+      "locator": "Figure 2 Notes",
+      "pdf_page": 12,
+      "quote_en": "Laidley enters in a Power Purchase Agreement with Entergy Louisiana, which will develop three gas-fired generating units."
+    },
+    {
+      "locator": "Section IV",
+      "pdf_page": 12,
+      "quote_en": "Beignet’s debt was issued at a yield of 6.58%, at least 100 basis points above the rate Meta likely would have paid on comparable unsecured corporate debt at the time of issuance."
+    },
+    {
+      "locator": "Section IV",
+      "pdf_page": 12,
+      "quote_en": "Over the life of the financing, that spread implies more than $5 billion of additional interest expense for Beignet, a cost which is ultimately reflected in Meta’s lease payments."
+    },
+    {
+      "locator": "Section IV",
+      "pdf_page": 12,
+      "quote_en": "The economic rationale for Meta is therefore not cheaper financing, but preservation of an asset-light corporate profile."
+    },
+    {
+      "locator": "Section IV",
+      "pdf_page": 13,
+      "quote_en": "Beignet bondholders receive a higher interest rate because they do not have a direct claim on Meta’s balance sheet."
+    },
+    {
+      "locator": "Section IV",
+      "pdf_page": 13,
+      "quote_en": "The Hyperion transaction may therefore provide a template for future data center financings."
+    },
+    {
+      "locator": "Footnote 7",
+      "pdf_page": 13,
+      "quote_en": "Indeed, the 960MW Sopaipilla datacenter project in El Paso, TX, a joint venture of Meta and Blackrock, follows a nearly identical structure."
+    },
+    {
+      "locator": "Footnote 7",
+      "pdf_page": 13,
+      "quote_en": "Sopaipilla investor issued $12.3 billion in A+-rated bonds in July 2026."
+    }
+  ]
+}

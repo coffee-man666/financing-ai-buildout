@@ -1,0 +1,186 @@
+{
+  "id": "revenue_sensitivity",
+  "title": {
+    "en": "Required Mature Annual Revenue: Sensitivity to Return and Margin (Table 7) and Market-Unit Conversions",
+    "zh": "所需成熟期年收入：回报率与利润率敏感性（表 7）及市场单位换算"
+  },
+  "description": {
+    "en": "Appendix D, Table 7: required mature annual revenue ($ billions) from all 2025-32 completion cohorts across required unlevered returns of 5/10/15% and operating cash-flow margins of 33/50/67%. Includes market-unit conversions of the central $3.549 trillion requirement ($18.8M per MW-year of total facility power; $22.6M per MW-year of critical IT at PUE 1.2; $2.58 per kWh; $5.1 per installed GPU-hour at full utilization; $6.4 at 80% and $7.3 at 70% billed utilization), the Ornn B200 rental benchmark of $6.07 (August 31, 2026), the three-year IT-life scenario (31.10% capital charge, ~$5.7T, 14.1% of GDP, $8.2 per GPU-hour), and the OpenAI+Anthropic growth arithmetic (81.3%/year from ~$100B in 2026).",
+    "zh": "附录 D 表 7：2025–32 全部建成 cohort 在 5%/10%/15% 无杠杆要求回报率 × 33%/50%/67% 经营现金流利润率下所需的成熟期年收入（十亿美元）。含中心值 $3.549 万亿的市场单位换算（总设施口径 $18.8M/MW-年；PUE 1.2 下 critical IT 口径 $22.6M/MW-年；$2.58/kWh；满负荷 $5.1/GPU 小时；80% 计费利用率 $6.4、70% $7.3）、Ornn B200 租金基准 $6.07（2026-08-31）、IT 寿命 3 年情形（资本费用 31.10%、约 $5.7 万亿、占 GDP 14.1%、$8.2/GPU 小时）以及 OpenAI+Anthropic 增速算术（2026 年约 $100B 起需年增 81.3%）。"
+  },
+  "source": {
+    "tables": [
+      "Table 7"
+    ],
+    "pdf_pages": [
+      14,
+      30,
+      31,
+      32
+    ],
+    "sections": [
+      "Section V. Risks in the AI Infrastructure Buildout",
+      "Appendix D. Revenue Required to Support the Investment"
+    ]
+  },
+  "columns": [
+    {
+      "key": "required_return_pct",
+      "label": {
+        "en": "Required unlevered return",
+        "zh": "无杠杆要求回报率"
+      },
+      "unit": "%"
+    },
+    {
+      "key": "margin_33_bn",
+      "label": {
+        "en": "Required revenue at 33% OCF margin",
+        "zh": "33% 经营现金流利润率下所需收入"
+      },
+      "unit": "$ billions"
+    },
+    {
+      "key": "margin_50_bn",
+      "label": {
+        "en": "Required revenue at 50% OCF margin",
+        "zh": "50% 经营现金流利润率下所需收入"
+      },
+      "unit": "$ billions"
+    },
+    {
+      "key": "margin_67_bn",
+      "label": {
+        "en": "Required revenue at 67% OCF margin",
+        "zh": "67% 经营现金流利润率下所需收入"
+      },
+      "unit": "$ billions"
+    }
+  ],
+  "rows": [
+    {
+      "required_return_pct": 5,
+      "margin_33_bn": 4333,
+      "margin_50_bn": 2860,
+      "margin_67_bn": 2134
+    },
+    {
+      "required_return_pct": 10,
+      "margin_33_bn": 5377,
+      "margin_50_bn": 3549,
+      "margin_67_bn": 2648
+    },
+    {
+      "required_return_pct": 15,
+      "margin_33_bn": 6554,
+      "margin_50_bn": 4326,
+      "margin_67_bn": 3228
+    }
+  ],
+  "totals": {},
+  "notes": [
+    "Table 7 has no Total row; totals is therefore empty.",
+    "Table 7 note: 'Entries are billions of dollars of mature annual revenue required from all 2025-32 completion cohorts. For each required return, the capital base is calculated by applying equation (3) to the $8.762 trillion initial cost in Table 6. IT equipment is 68 percent of cost and has a six-year economic life; other assets have a 20-year economic life. Each entry equals the weighted annual capital charge divided by the indicated operating cash-flow margin.' (PDF p.31)",
+    "Footnote 12: 'Ornn Compute Price Index, https://data.ornn.com/preview, accessed September 1, 2026.' (PDF p.31)",
+    "Appendix D (PDF p.31): the $5.1 per installed GB300 GPU-hour figure 'is of a similar magnitude to published on-demand prices for Blackwell GPU capacity'. Section V (PDF p.14): the $6.4 at 80 percent utilization 'is comparable to frontier-GPU rental prices at the end of August 2026'.",
+    "Appendix D closing: 'The central economic question, however, is whether demand is deep enough to absorb roughly 188 GW of new capacity at high utilization, and whether providers retain sufficient pricing power for GPU-hour prices to remain near current levels as capacity expands and competition among hyperscalers, cloud providers, and AI model developers intensifies.' (PDF p.31)",
+    "Raw stores Table 7 in long form (one row per required-return × margin cell); this view pivots to one row per required return — all nine values verbatim, nothing recomputed."
+  ],
+  "provenance": [
+    {
+      "locator": "Table 7, title",
+      "pdf_page": 31,
+      "quote_en": "Table 7. Required Mature Annual Revenue"
+    },
+    {
+      "locator": "Table 7, notes",
+      "pdf_page": 31,
+      "quote_en": "Entries are billions of dollars of mature annual revenue required from all 2025–32 completion cohorts."
+    },
+    {
+      "locator": "Table 7, notes",
+      "pdf_page": 31,
+      "quote_en": "For each required return, the capital base is calculated by applying equation (3) to the $8.762 trillion initial cost in Table 6."
+    },
+    {
+      "locator": "Appendix D, text above Table 7",
+      "pdf_page": 30,
+      "quote_en": "At the central assumptions of a 10 percent return and a 50 percent margin, required annual revenue is $3.55 trillion."
+    },
+    {
+      "locator": "Appendix D, text above Table 7",
+      "pdf_page": 30,
+      "quote_en": "The estimate ranges from $2.13 trillion under a 5 percent"
+    },
+    {
+      "locator": "Appendix D, text continued",
+      "pdf_page": 31,
+      "quote_en": "required return and a 67 percent margin to $6.55 trillion under a 15 percent required return and a 33 percent margin."
+    },
+    {
+      "locator": "Appendix D, market units",
+      "pdf_page": 31,
+      "quote_en": "corresponds to approximately $18.8 million per MW-year of total facility power"
+    },
+    {
+      "locator": "Appendix D, market units",
+      "pdf_page": 31,
+      "quote_en": "the same revenue corresponds to approximately $22.6 million per MW-year of critical IT load, or $2.58 per kWh of critical IT energy at full utilization."
+    },
+    {
+      "locator": "Appendix D, market units",
+      "pdf_page": 31,
+      "quote_en": "the 188.3 GW build-out supports roughly 1.10 million racks, or 79.3 million GPUs, implying required revenue of about $5.1 per installed GPU-hour at full utilization."
+    },
+    {
+      "locator": "Appendix D, market units",
+      "pdf_page": 31,
+      "quote_en": "This figure is slightly below the $6.07 per GPU-hour B200 rental price reported by the transaction-based Ornn Compute Price Index on August 31, 2026."
+    },
+    {
+      "locator": "Footnote 12",
+      "pdf_page": 31,
+      "quote_en": "Ornn Compute Price Index, https://data.ornn.com/preview, accessed September 1, 2026."
+    },
+    {
+      "locator": "Appendix D, utilization",
+      "pdf_page": 31,
+      "quote_en": "80 percent utilization implies a required price of about $6.4 per billed GPU-hour, while 70 percent utilization implies about $7.3 per billed GPU-hour."
+    },
+    {
+      "locator": "Appendix D, OpenAI/Anthropic arithmetic",
+      "pdf_page": 31,
+      "quote_en": "taking $100 billion as a 2026 benchmark for the combined annual revenues of OpenAI and Anthropic, revenues would need to grow at approximately 81.3% per year through 2032 to reach the required $3.549 trillion annual revenue."
+    },
+    {
+      "locator": "Appendix D, three-year IT life (sentence starts on p.31)",
+      "pdf_page": 31,
+      "quote_en": "if the IT share of capital has a three-year rather than"
+    },
+    {
+      "locator": "Appendix D, three-year IT life",
+      "pdf_page": 32,
+      "quote_en": "six-year economic life, while all other assumptions remain unchanged, the weighted annual capital charge increases from 19.37 percent to 31.10 percent of the capital base."
+    },
+    {
+      "locator": "Appendix D, three-year IT life",
+      "pdf_page": 32,
+      "quote_en": "mature annual required revenue rises from $3.5 trillion to about $5.7 trillion, or from 8.8 percent to 14.1 percent of 2032 GDP."
+    },
+    {
+      "locator": "Appendix D, three-year IT life",
+      "pdf_page": 32,
+      "quote_en": "the required price rises from about $5.1 to $8.2 per installed GPU-hour at full utilization."
+    },
+    {
+      "locator": "Section V, revenue paragraph",
+      "pdf_page": 14,
+      "quote_en": "This is equivalent to roughly 8.8% of 2032 GDP, $5.1 per installed GB300 GPU-hour at full utilization, or $6.4 per billed GPU-hour at 80 percent utilization."
+    },
+    {
+      "locator": "Section V, revenue paragraph",
+      "pdf_page": 14,
+      "quote_en": "The latter is comparable to frontier-GPU rental prices at the end of August 2026."
+    }
+  ]
+}

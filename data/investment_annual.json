@@ -1,0 +1,189 @@
+{
+  "id": "investment_annual",
+  "title": {
+    "en": "Scenario-Implied U.S. Data Center Investment, 2025–32 (Table 5)",
+    "zh": "情景隐含的美国数据中心年度投资，2025–32（表5）"
+  },
+  "description": {
+    "en": "Annual U.S. data center investment (data centers, power infrastructure, and IT equipment) implied by the Table 4 capacity scenario, with nominal GDP and the investment/GDP ratio, 2025–2032. Costs are valued at completion-year cost per MW ($41 million per MW in 2025, growing 4 percent annually); nominal GDP is $30.762 trillion in 2025, growing 4 percent annually.",
+    "zh": "由表4容量情景推出的美国数据中心年度投资（数据中心、电力基础设施与 IT 设备），含名义 GDP 与投资/GDP 比值，2025–2032。各完工队列按其完工年单位成本（2025 年 41 百万美元/MW，每年涨 4%）计价；名义 GDP 2025 年为 30.762 万亿美元，年增 4%。"
+  },
+  "source": {
+    "tables": [
+      "Table 5"
+    ],
+    "pdf_pages": [
+      6,
+      25,
+      26,
+      27,
+      28
+    ],
+    "sections": [
+      "Appendix B",
+      "Appendix C"
+    ]
+  },
+  "columns": [
+    {
+      "key": "year",
+      "label": {
+        "en": "Year",
+        "zh": "年份"
+      },
+      "unit": ""
+    },
+    {
+      "key": "investment_bn",
+      "label": {
+        "en": "Investment",
+        "zh": "投资"
+      },
+      "unit": "$ billions"
+    },
+    {
+      "key": "gdp_bn",
+      "label": {
+        "en": "Nominal GDP",
+        "zh": "名义 GDP"
+      },
+      "unit": "$ billions"
+    },
+    {
+      "key": "investment_gdp_pct",
+      "label": {
+        "en": "Investment/GDP",
+        "zh": "投资/GDP"
+      },
+      "unit": "%"
+    }
+  ],
+  "rows": [
+    {
+      "year": 2025,
+      "investment_bn": 790,
+      "gdp_bn": 30762,
+      "investment_gdp_pct": 2.6
+    },
+    {
+      "year": 2026,
+      "investment_bn": 1253,
+      "gdp_bn": 31992,
+      "investment_gdp_pct": 3.9
+    },
+    {
+      "year": 2027,
+      "investment_bn": 1597,
+      "gdp_bn": 33272,
+      "investment_gdp_pct": 4.8
+    },
+    {
+      "year": 2028,
+      "investment_bn": 1717,
+      "gdp_bn": 34603,
+      "investment_gdp_pct": 5.0
+    },
+    {
+      "year": 2029,
+      "investment_bn": 978,
+      "gdp_bn": 35987,
+      "investment_gdp_pct": 2.7
+    },
+    {
+      "year": 2030,
+      "investment_bn": 886,
+      "gdp_bn": 37427,
+      "investment_gdp_pct": 2.4
+    },
+    {
+      "year": 2031,
+      "investment_bn": 863,
+      "gdp_bn": 38924,
+      "investment_gdp_pct": 2.2
+    },
+    {
+      "year": 2032,
+      "investment_bn": 889,
+      "gdp_bn": 40481,
+      "investment_gdp_pct": 2.2
+    }
+  ],
+  "totals": {
+    "row_label": "2025–32",
+    "investment_bn": 8973,
+    "gdp_bn": 283448,
+    "investment_gdp_pct": 3.17
+  },
+  "notes": [
+    "GDP-growth sensitivity (required, PDF p.26): if nominal GDP were to grow at 6% per year (rather than the baseline 4% per year) over 2025–32, maybe due to AI-driven productivity growth, investment would constitute 2.95% of cumulative GDP; if GDP were to grow at 8% per year, the investment share would be 2.74% of cumulative GDP.",
+    "Table 5 notes (PDF p.27): investment uses the capacity outcomes in Table 4, a 2025 cost of $41 million per MW, 4 percent annual completion-cohort cost and GDP growth, and the expenditure profile in equation (1); the final ratio is cumulative investment divided by cumulative GDP; the investment numbers include expenditures incurred during 2025–32 on data centers completed after 2032.",
+    "Cost and expenditure profile (PDF pp.25–26): total cost of $41 million per MW for capacity completed in 2025, increasing 4 percent annually for subsequent cohorts; 5.122 percent of cohort cost is allocated to each of years t−3 and t−2, 17.561 percent to year t−1, and 72.195 percent to t (the operational year), so annual investment includes spending on projects completed in that year and in the following three years. Component costs (PDF p.26): $2 million per MW power, $11 million per MW real estate, $28 million per MW IT.",
+    "Schedule assumptions (PDF p.26): the 54.0 GW of no-date capacity completed by 2032 is distributed evenly over 2028–2032; the 89.8 GW of no-date capacity completed after 2032 and the 19.9 GW of dated capacity delayed beyond 2032 are distributed evenly over 2033–2037; the 5.2 GW of projects with a reported completion year after 2032 remain in that reported year; capacity that is never completed generates no investment; operational capacity without a reported completion year is excluded from the investment schedule.",
+    "GDP path (PDF p.26): nominal GDP is $30.762 trillion in 2025 and assumed to grow 4 percent annually; the scenario implies $8.973 trillion of investment during 2025–32, equivalent to 3.17 percent of cumulative nominal GDP; the arithmetic average of the eight annual investment-to-GDP ratios is 3.22 percent.",
+    "Peak (PDF p.28, Appendix C): the annual investment-to-GDP ratio for the AI buildout averages 3.22 percent over 2025–2032 and peaks at 4.96 percent in 2028 (Table 5 shows the rounded 5.0 for 2028).",
+    "Scope/conservatism (PDF p.26): estimates cover only the initial construction and equipping of projects reported as of September 12, 2026, excluding subsequent pipeline growth and IT replacement investment (e.g., 2025–26 capacity may require substantial GPU replacement by around 2030); no component-specific depreciation is incorporated.",
+    "Column mapping from raw: investment_bn_usd→investment_bn, nominal_gdp_bn_usd→gdp_bn; values verbatim."
+  ],
+  "provenance": [
+    {
+      "locator": "Table 5 (title)",
+      "pdf_page": 27,
+      "quote_en": "Table 5. Scenario-Implied U.S. Data Center Investment, 2025–32"
+    },
+    {
+      "locator": "Table 5 (notes)",
+      "pdf_page": 27,
+      "quote_en": "The final ratio is cumulative investment divided by cumulative GDP. The investment numbers include expenditures incurred during 2025–32 on data centers completed after 2032."
+    },
+    {
+      "locator": "Appendix B, Annual Data Center Investment",
+      "pdf_page": 26,
+      "quote_en": "The scenario implies $8.973 trillion of investment during 2025–32, equivalent to 3.17 percent of cumulative nominal GDP."
+    },
+    {
+      "locator": "Appendix B, Annual Data Center Investment",
+      "pdf_page": 26,
+      "quote_en": "If nominal GDP were to grow at 6% per year (rather than the baseline 4% per year) over the 2025–32 period, maybe due to AI-driven productivity growth, investment would constitute 2.95% of cumulative GDP."
+    },
+    {
+      "locator": "Appendix B, Annual Data Center Investment",
+      "pdf_page": 26,
+      "quote_en": "If GDP were to grow at 8% per year, the investment share would be 2.74% of cumulative GDP."
+    },
+    {
+      "locator": "Appendix B, Annual Data Center Investment",
+      "pdf_page": 25,
+      "quote_en": "We assume a total cost of $41 million per MW for capacity completed in 2025, increasing by 4 percent annually for subsequent completion cohorts."
+    },
+    {
+      "locator": "Appendix B, expenditure profile",
+      "pdf_page": 25,
+      "quote_en": "We allocate 5.122 percent to each of years 𝑡−3 and 𝑡−2, 17.561 percent to year 𝑡−1, and 72.195 percent to 𝑡, the year in which the data center becomes operational."
+    },
+    {
+      "locator": "Appendix B, schedule assumptions",
+      "pdf_page": 26,
+      "quote_en": "we distribute the 54.0 GW of no-date capacity completed by 2032 evenly over the five years from 2028 to 2032"
+    },
+    {
+      "locator": "Appendix B, schedule assumptions",
+      "pdf_page": 26,
+      "quote_en": "The 89.8 GW of no-date capacity completed after 2032 and the 19.9 GW of dated capacity delayed beyond 2032 are distributed evenly over the five years from 2033 to 2037."
+    },
+    {
+      "locator": "Appendix B, GDP assumption",
+      "pdf_page": 26,
+      "quote_en": "Nominal GDP is $30.762 trillion in 2025 and is assumed to grow by 4 percent annually, the same rate as completion-cohort cost per MW."
+    },
+    {
+      "locator": "Appendix C, historical comparison paragraph",
+      "pdf_page": 28,
+      "quote_en": "averages 3.22 percent over 2025–2032 and peaks at 4.96 percent in 2028."
+    },
+    {
+      "locator": "Section II, tail",
+      "pdf_page": 6,
+      "quote_en": "To estimate annual investment, we apply the benchmark of $41 million per MW, allow costs to grow by 4 percent annually across completion cohorts, and allocate project costs across the completion year and the preceding three years."
+    }
+  ]
+}

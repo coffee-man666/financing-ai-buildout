@@ -1,0 +1,263 @@
+{
+  "id": "offbalance_leverage",
+  "title": {
+    "en": "Hyperscaler Off-Balance-Sheet Lease and Purchase Commitments",
+    "zh": "超大规模云厂商表外租赁与采购承诺"
+  },
+  "description": {
+    "en": "Off-balance-sheet leverage facts from Section IV and footnotes 5, 6, 9: Moody's estimate that hyperscalers have roughly $970B of lease commitments of which about $660B is future leases not yet on balance sheet; the Wall Street Journal tally of $2.4T off-balance-sheet liabilities for Microsoft, Alphabet, Amazon, and Meta ($904B future leases + $1.52T future purchase commitments, mostly chips) versus $604B on-balance-sheet ($356B long-term debt + $248B current leases), with only one-fifth of the $3T recognized; footnote 6 leverage definitions (L1-L4, uncommenced leases x 0.75 present-value approximation, June 2026 data, ex-Amazon: L1 20% -> L2 48%, L3 0.7x -> L4 2.6x); and footnote 9's $500B NVIDIA-chip credit facility with a 25% NVIDIA residual value guarantee (up to $125B of backstops).",
+    "zh": "来自 Section IV 与脚注 5、6、9 的表外杠杆事实：Moody's 估计超大规模云厂商约有 9700 亿美元租赁承诺、其中约 6600 亿美元为尚未入表的未来租约；华尔街日报对微软、谷歌、亚马逊、Meta 四家的统计——表外负债 2.4 万亿美元（未来租赁承诺 9040 亿美元 + 未来采购承诺 1.52 万亿美元，多为芯片），对应表内 6040 亿美元（长期债务 3560 亿美元 + 当期租赁 2480 亿美元），3 万亿美元数据中心相关义务中仅五分之一入表；脚注 6 的杠杆口径（L1-L4 定义、未生效租约按 0.75 折现近似现值、2026 年 6 月数据、剔除 Amazon 后 L1 20%→L2 48%、L3 0.7x→L4 2.6x）；以及脚注 9 的 5000 亿美元 NVIDIA 芯片信贷安排与 NVIDIA 25% 残值担保（最高 1250 亿美元兜底）。"
+  },
+  "source": {
+    "tables": [],
+    "pdf_pages": [
+      11,
+      12,
+      15
+    ],
+    "sections": [
+      "Section IV. Financial Architecture and Risk",
+      "Footnotes 5, 6, 9"
+    ]
+  },
+  "columns": [
+    {
+      "key": "fact_key",
+      "label": {
+        "en": "Fact key",
+        "zh": "事实键"
+      },
+      "unit": ""
+    },
+    {
+      "key": "value",
+      "label": {
+        "en": "Value (paper figure/verbatim)",
+        "zh": "数值（论文原值/原文）"
+      },
+      "unit": "varies (see unit)"
+    },
+    {
+      "key": "unit",
+      "label": {
+        "en": "Unit",
+        "zh": "单位"
+      },
+      "unit": ""
+    },
+    {
+      "key": "note",
+      "label": {
+        "en": "Note (qualifier; verbatim detail; locator)",
+        "zh": "备注（限定词；原文细节；定位）"
+      },
+      "unit": ""
+    }
+  ],
+  "rows": [
+    {
+      "fact_key": "moodys_hyperscaler_lease_commitments",
+      "value": 970,
+      "unit": "$ billion",
+      "note": "qualifier: roughly; \"hyperscalers have roughly $970 billion of lease commitments, of which about $660 billion relates to future leases not yet reflected on balance sheet (Moody's Ratings, 2026a)\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "moodys_offbalance_future_leases",
+      "value": 660,
+      "unit": "$ billion",
+      "note": "qualifier: about; \"about $660 billion relates to future leases not yet reflected on balance sheet\"; Section IV, PDF p.11"
+    },
+    {
+      "fact_key": "wsj_offbalance_total",
+      "value": 2400,
+      "unit": "$ billion",
+      "note": "\"$2.4 trillion in off-balance sheet liabilities for the four large hyperscalers (Microsoft, Alphabet, Amazon, and Meta)\"; Footnote 5, PDF p.11"
+    },
+    {
+      "fact_key": "wsj_future_lease_commitments",
+      "value": 904,
+      "unit": "$ billion",
+      "note": "\"$904 billion in future lease commitments\"; Footnote 5, PDF p.11"
+    },
+    {
+      "fact_key": "wsj_future_purchase_commitments",
+      "value": 1520,
+      "unit": "$ billion",
+      "note": "\"$1.52 trillion in future purchase commitments, mostly of chips\"; Footnote 5, PDF p.11"
+    },
+    {
+      "fact_key": "wsj_onbalance_total",
+      "value": 604,
+      "unit": "$ billion",
+      "note": "\"$604 billion in on-balance sheet obligations\"; Footnote 5, PDF p.11"
+    },
+    {
+      "fact_key": "wsj_onbalance_longterm_debt",
+      "value": 356,
+      "unit": "$ billion",
+      "note": "\"$356 billion in long-term debt\"; Footnote 5, PDF p.11"
+    },
+    {
+      "fact_key": "wsj_onbalance_current_leases",
+      "value": 248,
+      "unit": "$ billion",
+      "note": "\"$248 billion in current lease obligations\"; Footnote 5, PDF p.11"
+    },
+    {
+      "fact_key": "wsj_total_datacenter_obligations",
+      "value": 3000,
+      "unit": "$ billion",
+      "note": "\"the $3 trillion in datacenter-related obligations\"; Footnote 5, PDF p.11"
+    },
+    {
+      "fact_key": "wsj_share_on_balance_sheet",
+      "value": 0.2,
+      "unit": "share",
+      "note": "qualifier: Only one-fifth; \"Only one-fifth of the $3 trillion in datacenter-related obligations are currently recognized on these four companies’ balance sheets\"; Footnote 5, PDF p.11"
+    },
+    {
+      "fact_key": "fn6_uncommenced_lease_pv_factor",
+      "value": 0.75,
+      "unit": "ratio",
+      "note": "\"I multiply the latter by 0.75 to approximate a present value\"; Footnote 6, PDF p.11"
+    },
+    {
+      "fact_key": "fn6_data_vintage",
+      "value": "June 2026",
+      "unit": "",
+      "note": "\"I use June 2026 data\"; Footnote 6, PDF p.11"
+    },
+    {
+      "fact_key": "fn6_sample",
+      "value": "ex-Amazon, four hyperscalers",
+      "unit": "",
+      "note": "\"Leaving aside Amazon, whose leases include many warehouses, I aggregate across the other four hyperscalers\"; Footnote 6, PDF p.12"
+    },
+    {
+      "fact_key": "fn6_l1",
+      "value": 20,
+      "unit": "%",
+      "note": "\"The aggregate leverage ratio increases from 𝐿1 = 20% to 𝐿2 = 48% and from 𝐿3 = 0.7𝑥to 𝐿4 = 2.6𝑥.\" (this row: 𝐿1 = 20%; math-italic glyphs as printed); Footnote 6, PDF p.12"
+    },
+    {
+      "fact_key": "fn6_l2",
+      "value": 48,
+      "unit": "%",
+      "note": "\"The aggregate leverage ratio increases from 𝐿1 = 20% to 𝐿2 = 48% and from 𝐿3 = 0.7𝑥to 𝐿4 = 2.6𝑥.\" (this row: 𝐿2 = 48%; math-italic glyphs as printed); Footnote 6, PDF p.12"
+    },
+    {
+      "fact_key": "fn6_l3",
+      "value": 0.7,
+      "unit": "x",
+      "note": "\"The aggregate leverage ratio increases from 𝐿1 = 20% to 𝐿2 = 48% and from 𝐿3 = 0.7𝑥to 𝐿4 = 2.6𝑥.\" (this row: 𝐿3 = 0.7𝑥 (debt to EBITDA); math-italic glyphs as printed); Footnote 6, PDF p.12"
+    },
+    {
+      "fact_key": "fn6_l4",
+      "value": 2.6,
+      "unit": "x",
+      "note": "\"The aggregate leverage ratio increases from 𝐿1 = 20% to 𝐿2 = 48% and from 𝐿3 = 0.7𝑥to 𝐿4 = 2.6𝑥.\" (this row: 𝐿4 = 2.6𝑥 (debt plus lease obligations to EBITDA); math-italic glyphs as printed); Footnote 6, PDF p.12"
+    },
+    {
+      "fact_key": "fn9_credit_facility",
+      "value": 500,
+      "unit": "$ billion",
+      "note": "\"The $500 billion credit facility stood up by Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR in August 2026 to finance NVIDIA chips\"; Footnote 9, PDF p.15"
+    },
+    {
+      "fact_key": "fn9_nvidia_rvg_share",
+      "value": 25,
+      "unit": "%",
+      "note": "\"NVIDIA will provide a 25% residual value guarantee\"; Footnote 9, PDF p.15"
+    },
+    {
+      "fact_key": "fn9_backstop_exposure",
+      "value": 125,
+      "unit": "$ billion",
+      "note": "qualifier: as much as; \"exposing it to as much as $125 billion of backstops\"; Footnote 9, PDF p.15"
+    },
+    {
+      "fact_key": "fn9_google_broadcom_similar",
+      "value": true,
+      "unit": "",
+      "note": "\"Google and Broadcom entered into a similar arrangement to help finance acquisition of its TPU chips\"; Footnote 9, PDF p.15"
+    }
+  ],
+  "totals": {},
+  "notes": [
+    "Printed page = PDF page - 2; footnotes 5-6 sit on printed pp. 9-10 (PDF 11-12), footnote 9 on printed p. 13 (PDF 15).",
+    "Footnote 6 definitions (verbatim structure): L1 = ratio of debt to debt plus the book value of equity; L2 = ratio of debt plus lease obligations divided by debt plus lease obligations plus the book value of equity; L3 = ratio of debt to EBITDA; L4 = ratio of debt plus lease obligations to EBITDA.",
+    "Footnote 6 lease-obligation input: commenced lease obligations plus future uncommenced lease obligations multiplied by 0.75 as a present-value approximation; June 2026 data.",
+    "Footnote 6 scope: 'Leaving aside Amazon, whose leases include many warehouses, I aggregate across the other four hyperscalers' - so L1-L4 are ex-Amazon aggregates; the paper writes the leverage symbols in math-italic notation (rows normalize them to L1/L2/L3/L4).",
+    "Moody's source cited by the paper: Moody's Ratings (2026a, February), 'Accounting - u.s.: Hyperscalers' reported ai-related lease commitments may understate economic risk'.",
+    "WSJ figures are 'a recent analysis by the Wall Street Journal' as cited in Footnote 5; $2.4T + $604B underlies the '$3 trillion in datacenter-related obligations' total, and 'only one-fifth' is currently recognized.",
+    "Footnote 9 appears alongside Section V text (PDF p.15) but is within this family's assigned extraction scope (Section IV and footnotes 3-7, 9); it quantifies contingent purchase-financing backstops (NVIDIA residual value guarantee) rather than Hyperion-specific facts.",
+    "fact_key = raw `item`; `note` merges raw qualifier_en, detail_en, locator and pdf_page verbatim."
+  ],
+  "provenance": [
+    {
+      "locator": "Section IV",
+      "pdf_page": 11,
+      "quote_en": "Moody’s estimates that hyperscalers have roughly $970 billion of lease commitments, of which about $660 billion relates to future leases not yet reflected on balance sheet"
+    },
+    {
+      "locator": "Footnote 5",
+      "pdf_page": 11,
+      "quote_en": "A recent analysis by the Wall Street Journal tallies $2.4 trillion in off-balance sheet liabilities for the four large hyperscalers (Microsoft, Alphabet, Amazon, and Meta)"
+    },
+    {
+      "locator": "Footnote 5",
+      "pdf_page": 11,
+      "quote_en": "$904 billion in future lease commitments and $1.52 trillion in future purchase commitments, mostly of chips."
+    },
+    {
+      "locator": "Footnote 5",
+      "pdf_page": 11,
+      "quote_en": "This compares to $604 billion in on-balance sheet obligations: $356 billion in long-term debt and $248 billion in current lease obligations."
+    },
+    {
+      "locator": "Footnote 5",
+      "pdf_page": 11,
+      "quote_en": "Only one-fifth of the $3 trillion in datacenter-related obligations are currently recognized on these four companies’ balance sheets."
+    },
+    {
+      "locator": "Footnote 6",
+      "pdf_page": 11,
+      "quote_en": "To compute lease obligations, I sum commenced lease obligations and future uncommenced lease obligations, where I multiply the latter by 0.75 to approximate a present value."
+    },
+    {
+      "locator": "Footnote 6",
+      "pdf_page": 11,
+      "quote_en": "I use June 2026"
+    },
+    {
+      "locator": "Footnote 6",
+      "pdf_page": 12,
+      "quote_en": "Leaving aside Amazon, whose leases include many warehouses, I aggregate across the other four hyperscalers."
+    },
+    {
+      "locator": "Footnote 6",
+      "pdf_page": 12,
+      "quote_en": "The aggregate leverage ratio increases from 𝐿1 = 20% to 𝐿2 = 48% and from"
+    },
+    {
+      "locator": "Footnote 6",
+      "pdf_page": 12,
+      "quote_en": "𝐿3 = 0.7𝑥to 𝐿4 = 2.6𝑥."
+    },
+    {
+      "locator": "Footnote 9",
+      "pdf_page": 15,
+      "quote_en": "The $500 billion credit facility stood up by Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR in August 2026 to finance NVIDIA chips is a good example."
+    },
+    {
+      "locator": "Footnote 9",
+      "pdf_page": 15,
+      "quote_en": "NVIDIA will provide a 25% residual value guarantee, exposing it to as much as $125 billion of backstops."
+    },
+    {
+      "locator": "Footnote 9",
+      "pdf_page": 15,
+      "quote_en": "Google and Broadcom entered into a similar arrangement to help finance acquisition of its TPU chips."
+    }
+  ]
+}

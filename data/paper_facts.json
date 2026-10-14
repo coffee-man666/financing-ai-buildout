@@ -1,0 +1,355 @@
+{
+  "id": "paper_facts",
+  "title": {
+    "en": "Quantitative Facts and Scenario Parameters from the Paper's Main Text and Footnotes",
+    "zh": "论文正文与脚注的量化事实与情景参数"
+  },
+  "description": {
+    "en": "Quantitative facts stated in the main text and footnotes (Section II 'AI as a Physical Capital Boom' and related sections/appendices): the capacity pipeline, central completion scenario, cost and GDP growth assumptions, the equation (1) expenditure profile, and electricity/household/rack/GPU conversion benchmarks.",
+    "zh": "正文与脚注中的量化事实（第II节「AI as a Physical Capital Boom」及相关章节/附录）：容量管道、中央完工情景、成本与 GDP 增速假设、式(1)支出分摊，以及电力/家庭/机架/GPU 换算基准。"
+  },
+  "source": {
+    "tables": [],
+    "pdf_pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      25,
+      26,
+      31
+    ],
+    "sections": [
+      "II. AI as a Physical Capital Boom",
+      "I. Introduction",
+      "Abstract",
+      "Appendix B (equation (1))",
+      "Appendix D (racks/GPUs conversion)"
+    ]
+  },
+  "columns": [
+    {
+      "key": "fact_key",
+      "label": {
+        "en": "Fact key",
+        "zh": "事实键"
+      },
+      "unit": ""
+    },
+    {
+      "key": "value",
+      "label": {
+        "en": "Value",
+        "zh": "数值"
+      },
+      "unit": "varies (see unit)"
+    },
+    {
+      "key": "unit",
+      "label": {
+        "en": "Unit",
+        "zh": "单位"
+      },
+      "unit": ""
+    },
+    {
+      "key": "detail",
+      "label": {
+        "en": "Verbatim statement (EN)",
+        "zh": "原文表述（英文）"
+      },
+      "unit": ""
+    }
+  ],
+  "rows": [
+    {
+      "fact_key": "us_operating_capacity_gw",
+      "value": 63,
+      "unit": "GW (approximately)",
+      "detail": "approximately 63 GW of operating U.S. data center capacity"
+    },
+    {
+      "fact_key": "under_construction_gw",
+      "value": 47,
+      "unit": "GW (approximately)",
+      "detail": "comprising 47 GW under construction"
+    },
+    {
+      "fact_key": "planned_gw",
+      "value": 447,
+      "unit": "GW (approximately)",
+      "detail": "and 447 GW planned"
+    },
+    {
+      "fact_key": "development_pipeline_gw",
+      "value": 494,
+      "unit": "GW (approximately)",
+      "detail": "a development pipeline of approximately 494 GW"
+    },
+    {
+      "fact_key": "scenario_capacity_by_2032_gw",
+      "value": 188.3,
+      "unit": "GW",
+      "detail": "188.3 GW of additional U.S. capacity becomes operational during 2025–32"
+    },
+    {
+      "fact_key": "scenario_operational_2025_26_gw",
+      "value": 22.5,
+      "unit": "GW",
+      "detail": "including 22.5 GW associated with projects already operational in 2025 or 2026"
+    },
+    {
+      "fact_key": "scenario_capacity_after_2032_gw",
+      "value": 114.9,
+      "unit": "GW",
+      "detail": "A further 114.9 GW is completed after 2032"
+    },
+    {
+      "fact_key": "scenario_never_completed_gw",
+      "value": 213.5,
+      "unit": "GW",
+      "detail": "while 213.5 GW is never completed"
+    },
+    {
+      "fact_key": "implied_project_cancellation_rate_pct",
+      "value": 32.6,
+      "unit": "%",
+      "detail": "Our implied cancellation rate is 32.6% of projects, exactly in line with Brandsaas et al. (2025)'s 33% number"
+    },
+    {
+      "fact_key": "capacity_weighted_cancellation_rate_pct",
+      "value": 43.2,
+      "unit": "%",
+      "detail": "Our capacity-weighted cancellation rate is 43.2%, incorporating both cancellation and downsizing"
+    },
+    {
+      "fact_key": "cost_growth_annual_pct",
+      "value": 4,
+      "unit": "% per year",
+      "detail": "we apply the benchmark of $41 million per MW, allow costs to grow by 4 percent annually across completion cohorts, and allocate project costs across the completion year and the preceding three years"
+    },
+    {
+      "fact_key": "investment_2025_32_usd_trillion",
+      "value": 8.973,
+      "unit": "$ trillion",
+      "detail": "The resulting $8.973 trillion represents investment incurred during 2025–32, including pre-completion spending on projects that become operational after 2032"
+    },
+    {
+      "fact_key": "avg_investment_gdp_share_pct",
+      "value": 3.22,
+      "unit": "% per year",
+      "detail": "investment averages 3.22 percent of GDP per year"
+    },
+    {
+      "fact_key": "cumulative_investment_gdp_share_pct",
+      "value": 3.17,
+      "unit": "%",
+      "detail": "represents 3.17 percent of cumulative GDP over 2025–32"
+    },
+    {
+      "fact_key": "cumulative_gdp_share_if_gdp6_pct",
+      "value": 2.95,
+      "unit": "% of cumulative GDP",
+      "detail": "If nominal GDP grows by 6 percent annually over this period instead, potentially reflecting AI-driven productivity gains, investment represents 2.95 percent of cumulative GDP"
+    },
+    {
+      "fact_key": "nominal_gdp_2025_usd_trillion",
+      "value": 30.762,
+      "unit": "$ trillion",
+      "detail": "Nominal GDP is $30.762 trillion in 2025"
+    },
+    {
+      "fact_key": "gdp_growth_assumption_pct",
+      "value": 4,
+      "unit": "% per year",
+      "detail": "is assumed to grow by 4 percent annually, the same rate as completion-cohort cost per MW"
+    },
+    {
+      "fact_key": "spend_share_t_minus_3_pct",
+      "value": 5.122,
+      "unit": "%",
+      "detail": "We allocate 5.122 percent to each of years t−3 and t−2 (equation (1))"
+    },
+    {
+      "fact_key": "spend_share_t_minus_2_pct",
+      "value": 5.122,
+      "unit": "%",
+      "detail": "We allocate 5.122 percent to each of years t−3 and t−2 (equation (1))"
+    },
+    {
+      "fact_key": "spend_share_t_minus_1_pct",
+      "value": 17.561,
+      "unit": "%",
+      "detail": "17.561 percent to year t−1 (equation (1))"
+    },
+    {
+      "fact_key": "spend_share_t_pct",
+      "value": 72.195,
+      "unit": "%",
+      "detail": "72.195 percent to t, the year in which the data center becomes operational (equation (1))"
+    },
+    {
+      "fact_key": "us_residential_electricity_2025_twh",
+      "value": 1515,
+      "unit": "TWh",
+      "detail": "the new capacity completed by 2032 would consume roughly as much electricity annually as the entire U.S. residential sector does today (1,515 TWh in 2025)"
+    },
+    {
+      "fact_key": "households_equivalent_200mw",
+      "value": 170000,
+      "unit": "households (approximately)",
+      "detail": "A continuous 200 MW load would consume about as much electricity annually as 170,000 average U.S. households"
+    },
+    {
+      "fact_key": "campus_200mw_cost_usd_bn",
+      "value": 8.2,
+      "unit": "$ billions (approximately)",
+      "detail": "approximately $41 million per MW or $8.2 billion for a 200 MW AI training campus in 2025"
+    },
+    {
+      "fact_key": "campus_1gw_cost_usd_bn",
+      "value": 41,
+      "unit": "$ billions (about)",
+      "detail": "We estimate that a 1 GW AI campus costs about $41 billion"
+    },
+    {
+      "fact_key": "racks_supported_188gw",
+      "value": 1100000,
+      "unit": "racks (roughly; '1.10 million')",
+      "detail": "the 188.3 GW build-out supports roughly 1.10 million racks"
+    },
+    {
+      "fact_key": "gpus_supported_188gw",
+      "value": 79300000,
+      "unit": "GPUs ('79.3 million')",
+      "detail": "or 79.3 million GPUs"
+    },
+    {
+      "fact_key": "traditional_rack_power_kw",
+      "value": "5–10",
+      "unit": "kW",
+      "detail": "traditional CPU-based racks often consumed 5–10 kilowatts (kW)"
+    },
+    {
+      "fact_key": "ai_rack_power_kw",
+      "value": "well above 100",
+      "unit": "kW",
+      "detail": "current rack-scale AI systems can draw well above 100 kW and increasingly rely on direct-to-chip liquid cooling"
+    },
+    {
+      "fact_key": "critical_it_capacity_200mw_mw",
+      "value": 166.7,
+      "unit": "MW (approximately)",
+      "detail": "A facility drawing 200 megawatts (MW) of total power supports approximately 166.7 MW of critical IT capacity at a power usage effectiveness ratio of 1.2"
+    }
+  ],
+  "totals": {},
+  "notes": [
+    "Printed page number = PDF page − 2 throughout.",
+    "Capacity figures use Cleanview project-level data accessed on September 12, 2026; the paper stresses the pipeline is 'not a completion forecast: projects may be delayed, reduced in scale, or never completed' and the 188.3/114.9/213.5 GW split is 'a scenario rather than a forecast' (PDF p.6).",
+    "Narrative rounding: the introduction (PDF p.3) rounds the scenario to '188 GW of new capacity', '$9.0 trillion in investment', 'averaging 3.22 percent of GDP per year', and 'a further 115 GW completed after 2032'; the precise values 188.3 / $8.973 trillion / 3.22% / 114.9 appear in Section II (PDF pp.6–7).",
+    "Equation (1) (PDF p.26): I_s = 0.72195·c_s·K_s + 0.17561·c_{s+1}·K_{s+1} + 0.05122·c_{s+2}·K_{s+2} + 0.05122·c_{s+3}·K_{s+3}; the paper states the shares verbally on PDF p.25.",
+    "The 1.10 million racks / 79.3 million GPUs are stated in Appendix D (PDF p.31) as a conversion 'Using the GB300 NVL72 configuration in Appendix A'.",
+    "1,515 TWh (2025) is the annual electricity of the entire U.S. residential sector, used as the full-utilization analog for capacity completed by 2032 (PDF p.4, Section I).",
+    "fact_key = raw `key`; `detail` = raw `statement_en` (verbatim). Bilingual labels (label.en / label.zh) and per-fact pdf_pages / locator remain in data/raw/physical.json (paper_facts)."
+  ],
+  "provenance": [
+    {
+      "locator": "Section II, capacity pipeline (63/47/447/494 GW)",
+      "pdf_page": 6,
+      "quote_en": "we estimate approximately 63 GW of operating U.S. data center capacity and a development pipeline of approximately 494 GW, comprising 47 GW under construction and 447 GW planned."
+    },
+    {
+      "locator": "Section II, central scenario (188.3 GW incl. 22.5 GW)",
+      "pdf_page": 6,
+      "quote_en": "Our central scenario implies that 188.3 GW of additional U.S. capacity becomes operational during 2025–32, including 22.5 GW associated with projects already operational in 2025 or 2026."
+    },
+    {
+      "locator": "Section II, central scenario (114.9 / 213.5 GW)",
+      "pdf_page": 6,
+      "quote_en": "A further 114.9 GW is completed after 2032, while 213.5 GW is never completed."
+    },
+    {
+      "locator": "Section II, footnote 2 (32.6% project cancellation)",
+      "pdf_page": 6,
+      "quote_en": "Our implied cancellation rate is 32.6% of projects, exactly in line with Brandsaas et al. (2025)’s 33% number based on historical cancellation rates from Dodge Construction Network data"
+    },
+    {
+      "locator": "Section II, footnote 2 (43.2% capacity-weighted)",
+      "pdf_page": 6,
+      "quote_en": "capacity-weighted cancellation rate is 43.2%, incorporating both cancellation and downsizing."
+    },
+    {
+      "locator": "Section II, $41m/MW benchmark and 4% cost growth",
+      "pdf_page": 6,
+      "quote_en": "we apply the benchmark of $41 million per MW, allow costs to grow by 4 percent annually across completion cohorts, and allocate project costs across the completion year and the preceding three years."
+    },
+    {
+      "locator": "Section II, $8.973 trillion investment 2025–32",
+      "pdf_page": 6,
+      "quote_en": "resulting $8.973 trillion represents investment incurred during 2025–32"
+    },
+    {
+      "locator": "Section II, 3.22%/yr and 3.17% cumulative GDP shares",
+      "pdf_page": 7,
+      "quote_en": "investment averages 3.22 percent of GDP per year and represents 3.17 percent of cumulative GDP over 2025–32."
+    },
+    {
+      "locator": "Section II, 2.95% under 6% GDP growth",
+      "pdf_page": 7,
+      "quote_en": "If nominal GDP grows by 6 percent annually over this period instead, potentially reflecting AI-driven productivity gains, investment represents 2.95 percent of cumulative GDP."
+    },
+    {
+      "locator": "Appendix B, nominal GDP $30.762T growing 4%/yr",
+      "pdf_page": 26,
+      "quote_en": "$30.762 trillion in 2025 and is assumed to grow by 4 percent annually, the same rate as completion-cohort cost per MW."
+    },
+    {
+      "locator": "Appendix B, expenditure profile (equation (1) shares)",
+      "pdf_page": 25,
+      "quote_en": "We allocate 5.122 percent to each of years 𝑡−3 and 𝑡−2, 17.561 percent to year 𝑡−1, and 72.195 percent to 𝑡, the year in which the data center becomes operational."
+    },
+    {
+      "locator": "Section I, 1,515 TWh residential electricity",
+      "pdf_page": 4,
+      "quote_en": "the new capacity completed by 2032 would consume roughly as much electricity annually as the entire U.S. residential sector does today (1,515 TWh in 2025)."
+    },
+    {
+      "locator": "Section II, 170,000 households per 200 MW",
+      "pdf_page": 6,
+      "quote_en": "A continuous 200 MW load would consume about as much electricity annually as 170,000 average U.S. households."
+    },
+    {
+      "locator": "Section II, $8.2B for a 200 MW campus in 2025",
+      "pdf_page": 6,
+      "quote_en": "these estimates imply an initial capital cost of approximately $41 million per MW or $8.2 billion for a 200 MW AI training campus in 2025."
+    },
+    {
+      "locator": "Section II, one-third / two-thirds split",
+      "pdf_page": 6,
+      "quote_en": "one-third of this cost reflects the facility and power infrastructure, while roughly two-thirds consists of compute hardware and related IT systems."
+    },
+    {
+      "locator": "Appendix D, 1.10M racks / 79.3M GPUs",
+      "pdf_page": 31,
+      "quote_en": "the 188.3 GW build-out supports roughly 1.10 million racks, or 79.3 million GPUs"
+    },
+    {
+      "locator": "Section II, 5–10 kW vs well above 100 kW racks",
+      "pdf_page": 5,
+      "quote_en": "CPU-based racks often consumed 5–10 kilowatts (kW), current rack-scale AI systems can draw well above 100 kW"
+    },
+    {
+      "locator": "Section II, 166.7 MW critical IT at PUE 1.2",
+      "pdf_page": 5,
+      "quote_en": "A facility drawing 200 megawatts (MW) of total power supports approximately 166.7 MW of critical IT capacity at a power usage effectiveness ratio of 1.2."
+    },
+    {
+      "locator": "Abstract, 1 GW campus ≈ $41 billion",
+      "pdf_page": 2,
+      "quote_en": "We estimate that a 1 GW AI campus costs about $41 billion."
+    }
+  ]
+}

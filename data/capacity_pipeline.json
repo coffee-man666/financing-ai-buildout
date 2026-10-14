@@ -1,0 +1,209 @@
+{
+  "id": "capacity_pipeline",
+  "title": {
+    "en": "Operational, Under Construction, and Planned U.S. Data Center Capacity by Completion Year (Table 3)",
+    "zh": "按完工年份划分的美国在运/在建/规划数据中心容量（表3）"
+  },
+  "description": {
+    "en": "Project counts and capacity (GW) by completion year from the Cleanview project database (accessed September 12, 2026), split into observed capacity (reported by Cleanview) and imputed capacity (estimated by the model described in the text), before applying any realization adjustments. Excludes canceled projects.",
+    "zh": "来自 Cleanview 项目数据库（2026年9月12日取数）、按完工年份统计的项目数与容量（GW），分为观测容量（Cleanview 报告）与插值容量（文中所建模型估计），未做任何实现率调整；不含已取消项目。"
+  },
+  "source": {
+    "tables": [
+      "Table 3"
+    ],
+    "pdf_pages": [
+      6,
+      22,
+      23,
+      25
+    ],
+    "sections": [
+      "Appendix B",
+      "Section II"
+    ]
+  },
+  "columns": [
+    {
+      "key": "completion_year",
+      "label": {
+        "en": "Completion year",
+        "zh": "完工年份"
+      },
+      "unit": ""
+    },
+    {
+      "key": "projects",
+      "label": {
+        "en": "Projects (total)",
+        "zh": "项目数（合计）"
+      },
+      "unit": "projects"
+    },
+    {
+      "key": "observed_gw",
+      "label": {
+        "en": "Observed capacity",
+        "zh": "观测容量"
+      },
+      "unit": "GW"
+    },
+    {
+      "key": "imputed_gw",
+      "label": {
+        "en": "Imputed capacity",
+        "zh": "插值容量"
+      },
+      "unit": "GW"
+    },
+    {
+      "key": "total_gw",
+      "label": {
+        "en": "Total capacity",
+        "zh": "总容量"
+      },
+      "unit": "GW"
+    }
+  ],
+  "rows": [
+    {
+      "completion_year": "Before 2025",
+      "projects": 1009,
+      "observed_gw": 39.1,
+      "imputed_gw": 1.3,
+      "total_gw": 40.5
+    },
+    {
+      "completion_year": "2025",
+      "projects": 187,
+      "observed_gw": 13.6,
+      "imputed_gw": 0.1,
+      "total_gw": 13.8
+    },
+    {
+      "completion_year": "2026",
+      "projects": 293,
+      "observed_gw": 26.9,
+      "imputed_gw": 1.7,
+      "total_gw": 28.7
+    },
+    {
+      "completion_year": "2027",
+      "projects": 405,
+      "observed_gw": 41.0,
+      "imputed_gw": 4.7,
+      "total_gw": 45.7
+    },
+    {
+      "completion_year": "2028",
+      "projects": 369,
+      "observed_gw": 42.4,
+      "imputed_gw": 5.4,
+      "total_gw": 47.9
+    },
+    {
+      "completion_year": "2029",
+      "projects": 153,
+      "observed_gw": 16.7,
+      "imputed_gw": 1.5,
+      "total_gw": 18.2
+    },
+    {
+      "completion_year": "2030",
+      "projects": 109,
+      "observed_gw": 12.5,
+      "imputed_gw": 1.8,
+      "total_gw": 14.3
+    },
+    {
+      "completion_year": "2031",
+      "projects": 60,
+      "observed_gw": 11.7,
+      "imputed_gw": 2.5,
+      "total_gw": 14.2
+    },
+    {
+      "completion_year": "2032",
+      "projects": 46,
+      "observed_gw": 7.1,
+      "imputed_gw": 2.5,
+      "total_gw": 9.5
+    },
+    {
+      "completion_year": "After 2032",
+      "projects": 29,
+      "observed_gw": 2.2,
+      "imputed_gw": 8.3,
+      "total_gw": 10.5
+    },
+    {
+      "completion_year": "Planned, no date",
+      "projects": 717,
+      "observed_gw": 225.6,
+      "imputed_gw": 88.4,
+      "total_gw": 313.9
+    }
+  ],
+  "totals": {
+    "row_label": "Total",
+    "observed_projects": 3010,
+    "observed_gw": 438.9,
+    "imputed_projects": 367,
+    "imputed_gw": 118.2,
+    "total_projects": 3377,
+    "total_gw": 557.1
+  },
+  "notes": [
+    "Cancellation rates (required): interpreting the category-specific “Never” shares as probabilities of whole-project cancellation, the assumptions imply that 32.6 percent of the 2,090 planned and under-construction projects, or approximately 680 projects, are never built; the corresponding capacity-weighted non-realization share is 43.2 percent, representing 213.5 GW of the 494.1 GW associated with these projects. The 43.2% capacity-weighted rate incorporates both cancellation and downsizing (“Capacity-based non-realization also encompasses downsizing”); footnote 2 (PDF p.6) states “Our capacity-weighted cancellation rate is 43.2%, incorporating both cancellation and downsizing.”",
+    "Table 3 definitions (Table notes, PDF p.23): the table includes operational, under-construction, and planned projects and excludes canceled projects; “Observed” denotes capacity reported by Cleanview; “imputed” denotes capacity estimated using the model described in the text; “Before 2025” includes operational projects without a reported year; “After 2032” includes projects dated 2033 or later; no realization adjustments are applied.",
+    "Imputation (PDF p.23): imputed values are capped at 2,000 MW (affecting 13 predictions); capacity is imputed for 43 operational, 10 under-construction, and 314 planned projects, adding 118.2 GW in total.",
+    "Database (PDF p.22): Cleanview database contains 3,423 projects; the 46 canceled projects are excluded, leaving 3,377 active projects — 1,287 operational, 462 under construction, 1,628 planned. Capacity is reported for 3,010 of the 3,377 active projects and missing for 367. Projects under construction receive the same realization treatment as planned projects.",
+    "2025 category (PDF p.23): 187 projects and 13.8 GW; seven of these projects, representing 0.6 GW, remain classified as under construction or planned despite a reported 2025 completion year and are treated as operational in the realization scenario.",
+    "2026 category (PDF p.23): 98 operational projects (9.4 GW), 145 under construction (12.9 GW), 50 planned (6.3 GW).",
+    "Section II (PDF p.6): approximately 63 GW of operating U.S. data center capacity and a development pipeline of approximately 494 GW, comprising 47 GW under construction and 447 GW planned — “not a completion forecast: projects may be delayed, reduced in scale, or never completed.”",
+    "Benchmark comparison (PDF p.25): the implied 32.6% project-count cancellation rate is very close to the 33% abandonment rate reported by Brandsaas et al. (2025) using Dodge Construction Network data, and to their 30% rate for projects valued above $250 million.",
+    "Per-completion-year project counts (observed / imputed / total; verbatim Table 3 values kept out of the fixed row schema — `projects` holds the total count): Before 2025 971/38/1009; 2025 184/3/187; 2026 281/12/293; 2027 381/24/405; 2028 346/23/369; 2029 145/8/153; 2030 103/6/109; 2031 55/5/60; 2032 41/5/46; After 2032 20/9/29; Planned, no date 483/234/717."
+  ],
+  "provenance": [
+    {
+      "locator": "Table 3 (title)",
+      "pdf_page": 23,
+      "quote_en": "Table 3. Operational, Under Construction, and Planned U.S. Data Center Capacity by Completion Year"
+    },
+    {
+      "locator": "Appendix B, Capacity Estimates paragraph",
+      "pdf_page": 23,
+      "quote_en": "In total, 557.1 GW of data center capacity is represented in the database, including imputed capacity, compared with the installed base of 40.5 GW at the end of 2024."
+    },
+    {
+      "locator": "Appendix B, Data Center Projects paragraph",
+      "pdf_page": 22,
+      "quote_en": "We exclude the 46 canceled projects, leaving 3,377 active projects: 1,287 operational, 462 under construction, and 1,628 planned."
+    },
+    {
+      "locator": "Appendix B, Imputing Missing Capacity (end)",
+      "pdf_page": 23,
+      "quote_en": "We impute capacity for 43 operational projects, 10 projects under construction, and 314 planned projects, adding 118.2 GW in total."
+    },
+    {
+      "locator": "Appendix B, cancellation paragraph",
+      "pdf_page": 25,
+      "quote_en": "our assumptions imply that 32.6 percent of the 2,090 planned and under-construction projects, or approximately 680 projects, are never built"
+    },
+    {
+      "locator": "Appendix B, cancellation paragraph",
+      "pdf_page": 25,
+      "quote_en": "The corresponding capacity-weighted non-realization share is 43.2 percent, representing 213.5 GW of the 494.1 GW associated with these projects."
+    },
+    {
+      "locator": "Section II, tail",
+      "pdf_page": 6,
+      "quote_en": "we estimate approximately 63 GW of operating U.S. data center capacity and a development pipeline of approximately 494 GW, comprising 47 GW under construction and 447 GW planned"
+    },
+    {
+      "locator": "Section II, footnote 2",
+      "pdf_page": 6,
+      "quote_en": "Our capacity-weighted cancellation rate is 43.2%, incorporating both cancellation and downsizing."
+    }
+  ]
+}

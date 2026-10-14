@@ -1,0 +1,249 @@
+{
+  "id": "revenue_requirement",
+  "title": {
+    "en": "Capital and Required Revenue by Completion Cohort (Table 6) with Revenue-Requirement Parameters",
+    "zh": "按建成年份的资本与所需收入（表 6）及收入要求参数"
+  },
+  "description": {
+    "en": "Appendix D, Table 6: for each 2025-2032 completion cohort, capacity (GW), initial cost Q_t, capital base at commissioning B_t = phi * Q_t, required mature annual operating cash flow, and required mature annual revenue, at a 10% required unlevered return and a 50% operating cash-flow margin. Parameters include the construction capital markup phi = 1.04527, capital-recovery factors a(10%,6) = 22.96% and a(10%,20) = 11.75%, the weighted annual capital charge of 19.37%, the IT (68%, 6-year life) vs non-IT (32%, 20-year life) split, and the footnote-11 reconciliation of the $8.973 trillion (Table 5) and $8.762 trillion (Table 6) investment figures.",
+    "zh": "附录 D 表 6：按 2025–2032 各建成年份 cohort 的容量（GW）、初始成本 Q_t、建成时点资本基座 B_t = φ × Q_t、所需成熟期年经营现金流与所需成熟期年收入（10% 无杠杆要求回报率、50% 经营现金流利润率）。参数包括建设期资本加成 φ = 1.04527、资本回收系数 a(10%,6) = 22.96% 与 a(10%,20) = 11.75%、加权年资本费用 19.37%、IT（占 68%、寿命 6 年）与非 IT（占 32%、寿命 20 年）拆分，以及脚注 11 对表 5 的 $8.973 万亿与表 6 的 $8.762 万亿投资额的差额调和。"
+  },
+  "source": {
+    "tables": [
+      "Table 6"
+    ],
+    "pdf_pages": [
+      14,
+      28,
+      29,
+      30
+    ],
+    "sections": [
+      "Section V. Risks in the AI Infrastructure Buildout",
+      "Appendix D. Revenue Required to Support the Investment"
+    ]
+  },
+  "columns": [
+    {
+      "key": "year",
+      "label": {
+        "en": "Completion year",
+        "zh": "建成年份"
+      },
+      "unit": "year"
+    },
+    {
+      "key": "gw",
+      "label": {
+        "en": "Capacity",
+        "zh": "容量"
+      },
+      "unit": "GW"
+    },
+    {
+      "key": "cost_bn",
+      "label": {
+        "en": "Cost (Q_t)",
+        "zh": "成本（Q_t）"
+      },
+      "unit": "$ billions"
+    },
+    {
+      "key": "capital_bn",
+      "label": {
+        "en": "Capital (B_t, capital base at commissioning)",
+        "zh": "资本（B_t，建成时点资本基座）"
+      },
+      "unit": "$ billions"
+    },
+    {
+      "key": "req_cf_bn",
+      "label": {
+        "en": "Required mature annual operating cash flow",
+        "zh": "所需成熟期年经营现金流"
+      },
+      "unit": "$ billions"
+    },
+    {
+      "key": "req_rev_bn",
+      "label": {
+        "en": "Required mature annual revenue",
+        "zh": "所需成熟期年收入"
+      },
+      "unit": "$ billions"
+    }
+  ],
+  "rows": [
+    {
+      "year": 2025,
+      "gw": 13.8,
+      "cost_bn": 563.9,
+      "capital_bn": 589.4,
+      "req_cf_bn": 114.2,
+      "req_rev_bn": 228.4
+    },
+    {
+      "year": 2026,
+      "gw": 26.6,
+      "cost_bn": 1133.6,
+      "capital_bn": 1184.9,
+      "req_cf_bn": 229.5,
+      "req_rev_bn": 459.1
+    },
+    {
+      "year": 2027,
+      "gw": 35.8,
+      "cost_bn": 1588.8,
+      "capital_bn": 1660.7,
+      "req_cf_bn": 321.7,
+      "req_rev_bn": 643.4
+    },
+    {
+      "year": 2028,
+      "gw": 43.5,
+      "cost_bn": 2005.5,
+      "capital_bn": 2096.3,
+      "req_cf_bn": 406.1,
+      "req_rev_bn": 812.2
+    },
+    {
+      "year": 2029,
+      "gw": 21.5,
+      "cost_bn": 1029.6,
+      "capital_bn": 1076.2,
+      "req_cf_bn": 208.5,
+      "req_rev_bn": 417.0
+    },
+    {
+      "year": 2030,
+      "gw": 17.7,
+      "cost_bn": 881.9,
+      "capital_bn": 921.9,
+      "req_cf_bn": 178.6,
+      "req_rev_bn": 357.2
+    },
+    {
+      "year": 2031,
+      "gw": 16.1,
+      "cost_bn": 835.5,
+      "capital_bn": 873.3,
+      "req_cf_bn": 169.2,
+      "req_rev_bn": 338.3
+    },
+    {
+      "year": 2032,
+      "gw": 13.4,
+      "cost_bn": 723.4,
+      "capital_bn": 756.2,
+      "req_cf_bn": 146.5,
+      "req_rev_bn": 293.0
+    }
+  ],
+  "totals": {
+    "label": {
+      "en": "Total (Table 6 'Total' row), 2025-2032",
+      "zh": "总计（表 6 Total 行），2025–2032"
+    },
+    "gw": 188.3,
+    "cost_bn": 8762.2,
+    "capital_bn": 9158.8,
+    "req_cf_bn": 1774.3,
+    "req_rev_bn": 3548.5
+  },
+  "notes": [
+    "Table 6 note: 'Figures may not sum exactly because of rounding.'",
+    "Appendix D text values accompanying the table: initial cost approximately $8.762 trillion; capital base at commissioning approximately $9.159 trillion; required annual operating cash flow $1.774 trillion; mature annual revenue approximately $3.549 trillion by 2032; 8.8% of 2032 GDP of $40.481 trillion (PDF p.30).",
+    "Section V restatement: 'Under the central assumptions in Appendix D, the 2025-2032 buildout requires approximately $3.55 trillion in mature annual revenue to earn a 10% unlevered return at a 50% operating cash-flow margin' (PDF p.14).",
+    "The revenue calculation uses the capacity outcomes of Table 4, excludes capacity operational before 2025, retains reported completion years, and includes only capacity completed in 2025-32 (PDF p.29).",
+    "Equations (Appendix D): (2) Q_t = c_t x K_t; (3) phi = 0.05122(1+r)^3 + 0.05122(1+r)^2 + 0.17561(1+r) + 0.72195; (4) B_t = phi * Q_t; (5) a(r,N) = r(1+r)^N / ((1+r)^N - 1); (6) CF_t(r) = B_t[0.68 a(r,6) + 0.32 a(r,20)]; (7) Rev_t(r,mu) = CF_t(r)/mu.",
+    "The exercise 'is not a forecast of AI revenues. Rather, it calculates the mature annual revenue required to recover the investment, replace depreciating capital, and compensate investors for the opportunity cost of capital' (PDF p.28).",
+    "Column mapping from raw: cost_bn_usd→cost_bn, capital_bn_usd→capital_bn, req_cf_bn_usd→req_cf_bn, req_rev_bn_usd→req_rev_bn; values verbatim."
+  ],
+  "provenance": [
+    {
+      "locator": "Table 6, title",
+      "pdf_page": 30,
+      "quote_en": "Table 6. Capital and Required Revenue by Completion Cohort"
+    },
+    {
+      "locator": "Appendix D, text above Table 6",
+      "pdf_page": 30,
+      "quote_en": "The 188.3 GW of capacity completed between 2025 and 2032 has an initial cost of approximately $8.762"
+    },
+    {
+      "locator": "Appendix D, text above Table 6",
+      "pdf_page": 30,
+      "quote_en": "Including the return on capital committed during construction raises the capital base at commissioning to approximately $9.159 trillion."
+    },
+    {
+      "locator": "Appendix D, text above Table 6",
+      "pdf_page": 30,
+      "quote_en": "At a 10 percent required unlevered return, this capacity must generate $1.774 trillion in annual operating cash flow once all cohorts are operational and mature."
+    },
+    {
+      "locator": "Appendix D, text above Table 6",
+      "pdf_page": 30,
+      "quote_en": "At a 50 percent operating cash-flow margin, this corresponds to mature annual revenue of approximately $3.549 trillion by 2032."
+    },
+    {
+      "locator": "Appendix D, text above Table 6",
+      "pdf_page": 30,
+      "quote_en": "This represents 8.8% of 2032 GDP of $40.481 trillion."
+    },
+    {
+      "locator": "Appendix D, equation (3)",
+      "pdf_page": 29,
+      "quote_en": "𝜙= 0.05122(1 + 𝑟)3 + 0.05122(1 + 𝑟)2 + 0.17561(1 + 𝑟) + 0.72195."
+    },
+    {
+      "locator": "Appendix D, text below equation (4)",
+      "pdf_page": 29,
+      "quote_en": "For 𝑟= 0.10, 𝜙= 1.04527."
+    },
+    {
+      "locator": "Appendix D, capital-recovery factors",
+      "pdf_page": 29,
+      "quote_en": "At an 𝑟= 10% required unlevered return, the six-year and 20-year capital-recovery factors are 22.96% and 11.75%, respectively. The weighted annual capital charge is therefore 19.37% of the capital base."
+    },
+    {
+      "locator": "Appendix D, asset lives",
+      "pdf_page": 29,
+      "quote_en": "We assume in Table 2 that IT equipment accounts for 68 percent of total cost. Based on current industry assessment and accounting practices, we assume IT has a six-year economic life."
+    },
+    {
+      "locator": "Appendix D, asset lives",
+      "pdf_page": 29,
+      "quote_en": "Buildings, power infrastructure, cooling equipment, and other non-IT assets account for the remaining 32 percent and have a 20-year economic life."
+    },
+    {
+      "locator": "Appendix D, text above Table 6",
+      "pdf_page": 30,
+      "quote_en": "At a 10 percent required return and a 𝜇= 50% margin, mature annual revenue equals 38.74% of the capital base."
+    },
+    {
+      "locator": "Footnote 11",
+      "pdf_page": 30,
+      "quote_en": "The difference with the $8.973 trillion estimate in Table 5 is the $565 billion in costs incurred during 2025-2032 for data centers that will be operational after 2032"
+    },
+    {
+      "locator": "Footnote 11",
+      "pdf_page": 30,
+      "quote_en": "minus the $354 billion in costs that were incurred prior to 2025 on data centers completed in 2025–2032."
+    },
+    {
+      "locator": "Table 6, notes",
+      "pdf_page": 30,
+      "quote_en": "$41 million per MW in 2025 and 4 percent annual cost growth"
+    },
+    {
+      "locator": "Table 6, notes",
+      "pdf_page": 30,
+      "quote_en": "the 54.0 GW of undated capacity assumed to be completed by 2032 is allocated equally across 2028–2032."
+    },
+    {
+      "locator": "Section V, revenue paragraph",
+      "pdf_page": 14,
+      "quote_en": "Under the central assumptions in Appendix D, the 2025–2032 buildout requires approximately $3.55 trillion in mature annual revenue to earn a 10% unlevered return at a 50% operating cash-flow margin."
+    }
+  ]
+}
